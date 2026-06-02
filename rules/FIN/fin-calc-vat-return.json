@@ -1,0 +1,17 @@
+{
+  "id": "fin-calc-vat-return",
+  "name": "Calculate VAT return",
+  "description": "Calculate output and input VAT for quarterly VAT return submission",
+  "task": "CALC",
+  "dom": "FIN",
+  "packet": "CALC|FIN|return:FIN-Agent|p:1|aacp:1.1|res:vat_return|rules:vat_scheme|validate:hmrc_rules",
+  "tags": [
+    "vat",
+    "tax",
+    "quarterly",
+    "hmrc"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

@@ -1,0 +1,17 @@
+{
+  "id": "it-sync-licences-to-mdm",
+  "name": "Sync licence assignments to MDM",
+  "description": "Synchronise approved licence assignments to MDM for device-level enforcement",
+  "task": "SYNC",
+  "dom": "IT",
+  "packet": "SYNC|IT|return:IT-Agent|p:2|aacp:1.1|res:licence_mdm_sync|validate:assignment_match",
+  "tags": [
+    "sync",
+    "mdm",
+    "licences",
+    "it"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

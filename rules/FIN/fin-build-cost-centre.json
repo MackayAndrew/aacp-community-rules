@@ -1,0 +1,17 @@
+{
+  "id": "fin-build-cost-centre",
+  "name": "Build new cost centre structure",
+  "description": "Create new cost centre in the GL with approved budget allocation and owner assignment",
+  "task": "BUILD",
+  "dom": "FIN",
+  "packet": "BUILD|FIN|return:FIN-Agent|p:1|aacp:1.1|res:cost_centre|req:gl_code,budget_allocation,owner_assignment",
+  "tags": [
+    "cost-centre",
+    "gl",
+    "budget",
+    "finance"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

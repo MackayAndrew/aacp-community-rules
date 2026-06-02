@@ -1,0 +1,17 @@
+{
+  "id": "fin-merge-gl-bank-statement",
+  "name": "Merge GL and bank statement for reconciliation",
+  "description": "Merge GL transaction data with bank statement for period reconciliation",
+  "task": "MERGE",
+  "dom": "FIN",
+  "packet": "MERGE|FIN|return:FIN-Agent|p:1|aacp:1.1|res:gl_bank_merged|rules:recon_v1|validate:period_match",
+  "tags": [
+    "gl",
+    "bank",
+    "merge",
+    "reconciliation"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

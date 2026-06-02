@@ -1,0 +1,17 @@
+{
+  "id": "fin-proc-approve-payment",
+  "name": "Approve payment for processed invoice",
+  "description": "Approve payment run for invoices that have passed three-way match validation",
+  "task": "PROC",
+  "dom": "FIN",
+  "packet": "PROC|FIN|return:FIN-Agent|p:1|aacp:1.1|res:payment|req:approve|validate:authorisation_limit",
+  "tags": [
+    "invoice",
+    "payment",
+    "approval",
+    "ap"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

@@ -1,0 +1,17 @@
+{
+  "id": "mkt-fetch-attribution-data",
+  "name": "Fetch attribution data for channel analysis",
+  "description": "Retrieve multi-touch attribution data for marketing channel analysis",
+  "task": "FETCH",
+  "dom": "MKT",
+  "packet": "FETCH|MKT|return:MKT-Agent|p:2|aacp:1.1|res:attribution_data|period:current|fmt:json",
+  "tags": [
+    "attribution",
+    "channels",
+    "analysis",
+    "marketing"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

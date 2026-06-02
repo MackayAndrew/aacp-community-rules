@@ -1,0 +1,17 @@
+{
+  "id": "fin-flag-expense-policy-breach",
+  "name": "Flag expense claims breaching policy",
+  "description": "Flag expense claims that exceed policy limits or lack required receipts",
+  "task": "FLAG",
+  "dom": "FIN",
+  "packet": "FLAG|FIN|return:FIN-Agent|p:2|aacp:1.1|res:expense_claims|validate:expense_policy|highlight:REVIEW_REQ",
+  "tags": [
+    "expenses",
+    "policy",
+    "flag",
+    "compliance"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

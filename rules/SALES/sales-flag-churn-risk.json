@@ -1,0 +1,17 @@
+{
+  "id": "sales-flag-churn-risk",
+  "name": "Flag high churn risk renewal",
+  "description": "Flag renewals at high churn risk based on product usage and NPS signals",
+  "task": "FLAG",
+  "dom": "SALES",
+  "packet": "FLAG|SALES|return:SALES-Agent|p:1|aacp:1.1|res:renewals|validate:churn_score>=7|highlight:CHURN_RISK",
+  "tags": [
+    "renewals",
+    "churn",
+    "risk",
+    "retention"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

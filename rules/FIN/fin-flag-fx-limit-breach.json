@@ -1,0 +1,17 @@
+{
+  "id": "fin-flag-fx-limit-breach",
+  "name": "Flag FX limit breach",
+  "description": "Flag currency exposures that exceed approved hedging policy limits",
+  "task": "FLAG",
+  "dom": "FIN",
+  "packet": "FLAG|FIN|return:FIN-Agent|p:1|aacp:1.1|res:fx_exposure|validate:hedging_limits|highlight:BREACH",
+  "tags": [
+    "fx",
+    "limit",
+    "breach",
+    "hedging"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

@@ -1,0 +1,17 @@
+{
+  "id": "legal-proc-process-dsar",
+  "name": "Process DSAR response",
+  "description": "Compile and review personal data for DSAR response within legal timeframe",
+  "task": "PROC",
+  "dom": "LEGAL",
+  "packet": "PROC|LEGAL|return:LEG-Agent|p:1|aacp:1.1|res:dsar_response|req:data_compilation,legal_review",
+  "tags": [
+    "gdpr",
+    "dsar",
+    "response",
+    "data-subject"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

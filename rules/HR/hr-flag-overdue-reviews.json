@@ -1,0 +1,17 @@
+{
+  "id": "hr-flag-overdue-reviews",
+  "name": "Flag overdue performance reviews",
+  "description": "Flag performance reviews that are overdue and escalate to HR Director",
+  "task": "FLAG",
+  "dom": "HR",
+  "packet": "FLAG|HR|return:HR-Agent|p:1|aacp:1.1|res:overdue_reviews|status:overdue|highlight:ESCALATE",
+  "tags": [
+    "performance",
+    "overdue",
+    "flag",
+    "escalate"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

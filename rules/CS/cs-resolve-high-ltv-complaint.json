@@ -1,0 +1,17 @@
+{
+  "id": "cs-resolve-high-ltv-complaint",
+  "name": "Resolve high-LTV customer complaint with goodwill",
+  "description": "Generate resolution with goodwill consideration for high-value customer complaints",
+  "task": "RESOLVE",
+  "dom": "CS",
+  "packet": "RESOLVE|CS|return:CS-Agent|p:1|aacp:1.1|res:complaint|req:resolve,goodwill_consider|sentiment:negative|tone:empathetic",
+  "tags": [
+    "complaint",
+    "resolution",
+    "ltv",
+    "goodwill"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

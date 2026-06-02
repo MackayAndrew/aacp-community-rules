@@ -1,0 +1,17 @@
+{
+  "id": "mkt-log-attribution-model-updated",
+  "name": "Log attribution model update",
+  "description": "Write attribution model update record to marketing audit trail",
+  "task": "LOG",
+  "dom": "MKT",
+  "packet": "LOG|MKT|return:AUD-Agent|p:3|aacp:1.1|res:attribution_model|actor:MKT-Agent|status:updated",
+  "tags": [
+    "attribution",
+    "model",
+    "audit",
+    "log"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

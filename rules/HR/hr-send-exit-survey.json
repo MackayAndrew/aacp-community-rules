@@ -1,0 +1,17 @@
+{
+  "id": "hr-send-exit-survey",
+  "name": "Send exit survey to departing employee",
+  "description": "Send automated exit survey to departing employee on final day",
+  "task": "SEND",
+  "dom": "HR",
+  "packet": "SEND|HR|return:HR-Agent|p:3|aacp:1.1|subj:exit_survey|tone:empathetic",
+  "tags": [
+    "offboarding",
+    "exit",
+    "survey",
+    "leaver"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

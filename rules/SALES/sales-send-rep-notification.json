@@ -1,0 +1,17 @@
+{
+  "id": "sales-send-rep-notification",
+  "name": "Notify sales rep of qualified lead",
+  "description": "Send notification to assigned sales rep with qualified lead details and recommended next step",
+  "task": "SEND",
+  "dom": "SALES",
+  "packet": "SEND|SALES|return:SALES-Agent|p:1|aacp:1.1|subj:qualified_lead_assigned|highlight:ACTION_REQUIRED",
+  "tags": [
+    "leads",
+    "notification",
+    "rep",
+    "qualified"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

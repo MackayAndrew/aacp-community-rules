@@ -1,0 +1,17 @@
+{
+  "id": "mkt-log-content-published",
+  "name": "Log content publication",
+  "description": "Write content publication record to marketing audit trail",
+  "task": "LOG",
+  "dom": "MKT",
+  "packet": "LOG|MKT|return:AUD-Agent|p:3|aacp:1.1|actor:MKT-Agent|res:content|status:published",
+  "tags": [
+    "content",
+    "publication",
+    "audit",
+    "log"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

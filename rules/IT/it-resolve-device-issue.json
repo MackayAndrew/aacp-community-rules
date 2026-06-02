@@ -1,0 +1,17 @@
+{
+  "id": "it-resolve-device-issue",
+  "name": "Resolve reported device fault",
+  "description": "Resolve employee-reported device fault including remote diagnosis and replacement decision",
+  "task": "RESOLVE",
+  "dom": "IT",
+  "packet": "RESOLVE|IT|return:IT-Agent|p:2|aacp:1.1|res:device_fault|req:remote_diag,repair_or_replace",
+  "tags": [
+    "device",
+    "fault",
+    "resolution",
+    "it"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

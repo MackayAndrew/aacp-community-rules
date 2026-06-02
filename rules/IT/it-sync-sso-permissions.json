@@ -1,0 +1,17 @@
+{
+  "id": "it-sync-sso-permissions",
+  "name": "Sync SSO role permissions across systems",
+  "description": "Synchronise SSO role-based permissions across connected systems after role change",
+  "task": "SYNC",
+  "dom": "IT",
+  "packet": "SYNC|IT|return:IT-Agent|p:1|aacp:1.1|res:sso_permission_sync|validate:rbac_policy",
+  "tags": [
+    "sync",
+    "sso",
+    "permissions",
+    "it"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

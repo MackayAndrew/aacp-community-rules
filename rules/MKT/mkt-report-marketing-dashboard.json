@@ -1,0 +1,17 @@
+{
+  "id": "mkt-report-marketing-dashboard",
+  "name": "Generate marketing KPI dashboard",
+  "description": "Generate weekly marketing KPI dashboard for senior leadership review",
+  "task": "REPORT",
+  "dom": "MKT",
+  "packet": "REPORT|MKT|return:MKT-Agent|p:2|aacp:1.1|res:marketing_kpis|fmt:pdf|period:week|highlight:OFF_TRACK",
+  "tags": [
+    "kpi",
+    "dashboard",
+    "weekly",
+    "marketing"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

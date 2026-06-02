@@ -1,0 +1,17 @@
+{
+  "id": "hr-sync-headcount-to-plan",
+  "name": "Sync actual headcount to workforce plan",
+  "description": "Synchronise actual headcount figures to workforce planning system for variance tracking",
+  "task": "SYNC",
+  "dom": "HR",
+  "packet": "SYNC|HR|return:HR-Agent|p:2|aacp:1.1|res:headcount_plan_sync|validate:period_match",
+  "tags": [
+    "sync",
+    "headcount",
+    "workforce-plan",
+    "hr"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

@@ -1,0 +1,17 @@
+{
+  "id": "cs-resolve-product-fault",
+  "name": "Resolve product fault complaint",
+  "description": "Resolve customer complaint about product fault with replacement, repair, or refund decision",
+  "task": "RESOLVE",
+  "dom": "CS",
+  "packet": "RESOLVE|CS|return:CS-Agent|p:1|aacp:1.1|res:product_fault|sentiment:negative|tone:empathetic|req:fault_assess,remedy_decision",
+  "tags": [
+    "product",
+    "fault",
+    "resolution",
+    "cs"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

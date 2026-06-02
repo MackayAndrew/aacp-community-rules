@@ -1,0 +1,17 @@
+{
+  "id": "it-proc-enrol-device",
+  "name": "Enrol device in MDM",
+  "description": "Enrol employee device in mobile device management for corporate access",
+  "task": "PROC",
+  "dom": "IT",
+  "packet": "PROC|IT|return:IT-Agent|p:2|aacp:1.1|res:device_enrolment|req:mdm_policy,encryption",
+  "tags": [
+    "device",
+    "mdm",
+    "enrolment",
+    "security"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

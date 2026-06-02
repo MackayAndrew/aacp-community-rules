@@ -1,0 +1,17 @@
+{
+  "id": "sales-report-forecast-vs-target",
+  "name": "Generate forecast vs target report",
+  "description": "Generate sales forecast versus target report for VP Sales and board review",
+  "task": "REPORT",
+  "dom": "SALES",
+  "packet": "REPORT|SALES|return:SALES-Agent|p:2|aacp:1.1|res:forecast_vs_target|fmt:pdf,xlsx|highlight:BELOW_TARGET",
+  "tags": [
+    "forecast",
+    "target",
+    "report",
+    "board"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

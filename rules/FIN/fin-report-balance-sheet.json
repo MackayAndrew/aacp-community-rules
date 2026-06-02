@@ -1,0 +1,17 @@
+{
+  "id": "fin-report-balance-sheet",
+  "name": "Generate balance sheet",
+  "description": "Generate balance sheet as at period end for board reporting",
+  "task": "REPORT",
+  "dom": "FIN",
+  "packet": "REPORT|FIN|return:FIN-Agent|p:2|aacp:1.1|res:balance_sheet|fmt:pdf,xlsx|period:current",
+  "tags": [
+    "balance-sheet",
+    "report",
+    "finance",
+    "board"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

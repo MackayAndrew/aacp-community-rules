@@ -1,0 +1,17 @@
+{
+  "id": "it-flag-p1-incident",
+  "name": "Flag P1 major incident",
+  "description": "Flag Priority 1 incident and trigger major incident management process",
+  "task": "FLAG",
+  "dom": "IT",
+  "packet": "FLAG|IT|return:IT-Agent|p:1|aacp:1.1|res:incident|status:P1|highlight:MAJOR_INCIDENT",
+  "tags": [
+    "incident",
+    "p1",
+    "major",
+    "escalation"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

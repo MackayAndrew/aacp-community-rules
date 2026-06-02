@@ -1,0 +1,17 @@
+{
+  "id": "cs-proc-approve-goodwill",
+  "name": "Process goodwill approval for high-LTV customer",
+  "description": "Process goodwill gesture approval for high-value customer complaint resolution",
+  "task": "PROC",
+  "dom": "CS",
+  "packet": "PROC|CS|return:CS-Agent|p:1|aacp:1.1|res:goodwill_approval|req:manager_sign_off|validate:ltv_threshold",
+  "tags": [
+    "goodwill",
+    "approval",
+    "ltv",
+    "retention"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

@@ -1,0 +1,17 @@
+{
+  "id": "mkt-fetch-ab-test-results",
+  "name": "Fetch A/B test results",
+  "description": "Retrieve A/B test results for active experiments requiring analysis",
+  "task": "FETCH",
+  "dom": "MKT",
+  "packet": "FETCH|MKT|return:MKT-Agent|p:2|aacp:1.1|res:ab_test_results|filter:status=complete|fmt:json",
+  "tags": [
+    "ab-test",
+    "experiments",
+    "conversion",
+    "marketing"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

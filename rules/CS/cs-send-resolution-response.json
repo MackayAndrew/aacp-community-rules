@@ -1,0 +1,17 @@
+{
+  "id": "cs-send-resolution-response",
+  "name": "Send resolution response to customer",
+  "description": "Send resolution response to customer via their preferred channel",
+  "task": "SEND",
+  "dom": "CS",
+  "packet": "SEND|CS|return:CS-Agent|p:1|aacp:1.1|subj:complaint_resolution|tone:empathetic|flag_msg:resolution_sent",
+  "tags": [
+    "resolution",
+    "response",
+    "customer",
+    "send"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

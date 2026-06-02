@@ -1,0 +1,17 @@
+{
+  "id": "legal-flag-ip-infringement-risk",
+  "name": "Flag potential IP infringement risk",
+  "description": "Flag content or product feature with potential IP infringement requiring legal review",
+  "task": "FLAG",
+  "dom": "LEGAL",
+  "packet": "FLAG|LEGAL|return:LEG-Agent|p:1|aacp:1.1|res:ip_review|issue:potential_infringement|risk:high|highlight:LEGAL_REVIEW",
+  "tags": [
+    "ip",
+    "infringement",
+    "flag",
+    "legal"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

@@ -1,0 +1,17 @@
+{
+  "id": "cs-resolve-delivery-complaint",
+  "name": "Resolve delivery failure complaint",
+  "description": "Resolve customer complaint about non-delivery or late delivery with replacement or refund decision",
+  "task": "RESOLVE",
+  "dom": "CS",
+  "packet": "RESOLVE|CS|return:CS-Agent|p:1|aacp:1.1|res:delivery_complaint|sentiment:negative|tone:empathetic|req:carrier_check,remedy",
+  "tags": [
+    "delivery",
+    "complaint",
+    "resolution",
+    "cs"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

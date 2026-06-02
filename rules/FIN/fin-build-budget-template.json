@@ -1,0 +1,17 @@
+{
+  "id": "fin-build-budget-template",
+  "name": "Build annual budget template",
+  "description": "Generate annual budget template for department heads based on prior year actuals",
+  "task": "BUILD",
+  "dom": "FIN",
+  "packet": "BUILD|FIN|return:FIN-Agent|p:2|aacp:1.1|res:budget_template|req:prior_year_actuals,growth_assumptions,dept_config",
+  "tags": [
+    "budget",
+    "template",
+    "planning",
+    "finance"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fin-report-budget-vs-actual",
+  "name": "Generate budget vs actual report",
+  "description": "Generate budget versus actual spend report for finance director review",
+  "task": "REPORT",
+  "dom": "FIN",
+  "packet": "REPORT|FIN|return:FIN-Agent|p:2|aacp:1.1|res:budget_vs_actual|fmt:xlsx,pdf|highlight:OVER_BUDGET",
+  "tags": [
+    "budget",
+    "actual",
+    "report",
+    "finance"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

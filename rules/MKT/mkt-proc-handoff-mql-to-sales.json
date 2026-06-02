@@ -1,0 +1,17 @@
+{
+  "id": "mkt-proc-handoff-mql-to-sales",
+  "name": "Hand off MQL to sales",
+  "description": "Route marketing qualified lead to sales for qualification and follow-up",
+  "task": "PROC",
+  "dom": "MKT",
+  "packet": "PROC|MKT|return:MKT-Agent|p:1|aacp:1.1|res:mql_handoff|req:sales_routing|validate:score>=threshold",
+  "tags": [
+    "leads",
+    "mql",
+    "handoff",
+    "sales"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

@@ -1,0 +1,17 @@
+{
+  "id": "sales-calc-deal-probability",
+  "name": "Calculate deal win probability",
+  "description": "Calculate statistical win probability for opportunity based on historical data",
+  "task": "CALC",
+  "dom": "SALES",
+  "packet": "CALC|SALES|return:SALES-Agent|p:2|aacp:1.1|res:win_probability|rules:ml_model",
+  "tags": [
+    "pipeline",
+    "probability",
+    "forecasting",
+    "deal"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

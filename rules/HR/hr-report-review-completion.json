@@ -1,0 +1,17 @@
+{
+  "id": "hr-report-review-completion",
+  "name": "Report performance review completion rate",
+  "description": "Generate report showing performance review completion rate by department",
+  "task": "REPORT",
+  "dom": "HR",
+  "packet": "REPORT|HR|return:HR-Agent|p:2|aacp:1.1|res:review_completion|fmt:xlsx|highlight:BELOW_TARGET",
+  "tags": [
+    "performance",
+    "completion",
+    "report",
+    "department"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

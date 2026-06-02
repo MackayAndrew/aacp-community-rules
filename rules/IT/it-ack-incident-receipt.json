@@ -1,0 +1,17 @@
+{
+  "id": "it-ack-incident-receipt",
+  "name": "Acknowledge incident ticket receipt",
+  "description": "Acknowledge receipt of incident ticket and confirm SLA clock has started",
+  "task": "ACK",
+  "dom": "IT",
+  "packet": "ACK|IT|return:IT-Agent|p:1|aacp:1.1|res:incident_ticket|status:acknowledged",
+  "tags": [
+    "incident",
+    "receipt",
+    "ack",
+    "sla"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

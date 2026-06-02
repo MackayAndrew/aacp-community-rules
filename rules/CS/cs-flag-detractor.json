@@ -1,0 +1,17 @@
+{
+  "id": "cs-flag-detractor",
+  "name": "Flag NPS detractor for follow-up",
+  "description": "Flag NPS detractor response for priority follow-up from CS team",
+  "task": "FLAG",
+  "dom": "CS",
+  "packet": "FLAG|CS|return:CS-Agent|p:2|aacp:1.1|res:nps_response|validate:score<=6|highlight:DETRACTOR",
+  "tags": [
+    "nps",
+    "detractor",
+    "follow-up",
+    "flag"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

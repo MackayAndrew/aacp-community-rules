@@ -1,0 +1,17 @@
+{
+  "id": "hr-send-policy-reminder",
+  "name": "Send policy acknowledgement reminder",
+  "description": "Send reminder to employees with outstanding policy acknowledgements",
+  "task": "SEND",
+  "dom": "HR",
+  "packet": "SEND|HR|return:HR-Agent|p:2|aacp:1.1|subj:policy_acknowledgement_required|highlight:ACTION_REQUIRED",
+  "tags": [
+    "policy",
+    "reminder",
+    "compliance",
+    "acknowledgement"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

@@ -1,0 +1,17 @@
+{
+  "id": "legal-ack-contract-receipt",
+  "name": "Acknowledge contract received for review",
+  "description": "Acknowledge receipt of contract for legal review and confirm expected turnaround",
+  "task": "ACK",
+  "dom": "LEGAL",
+  "packet": "ACK|LEGAL|return:LEG-Agent|p:2|aacp:1.1|res:contract|status:acknowledged",
+  "tags": [
+    "contract",
+    "receipt",
+    "ack",
+    "legal"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

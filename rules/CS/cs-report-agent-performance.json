@@ -1,0 +1,17 @@
+{
+  "id": "cs-report-agent-performance",
+  "name": "Generate CS agent performance report",
+  "description": "Generate agent performance report including CSAT, resolution rate and AHT",
+  "task": "REPORT",
+  "dom": "CS",
+  "packet": "REPORT|CS|return:CS-Agent|p:2|aacp:1.1|res:agent_performance|fmt:xlsx|period:current",
+  "tags": [
+    "agent",
+    "performance",
+    "csat",
+    "report"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

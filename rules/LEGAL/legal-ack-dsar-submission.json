@@ -1,0 +1,17 @@
+{
+  "id": "legal-ack-dsar-submission",
+  "name": "Acknowledge DSAR submission",
+  "description": "Acknowledge receipt of Data Subject Access Request and confirm 30-day response window",
+  "task": "ACK",
+  "dom": "LEGAL",
+  "packet": "ACK|LEGAL|return:LEG-Agent|p:1|aacp:1.1|res:dsar_request|status:acknowledged",
+  "tags": [
+    "dsar",
+    "gdpr",
+    "ack",
+    "compliance"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

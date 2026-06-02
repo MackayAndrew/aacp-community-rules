@@ -1,0 +1,17 @@
+{
+  "id": "fin-sync-fx-rates",
+  "name": "Sync current FX rates to GL",
+  "description": "Synchronise current exchange rates from treasury system to GL for period-end revaluation",
+  "task": "SYNC",
+  "dom": "FIN",
+  "packet": "SYNC|FIN|return:FIN-Agent|p:1|aacp:1.1|res:fx_rate_sync|validate:rate_freshness",
+  "tags": [
+    "sync",
+    "fx",
+    "rates",
+    "finance"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

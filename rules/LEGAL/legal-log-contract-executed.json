@@ -1,0 +1,17 @@
+{
+  "id": "legal-log-contract-executed",
+  "name": "Log contract execution",
+  "description": "Write contract execution record to legal audit trail",
+  "task": "LOG",
+  "dom": "LEGAL",
+  "packet": "LOG|LEGAL|return:AUD-Agent|p:2|aacp:1.1|res:contract|actor:LEG-Agent|status:executed",
+  "tags": [
+    "contract",
+    "execution",
+    "audit",
+    "log"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

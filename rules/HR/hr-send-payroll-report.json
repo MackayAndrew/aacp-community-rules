@@ -1,0 +1,17 @@
+{
+  "id": "hr-send-payroll-report",
+  "name": "Send payroll report to finance director",
+  "description": "Distribute completed payroll report to Finance Director and HR Director for sign-off",
+  "task": "SEND",
+  "dom": "HR",
+  "packet": "SEND|HR|return:HR-Agent|p:2|aacp:1.1|to:fin_director,hr_director|subj:payroll_review_required|flag_msg:review_required",
+  "tags": [
+    "payroll",
+    "send",
+    "approval",
+    "distribution"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

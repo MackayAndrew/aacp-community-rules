@@ -1,0 +1,17 @@
+{
+  "id": "fin-fetch-budget-by-cc",
+  "name": "Fetch budget data by cost centre",
+  "description": "Retrieve approved budget and YTD spend for all cost centres",
+  "task": "FETCH",
+  "dom": "FIN",
+  "packet": "FETCH|FIN|return:FIN-Agent|p:1|aacp:1.1|res:budget_cc|period:current|fmt:json",
+  "tags": [
+    "budget",
+    "cost-centre",
+    "ytd",
+    "finance"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

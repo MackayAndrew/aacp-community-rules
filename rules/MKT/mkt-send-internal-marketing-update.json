@@ -1,0 +1,17 @@
+{
+  "id": "mkt-send-internal-marketing-update",
+  "name": "Send weekly marketing update to leadership",
+  "description": "Send weekly marketing performance update to CEO and leadership team",
+  "task": "SEND",
+  "dom": "MKT",
+  "packet": "SEND|MKT|return:MKT-Agent|p:2|aacp:1.1|subj:weekly_marketing_update|flag_msg:update_sent",
+  "tags": [
+    "update",
+    "leadership",
+    "weekly",
+    "send"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

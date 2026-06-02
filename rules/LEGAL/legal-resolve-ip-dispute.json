@@ -1,0 +1,17 @@
+{
+  "id": "legal-resolve-ip-dispute",
+  "name": "Resolve internal IP ownership dispute",
+  "description": "Resolve dispute over intellectual property ownership between internal teams or with external party",
+  "task": "RESOLVE",
+  "dom": "LEGAL",
+  "packet": "RESOLVE|LEGAL|return:LEG-Agent|p:1|aacp:1.1|res:ip_dispute|req:ownership_review,legal_opinion",
+  "tags": [
+    "ip",
+    "dispute",
+    "resolution",
+    "legal"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

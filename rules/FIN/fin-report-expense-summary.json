@@ -1,0 +1,17 @@
+{
+  "id": "fin-report-expense-summary",
+  "name": "Generate expense summary by department",
+  "description": "Generate expense claims summary report by department and category",
+  "task": "REPORT",
+  "dom": "FIN",
+  "packet": "REPORT|FIN|return:FIN-Agent|p:3|aacp:1.1|res:expense_summary|fmt:xlsx|period:current",
+  "tags": [
+    "expenses",
+    "summary",
+    "report",
+    "department"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

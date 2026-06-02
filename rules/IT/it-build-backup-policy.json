@@ -1,0 +1,17 @@
+{
+  "id": "it-build-backup-policy",
+  "name": "Build backup policy for system",
+  "description": "Create backup policy for new system including schedule, retention, and recovery test",
+  "task": "BUILD",
+  "dom": "IT",
+  "packet": "BUILD|IT|return:IT-Agent|p:2|aacp:1.1|res:backup_policy|req:schedule,retention_period,rto_rpo",
+  "tags": [
+    "backup",
+    "policy",
+    "recovery",
+    "it"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

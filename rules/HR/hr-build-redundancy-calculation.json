@@ -1,0 +1,17 @@
+{
+  "id": "hr-build-redundancy-calculation",
+  "name": "Build redundancy calculation",
+  "description": "Calculate statutory and contractual redundancy entitlement for affected employee",
+  "task": "BUILD",
+  "dom": "HR",
+  "packet": "BUILD|HR|return:HR-Agent|p:1|aacp:1.1|res:redundancy_calc|req:service_length,salary,notice_entitlement",
+  "tags": [
+    "redundancy",
+    "calculation",
+    "hr",
+    "offboarding"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

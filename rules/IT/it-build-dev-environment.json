@@ -1,0 +1,17 @@
+{
+  "id": "it-build-dev-environment",
+  "name": "Build developer environment",
+  "description": "Provision full developer environment including IDE, repositories, and cloud access",
+  "task": "BUILD",
+  "dom": "IT",
+  "packet": "BUILD|IT|return:IT-Agent|p:1|aacp:1.1|res:dev_environment|req:ide,repo_access,cloud_sandbox",
+  "tags": [
+    "developer",
+    "environment",
+    "provisioning",
+    "it"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

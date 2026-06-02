@@ -1,0 +1,17 @@
+{
+  "id": "it-flag-unmanaged-device",
+  "name": "Flag unmanaged device accessing corporate resources",
+  "description": "Flag devices accessing corporate resources that are not enrolled in MDM",
+  "task": "FLAG",
+  "dom": "IT",
+  "packet": "FLAG|IT|return:IT-Agent|p:1|aacp:1.1|res:device_access|validate:mdm_enrolled|highlight:UNMANAGED",
+  "tags": [
+    "device",
+    "security",
+    "mdm",
+    "flag"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

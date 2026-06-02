@@ -1,0 +1,17 @@
+{
+  "id": "cs-report-nps-monthly",
+  "name": "Generate monthly NPS report",
+  "description": "Generate monthly NPS report by product line and customer segment",
+  "task": "REPORT",
+  "dom": "CS",
+  "packet": "REPORT|CS|return:CS-Agent|p:2|aacp:1.1|res:nps_monthly|fmt:xlsx|period:current",
+  "tags": [
+    "nps",
+    "report",
+    "monthly",
+    "satisfaction"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

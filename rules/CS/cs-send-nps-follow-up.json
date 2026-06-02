@@ -1,0 +1,17 @@
+{
+  "id": "cs-send-nps-follow-up",
+  "name": "Send personalised NPS follow-up",
+  "description": "Send personalised follow-up message to NPS detractor or passive",
+  "task": "SEND",
+  "dom": "CS",
+  "packet": "SEND|CS|return:CS-Agent|p:2|aacp:1.1|subj:nps_follow_up|tone:empathetic|flag_msg:follow_up_sent",
+  "tags": [
+    "nps",
+    "follow-up",
+    "detractor",
+    "send"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fin-merge-multi-entity-accounts",
+  "name": "Merge multi-entity financial accounts",
+  "description": "Merge financial accounts from multiple legal entities for consolidated reporting",
+  "task": "MERGE",
+  "dom": "FIN",
+  "packet": "MERGE|FIN|return:FIN-Agent|p:2|aacp:1.1|res:consolidated_accounts|rules:consolidation_v1|validate:intercompany_elim",
+  "tags": [
+    "consolidation",
+    "multi-entity",
+    "merge",
+    "finance"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

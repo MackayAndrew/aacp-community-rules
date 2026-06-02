@@ -1,0 +1,17 @@
+{
+  "id": "fin-proc-bank-reconciliation",
+  "name": "Run bank reconciliation",
+  "description": "Reconcile bank statements against GL entries for month-end close",
+  "task": "PROC",
+  "dom": "FIN",
+  "packet": "PROC|FIN|return:FIN-Agent|p:1|aacp:1.1|res:bank_reconciliation|rules:recon_v1|validate:gl_match",
+  "tags": [
+    "month-end",
+    "reconciliation",
+    "bank",
+    "close"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

@@ -1,0 +1,17 @@
+{
+  "id": "it-resolve-data-quality-issue",
+  "name": "Resolve data quality issue in system",
+  "description": "Resolve identified data quality issue including source identification and correction",
+  "task": "RESOLVE",
+  "dom": "IT",
+  "packet": "RESOLVE|IT|return:IT-Agent|p:2|aacp:1.1|res:data_quality|req:source_id,correction,validation",
+  "tags": [
+    "data",
+    "quality",
+    "resolution",
+    "it"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

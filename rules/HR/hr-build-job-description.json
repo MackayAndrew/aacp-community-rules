@@ -1,0 +1,17 @@
+{
+  "id": "hr-build-job-description",
+  "name": "Build job description for new role",
+  "description": "Generate structured job description for new or updated role using approved template",
+  "task": "BUILD",
+  "dom": "HR",
+  "packet": "BUILD|HR|return:HR-Agent|p:2|aacp:1.1|res:job_description|req:role_template,grade,responsibilities",
+  "tags": [
+    "job-description",
+    "recruitment",
+    "hr",
+    "roles"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

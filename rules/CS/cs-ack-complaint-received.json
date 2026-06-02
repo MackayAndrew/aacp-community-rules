@@ -1,0 +1,17 @@
+{
+  "id": "cs-ack-complaint-received",
+  "name": "Acknowledge customer complaint received",
+  "description": "Acknowledge receipt of customer complaint and confirm investigation timeline",
+  "task": "ACK",
+  "dom": "CS",
+  "packet": "ACK|CS|return:CS-Agent|p:1|aacp:1.1|res:complaint|status:acknowledged|tone:empathetic",
+  "tags": [
+    "complaint",
+    "receipt",
+    "ack",
+    "cs"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

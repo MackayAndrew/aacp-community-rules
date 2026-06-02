@@ -1,0 +1,17 @@
+{
+  "id": "mkt-merge-lead-enrichment",
+  "name": "Merge lead and enrichment data",
+  "description": "Merge inbound lead records with enrichment data for improved qualification",
+  "task": "MERGE",
+  "dom": "MKT",
+  "packet": "MERGE|MKT|return:MKT-Agent|p:1|aacp:1.1|res:enriched_leads|rules:enrichment_v1|validate:no_duplicates",
+  "tags": [
+    "leads",
+    "enrichment",
+    "merge",
+    "marketing"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

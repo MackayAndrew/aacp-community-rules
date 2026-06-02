@@ -1,0 +1,17 @@
+{
+  "id": "hr-fetch-leaver-record",
+  "name": "Fetch leaver employee record",
+  "description": "Retrieve employee record for offboarding triggered by resignation or termination",
+  "task": "FETCH",
+  "dom": "HR",
+  "packet": "FETCH|HR|return:HR-Agent|p:1|aacp:1.1|res:employee_record|filter:status=leaver|fmt:json",
+  "tags": [
+    "offboarding",
+    "leaver",
+    "jml",
+    "exit"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

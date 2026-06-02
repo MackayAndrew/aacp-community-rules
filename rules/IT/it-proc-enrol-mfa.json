@@ -1,0 +1,17 @@
+{
+  "id": "it-proc-enrol-mfa",
+  "name": "Enrol user in MFA",
+  "description": "Enrol new user in multi-factor authentication and issue hardware token if required",
+  "task": "PROC",
+  "dom": "IT",
+  "packet": "PROC|IT|return:IT-Agent|p:1|aacp:1.1|res:mfa_enrolment|req:authenticator_app,backup_codes",
+  "tags": [
+    "security",
+    "mfa",
+    "authentication",
+    "joiner"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

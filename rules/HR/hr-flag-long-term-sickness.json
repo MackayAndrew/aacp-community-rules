@@ -1,0 +1,17 @@
+{
+  "id": "hr-flag-long-term-sickness",
+  "name": "Flag employees on long-term sickness",
+  "description": "Flag employees absent for more than 4 weeks for occupational health referral",
+  "task": "FLAG",
+  "dom": "HR",
+  "packet": "FLAG|HR|return:HR-Agent|p:1|aacp:1.1|res:long_term_sickness|validate:absence_days>=28|highlight:OH_REFERRAL",
+  "tags": [
+    "absence",
+    "long-term",
+    "sickness",
+    "occupational-health"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

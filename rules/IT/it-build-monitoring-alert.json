@@ -1,0 +1,17 @@
+{
+  "id": "it-build-monitoring-alert",
+  "name": "Build monitoring alert rule",
+  "description": "Create new monitoring alert rule for system or application threshold breach",
+  "task": "BUILD",
+  "dom": "IT",
+  "packet": "BUILD|IT|return:IT-Agent|p:2|aacp:1.1|res:alert_rule|req:threshold_config,notification_routing",
+  "tags": [
+    "monitoring",
+    "alert",
+    "infrastructure",
+    "it"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

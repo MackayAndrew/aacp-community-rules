@@ -1,0 +1,17 @@
+{
+  "id": "fin-proc-invoice-three-way-match",
+  "name": "Process invoice with three-way match",
+  "description": "Match supplier invoice against purchase order and goods receipt for AP processing",
+  "task": "PROC",
+  "dom": "FIN",
+  "packet": "PROC|FIN|return:FIN-Agent|p:2|aacp:1.1|res:invoice|req:po_match,gr_match|validate:three_way_match",
+  "tags": [
+    "invoice",
+    "ap",
+    "three-way-match",
+    "procurement"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

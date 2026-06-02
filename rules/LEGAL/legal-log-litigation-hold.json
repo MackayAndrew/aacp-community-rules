@@ -1,0 +1,17 @@
+{
+  "id": "legal-log-litigation-hold",
+  "name": "Log litigation hold activation",
+  "description": "Write litigation hold activation record to legal audit trail",
+  "task": "LOG",
+  "dom": "LEGAL",
+  "packet": "LOG|LEGAL|return:AUD-Agent|p:1|aacp:1.1|res:litigation_hold|actor:LEG-Agent|status:active",
+  "tags": [
+    "litigation",
+    "hold",
+    "audit",
+    "log"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

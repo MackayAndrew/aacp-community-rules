@@ -1,0 +1,17 @@
+{
+  "id": "hr-fetch-policy-acknowledgements",
+  "name": "Fetch outstanding policy acknowledgements",
+  "description": "Retrieve status of employee policy acknowledgements with outstanding items",
+  "task": "FETCH",
+  "dom": "HR",
+  "packet": "FETCH|HR|return:HR-Agent|p:2|aacp:1.1|res:policy_acknowledgements|filter:status=outstanding|fmt:json",
+  "tags": [
+    "policy",
+    "compliance",
+    "acknowledgement",
+    "hr"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

@@ -1,0 +1,17 @@
+{
+  "id": "cs-calc-csat-score",
+  "name": "Calculate CSAT score",
+  "description": "Calculate customer satisfaction score for the period from post-resolution surveys",
+  "task": "CALC",
+  "dom": "CS",
+  "packet": "CALC|CS|return:CS-Agent|p:2|aacp:1.1|res:csat_score|period:current|rules:csat_methodology",
+  "tags": [
+    "csat",
+    "satisfaction",
+    "score",
+    "reporting"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

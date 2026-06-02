@@ -1,0 +1,17 @@
+{
+  "id": "mkt-proc-update-attribution-model",
+  "name": "Update marketing attribution model",
+  "description": "Process update to marketing attribution model weights based on latest performance data",
+  "task": "PROC",
+  "dom": "MKT",
+  "packet": "PROC|MKT|return:MKT-Agent|p:3|aacp:1.1|res:attribution_model|req:model_update,validation",
+  "tags": [
+    "attribution",
+    "model",
+    "update",
+    "marketing"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

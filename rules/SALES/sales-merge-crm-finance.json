@@ -1,0 +1,17 @@
+{
+  "id": "sales-merge-crm-finance",
+  "name": "Merge CRM and finance data for commission",
+  "description": "Merge CRM closed won data with finance invoicing for commission calculation",
+  "task": "MERGE",
+  "dom": "SALES",
+  "packet": "MERGE|SALES|return:SALES-Agent|p:2|aacp:1.1|res:commission_data_merged|rules:commission_plan_v2|validate:invoice_match",
+  "tags": [
+    "commission",
+    "crm",
+    "finance",
+    "merge"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

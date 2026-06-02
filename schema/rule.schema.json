@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AACP Community Rule",
+  "type": "object",
+  "required": ["id", "name", "description", "task", "dom", "packet", "tags", "version", "source"],
+  "properties": {
+    "id":          { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "name":        { "type": "string", "minLength": 5 },
+    "description": { "type": "string", "minLength": 10 },
+    "task":        { "type": "string", "enum": ["FETCH","PROC","FLAG","RESOLVE","LOG","SEND","BUILD","MERGE","CALC","REPORT","ACK","SYNC"] },
+    "dom":         { "type": "string", "enum": ["HR","FIN","SALES","LEGAL","IT","CS","MKT"] },
+    "packet":      { "type": "string", "minLength": 20, "maxLength": 200 },
+    "tags":        { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "version":     { "type": "string", "enum": ["1.1"] },
+    "source":      { "type": "string", "enum": ["community", "core"] },
+    "validated":   { "type": "boolean" }
+  }
+}

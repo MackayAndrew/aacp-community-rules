@@ -1,0 +1,17 @@
+{
+  "id": "sales-sync-crm-to-finance",
+  "name": "Sync CRM won deals to finance system",
+  "description": "Synchronise closed-won opportunities from CRM to finance system for invoicing",
+  "task": "SYNC",
+  "dom": "SALES",
+  "packet": "SYNC|SALES|return:SALES-Agent|p:1|aacp:1.1|res:crm_finance_sync|validate:no_duplicates",
+  "tags": [
+    "sync",
+    "crm",
+    "finance",
+    "sales"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

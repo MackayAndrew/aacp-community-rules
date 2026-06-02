@@ -1,0 +1,17 @@
+{
+  "id": "hr-merge-employee-contractor-headcount",
+  "name": "Merge employee and contractor headcount",
+  "description": "Merge permanent employee and contractor records for unified headcount reporting",
+  "task": "MERGE",
+  "dom": "HR",
+  "packet": "MERGE|HR|return:HR-Agent|p:2|aacp:1.1|res:unified_headcount|rules:headcount_v1|validate:no_duplicates",
+  "tags": [
+    "headcount",
+    "merge",
+    "contractor",
+    "workforce"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

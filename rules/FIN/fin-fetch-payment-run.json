@@ -1,0 +1,17 @@
+{
+  "id": "fin-fetch-payment-run",
+  "name": "Fetch payment run for period",
+  "description": "Retrieve all approved invoices and expenses due for payment in current payment run",
+  "task": "FETCH",
+  "dom": "FIN",
+  "packet": "FETCH|FIN|return:FIN-Agent|p:1|aacp:1.1|res:payment_run|filter:status=approved|fmt:json",
+  "tags": [
+    "payment",
+    "run",
+    "ap",
+    "finance"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

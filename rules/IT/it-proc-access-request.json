@@ -1,0 +1,17 @@
+{
+  "id": "it-proc-access-request",
+  "name": "Process system access request",
+  "description": "Process employee request for additional system access pending manager approval",
+  "task": "PROC",
+  "dom": "IT",
+  "packet": "PROC|IT|return:IT-Agent|p:2|aacp:1.1|res:access_request|req:manager_approval,security_review",
+  "tags": [
+    "access",
+    "request",
+    "approval",
+    "security"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

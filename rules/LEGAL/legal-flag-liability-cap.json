@@ -1,0 +1,17 @@
+{
+  "id": "legal-flag-liability-cap",
+  "name": "Flag liability cap below threshold",
+  "description": "Flag contracts where liability cap is below company minimum acceptable threshold",
+  "task": "FLAG",
+  "dom": "LEGAL",
+  "packet": "FLAG|LEGAL|return:LEG-Agent|p:1|aacp:1.1|type:MSA|clause:liability_cap|issue:below_threshold|risk:high|block:signature",
+  "tags": [
+    "liability",
+    "cap",
+    "contract",
+    "flag"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}
