@@ -1,6 +1,6 @@
 # AACP Community Rule Library
 
-**191 pre-validated AACP v1.1 encoding rules for common enterprise workflows.**
+**241 pre-validated AACP v1.1 encoding rules for common enterprise workflows.**
 
 MIT Licensed. Maintained by the AACP spec author.
 The canonical implementation of the community encoding registry
