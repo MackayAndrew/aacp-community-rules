@@ -1,0 +1,17 @@
+{
+  "id": "it-log-incident-resolved",
+  "name": "Log incident resolution",
+  "description": "Write incident resolution record to ITSM audit trail",
+  "task": "LOG",
+  "dom": "IT",
+  "packet": "LOG|IT|return:AUD-Agent|p:2|aacp:1.1|res:incident|actor:IT-Agent|status:resolved",
+  "tags": [
+    "incident",
+    "resolution",
+    "audit",
+    "itsm"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

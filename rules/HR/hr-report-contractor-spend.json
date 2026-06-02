@@ -1,0 +1,17 @@
+{
+  "id": "hr-report-contractor-spend",
+  "name": "Report contractor spend vs budget",
+  "description": "Generate contractor spend report comparing actual vs budgeted contractor costs",
+  "task": "REPORT",
+  "dom": "HR",
+  "packet": "REPORT|HR|return:HR-Agent|p:2|aacp:1.1|res:contractor_spend|fmt:xlsx|highlight:OVER_BUDGET",
+  "tags": [
+    "contractor",
+    "spend",
+    "budget",
+    "report"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

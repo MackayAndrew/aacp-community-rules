@@ -1,0 +1,17 @@
+{
+  "id": "sales-calc-forecast-rollup",
+  "name": "Calculate sales forecast roll-up",
+  "description": "Calculate bottom-up sales forecast roll-up from rep level to company level",
+  "task": "CALC",
+  "dom": "SALES",
+  "packet": "CALC|SALES|return:SALES-Agent|p:2|aacp:1.1|res:forecast_rollup|rules:commit_likely_pipeline",
+  "tags": [
+    "forecast",
+    "rollup",
+    "pipeline",
+    "revenue"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

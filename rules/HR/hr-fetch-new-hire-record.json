@@ -1,0 +1,17 @@
+{
+  "id": "hr-fetch-new-hire-record",
+  "name": "Fetch new hire employee record",
+  "description": "Retrieve new hire record from HR system triggered by start date",
+  "task": "FETCH",
+  "dom": "HR",
+  "packet": "FETCH|HR|return:HR-Agent|p:1|aacp:1.1|res:employee_record|filter:status=new_hire|fmt:json",
+  "tags": [
+    "onboarding",
+    "jml",
+    "new-hire",
+    "joiner"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

@@ -1,0 +1,17 @@
+{
+  "id": "legal-fetch-contracts-for-review",
+  "name": "Fetch contracts pending review",
+  "description": "Retrieve all contracts pending legal review in the current queue",
+  "task": "FETCH",
+  "dom": "LEGAL",
+  "packet": "FETCH|LEGAL|return:LEG-Agent|p:1|aacp:1.1|res:contracts|filter:status=pending_review|fmt:json",
+  "tags": [
+    "contracts",
+    "review",
+    "queue",
+    "legal"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

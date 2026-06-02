@@ -1,0 +1,17 @@
+{
+  "id": "it-fetch-licence-inventory",
+  "name": "Fetch software licence inventory",
+  "description": "Retrieve current software licence inventory including allocation and usage",
+  "task": "FETCH",
+  "dom": "IT",
+  "packet": "FETCH|IT|return:IT-Agent|p:2|aacp:1.1|res:licence_inventory|filter:status=active|fmt:json",
+  "tags": [
+    "licences",
+    "inventory",
+    "software",
+    "compliance"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

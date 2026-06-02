@@ -1,0 +1,17 @@
+{
+  "id": "sales-fetch-competitive-intelligence",
+  "name": "Fetch competitive intelligence updates",
+  "description": "Retrieve latest competitive intelligence updates relevant to active deals",
+  "task": "FETCH",
+  "dom": "SALES",
+  "packet": "FETCH|SALES|return:SALES-Agent|p:3|aacp:1.1|res:competitive_intel|filter:relevance=high|fmt:json",
+  "tags": [
+    "competitive",
+    "intelligence",
+    "deals",
+    "sales"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

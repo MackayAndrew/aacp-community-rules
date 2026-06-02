@@ -1,0 +1,17 @@
+{
+  "id": "it-build-access-profile",
+  "name": "Build user system access profile",
+  "description": "Configure system access profile including email, VPN, and SharePoint permissions",
+  "task": "BUILD",
+  "dom": "IT",
+  "packet": "BUILD|IT|return:IT-Agent|p:1|aacp:1.1|res:access_profile|req:email,vpn,sharepoint",
+  "tags": [
+    "provisioning",
+    "access",
+    "vpn",
+    "joiner"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

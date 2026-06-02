@@ -1,0 +1,17 @@
+{
+  "id": "hr-calc-payroll-variance",
+  "name": "Calculate payroll variance vs prior period",
+  "description": "Calculate variance between current and prior period payroll, flag material differences",
+  "task": "CALC",
+  "dom": "HR",
+  "packet": "CALC|HR|return:HR-Agent|p:2|aacp:1.1|res:payroll_variance|highlight:MATERIAL_VARIANCE",
+  "tags": [
+    "payroll",
+    "variance",
+    "analysis",
+    "comparison"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

@@ -1,0 +1,17 @@
+{
+  "id": "hr-proc-final-pay",
+  "name": "Process final pay calculation",
+  "description": "Calculate and process final pay including accrued holiday and notice period pay",
+  "task": "PROC",
+  "dom": "HR",
+  "packet": "PROC|HR|return:HR-Agent|p:1|aacp:1.1|res:final_pay|req:holiday_accrual,notice_pay|validate:payroll_rules",
+  "tags": [
+    "offboarding",
+    "final-pay",
+    "payroll",
+    "leaver"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

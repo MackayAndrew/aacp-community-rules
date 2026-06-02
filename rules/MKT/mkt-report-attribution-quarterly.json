@@ -1,0 +1,17 @@
+{
+  "id": "mkt-report-attribution-quarterly",
+  "name": "Generate quarterly attribution report",
+  "description": "Generate quarterly revenue attribution report by channel for CMO review",
+  "task": "REPORT",
+  "dom": "MKT",
+  "packet": "REPORT|MKT|return:MKT-Agent|p:2|aacp:1.1|res:attribution_quarterly|fmt:pdf,xlsx|period:quarter",
+  "tags": [
+    "attribution",
+    "quarterly",
+    "report",
+    "cmo"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

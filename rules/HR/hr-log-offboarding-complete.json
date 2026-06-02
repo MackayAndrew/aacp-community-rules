@@ -1,0 +1,17 @@
+{
+  "id": "hr-log-offboarding-complete",
+  "name": "Log offboarding completion",
+  "description": "Write offboarding completion record to HR audit trail",
+  "task": "LOG",
+  "dom": "HR",
+  "packet": "LOG|HR|return:AUD-Agent|p:1|aacp:1.1|actor:HR-Agent|status:offboarded",
+  "tags": [
+    "offboarding",
+    "audit",
+    "log",
+    "leaver"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

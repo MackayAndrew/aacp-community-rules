@@ -1,0 +1,17 @@
+{
+  "id": "it-proc-remote-wipe",
+  "name": "Execute remote device wipe",
+  "description": "Execute remote wipe of lost or stolen corporate device",
+  "task": "PROC",
+  "dom": "IT",
+  "packet": "PROC|IT|return:IT-Agent|p:1|aacp:1.1|res:device_wipe|req:remote_wipe|validate:wipe_authorisation",
+  "tags": [
+    "device",
+    "remote-wipe",
+    "security",
+    "lost"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

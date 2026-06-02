@@ -1,0 +1,17 @@
+{
+  "id": "hr-send-welcome-email",
+  "name": "Send onboarding welcome email",
+  "description": "Send welcome email to new hire with credentials and onboarding instructions",
+  "task": "SEND",
+  "dom": "HR",
+  "packet": "SEND|HR|return:HR-Agent|p:2|aacp:1.1|subj:welcome_onboarding|flag_msg:onboarding_complete",
+  "tags": [
+    "onboarding",
+    "welcome",
+    "email",
+    "joiner"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

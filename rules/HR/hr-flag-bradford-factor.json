@@ -1,0 +1,17 @@
+{
+  "id": "hr-flag-bradford-factor",
+  "name": "Flag high Bradford factor employees",
+  "description": "Identify employees with Bradford factor score above threshold requiring manager review",
+  "task": "FLAG",
+  "dom": "HR",
+  "packet": "FLAG|HR|return:HR-Agent|p:2|aacp:1.1|res:bradford_factor|validate:threshold=400|highlight:REVIEW_REQ",
+  "tags": [
+    "absence",
+    "bradford",
+    "flag",
+    "attendance"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

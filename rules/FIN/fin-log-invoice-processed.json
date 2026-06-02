@@ -1,0 +1,17 @@
+{
+  "id": "fin-log-invoice-processed",
+  "name": "Log invoice processing completion",
+  "description": "Write invoice processing completion record to AP audit trail",
+  "task": "LOG",
+  "dom": "FIN",
+  "packet": "LOG|FIN|return:AUD-Agent|p:3|aacp:1.1|actor:FIN-Agent|status:processed|res:invoice",
+  "tags": [
+    "invoice",
+    "audit",
+    "log",
+    "ap"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

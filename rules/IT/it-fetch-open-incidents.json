@@ -1,0 +1,17 @@
+{
+  "id": "it-fetch-open-incidents",
+  "name": "Fetch open IT incidents",
+  "description": "Retrieve all open IT incidents prioritised by severity for triage",
+  "task": "FETCH",
+  "dom": "IT",
+  "packet": "FETCH|IT|return:IT-Agent|p:1|aacp:1.1|res:incidents|filter:status=open|fmt:json",
+  "tags": [
+    "incident",
+    "triage",
+    "helpdesk",
+    "it"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

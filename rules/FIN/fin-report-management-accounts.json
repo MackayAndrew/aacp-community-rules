@@ -1,0 +1,17 @@
+{
+  "id": "fin-report-management-accounts",
+  "name": "Generate management accounts pack",
+  "description": "Generate management accounts pack for CFO and Finance Director review",
+  "task": "REPORT",
+  "dom": "FIN",
+  "packet": "REPORT|FIN|return:FIN-Agent|p:2|aacp:1.1|res:mgmt_accounts|fmt:pdf,xlsx|highlight:REVIEW_REQ",
+  "tags": [
+    "month-end",
+    "management-accounts",
+    "report",
+    "close"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

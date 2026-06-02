@@ -1,0 +1,17 @@
+{
+  "id": "mkt-flag-low-quality-leads",
+  "name": "Flag low quality lead source",
+  "description": "Flag lead source generating low quality leads with poor conversion rates",
+  "task": "FLAG",
+  "dom": "MKT",
+  "packet": "FLAG|MKT|return:MKT-Agent|p:2|aacp:1.1|res:lead_quality|validate:conversion_rate<5|highlight:REVIEW_SOURCE",
+  "tags": [
+    "leads",
+    "quality",
+    "source",
+    "flag"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

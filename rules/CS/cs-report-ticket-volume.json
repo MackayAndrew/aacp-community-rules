@@ -1,0 +1,17 @@
+{
+  "id": "cs-report-ticket-volume",
+  "name": "Generate ticket volume report",
+  "description": "Generate ticket volume report by channel, category and resolution time",
+  "task": "REPORT",
+  "dom": "CS",
+  "packet": "REPORT|CS|return:CS-Agent|p:2|aacp:1.1|res:ticket_volume|fmt:xlsx|period:current",
+  "tags": [
+    "tickets",
+    "volume",
+    "report",
+    "management"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

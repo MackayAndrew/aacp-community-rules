@@ -1,0 +1,17 @@
+{
+  "id": "sales-send-renewal-outreach",
+  "name": "Send renewal outreach to account manager",
+  "description": "Notify account manager of upcoming renewal with customer health score and talking points",
+  "task": "SEND",
+  "dom": "SALES",
+  "packet": "SEND|SALES|return:SALES-Agent|p:1|aacp:1.1|subj:renewal_action_required|highlight:ACTION_REQUIRED",
+  "tags": [
+    "renewals",
+    "outreach",
+    "account",
+    "retention"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

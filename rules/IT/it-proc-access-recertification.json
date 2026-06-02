@@ -1,0 +1,17 @@
+{
+  "id": "it-proc-access-recertification",
+  "name": "Process quarterly access recertification",
+  "description": "Trigger quarterly access recertification for all users requiring manager sign-off",
+  "task": "PROC",
+  "dom": "IT",
+  "packet": "PROC|IT|return:IT-Agent|p:2|aacp:1.1|res:access_recertification|req:manager_review|period:quarterly",
+  "tags": [
+    "access",
+    "recertification",
+    "quarterly",
+    "compliance"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

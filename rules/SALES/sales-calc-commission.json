@@ -1,0 +1,17 @@
+{
+  "id": "sales-calc-commission",
+  "name": "Calculate sales commission",
+  "description": "Calculate sales commission for the period based on closed deals and commission plan",
+  "task": "CALC",
+  "dom": "SALES",
+  "packet": "CALC|SALES|return:SALES-Agent|p:2|aacp:1.1|res:commission|rules:commission_plan_v2|period:current",
+  "tags": [
+    "commission",
+    "compensation",
+    "sales",
+    "payroll"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

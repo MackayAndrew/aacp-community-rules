@@ -1,0 +1,17 @@
+{
+  "id": "hr-proc-leave-request",
+  "name": "Process employee leave request",
+  "description": "Process and route employee leave request for manager approval",
+  "task": "PROC",
+  "dom": "HR",
+  "packet": "PROC|HR|return:HR-Agent|p:2|aacp:1.1|res:leave_request|req:manager_approval",
+  "tags": [
+    "absence",
+    "leave",
+    "approval",
+    "process"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fin-fetch-vat-return-data",
+  "name": "Fetch VAT return data",
+  "description": "Retrieve all VAT-applicable transactions for the current VAT period",
+  "task": "FETCH",
+  "dom": "FIN",
+  "packet": "FETCH|FIN|return:FIN-Agent|p:1|aacp:1.1|res:vat_transactions|period:current|fmt:json",
+  "tags": [
+    "vat",
+    "tax",
+    "compliance",
+    "finance"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

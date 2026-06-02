@@ -1,0 +1,17 @@
+{
+  "id": "legal-flag-auto-renewal",
+  "name": "Flag contract auto-renewal clause",
+  "description": "Flag contracts with auto-renewal clauses requiring notice period action",
+  "task": "FLAG",
+  "dom": "LEGAL",
+  "packet": "FLAG|LEGAL|return:LEG-Agent|p:2|aacp:1.1|type:MSA|clause:auto_renewal|issue:notice_period_required|risk:medium",
+  "tags": [
+    "contract",
+    "renewal",
+    "auto-renewal",
+    "flag"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

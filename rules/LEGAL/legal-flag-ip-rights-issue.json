@@ -1,0 +1,17 @@
+{
+  "id": "legal-flag-ip-rights-issue",
+  "name": "Flag IP rights clause issue",
+  "description": "Flag IP rights clause in contract that may compromise company intellectual property",
+  "task": "FLAG",
+  "dom": "LEGAL",
+  "packet": "FLAG|LEGAL|return:LEG-Agent|p:1|aacp:1.1|type:NDA|clause:ip_rights|issue:ip_rights_restriction|risk:high|block:signature",
+  "tags": [
+    "ip",
+    "rights",
+    "flag",
+    "contract"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fin-calc-variance-analysis",
+  "name": "Run variance analysis vs prior period",
+  "description": "Run variance analysis comparing current period to prior period and budget",
+  "task": "CALC",
+  "dom": "FIN",
+  "packet": "CALC|FIN|return:FIN-Agent|p:2|aacp:1.1|res:variance_analysis|highlight:MATERIAL_VARIANCE",
+  "tags": [
+    "month-end",
+    "variance",
+    "analysis",
+    "close"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

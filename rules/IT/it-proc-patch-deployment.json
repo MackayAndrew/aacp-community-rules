@@ -1,0 +1,17 @@
+{
+  "id": "it-proc-patch-deployment",
+  "name": "Deploy security patches",
+  "description": "Deploy approved security patches to affected systems within maintenance window",
+  "task": "PROC",
+  "dom": "IT",
+  "packet": "PROC|IT|return:IT-Agent|p:1|aacp:1.1|res:patch_deployment|req:change_approval|validate:maintenance_window",
+  "tags": [
+    "security",
+    "patching",
+    "deployment",
+    "change"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

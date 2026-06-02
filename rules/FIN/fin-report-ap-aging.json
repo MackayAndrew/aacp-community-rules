@@ -1,0 +1,17 @@
+{
+  "id": "fin-report-ap-aging",
+  "name": "Generate AP aging report",
+  "description": "Generate accounts payable aging report showing overdue invoices by aging bucket",
+  "task": "REPORT",
+  "dom": "FIN",
+  "packet": "REPORT|FIN|return:FIN-Agent|p:2|aacp:1.1|res:ap_aging|fmt:xlsx|highlight:OVERDUE",
+  "tags": [
+    "invoice",
+    "aging",
+    "ap",
+    "report"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

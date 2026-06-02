@@ -1,0 +1,17 @@
+{
+  "id": "legal-proc-route-for-signature",
+  "name": "Route contract for signature",
+  "description": "Route reviewed and approved contract to DocuSign or equivalent for signature",
+  "task": "PROC",
+  "dom": "LEGAL",
+  "packet": "PROC|LEGAL|return:LEG-Agent|p:2|aacp:1.1|res:contract|req:docusign_routing|status:approved",
+  "tags": [
+    "contract",
+    "signature",
+    "docusign",
+    "esign"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

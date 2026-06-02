@@ -1,0 +1,17 @@
+{
+  "id": "fin-log-vat-submitted",
+  "name": "Log VAT return submission",
+  "description": "Write VAT return submission confirmation to compliance audit trail",
+  "task": "LOG",
+  "dom": "FIN",
+  "packet": "LOG|FIN|return:AUD-Agent|p:1|aacp:1.1|res:vat_return|actor:FIN-Agent|status:submitted",
+  "tags": [
+    "vat",
+    "tax",
+    "submission",
+    "compliance"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

@@ -1,0 +1,17 @@
+{
+  "id": "cs-proc-triage-ticket",
+  "name": "Triage incoming support ticket",
+  "description": "Triage incoming ticket by intent, category, sentiment and priority for routing",
+  "task": "PROC",
+  "dom": "CS",
+  "packet": "PROC|CS|return:CS-Agent|p:1|aacp:1.1|res:ticket_triage|req:categorise,sentiment_score,priority_score",
+  "tags": [
+    "ticket",
+    "triage",
+    "routing",
+    "support"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

@@ -1,0 +1,17 @@
+{
+  "id": "legal-fetch-contracts-expiring",
+  "name": "Fetch contracts expiring in 60 days",
+  "description": "Retrieve all contracts expiring within 60 days requiring renewal or termination decision",
+  "task": "FETCH",
+  "dom": "LEGAL",
+  "packet": "FETCH|LEGAL|return:LEG-Agent|p:1|aacp:1.1|res:contracts|filter:expiry_days<=60|fmt:json",
+  "tags": [
+    "contracts",
+    "expiry",
+    "renewal",
+    "legal"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

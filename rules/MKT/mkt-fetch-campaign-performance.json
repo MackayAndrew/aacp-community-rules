@@ -1,0 +1,17 @@
+{
+  "id": "mkt-fetch-campaign-performance",
+  "name": "Fetch campaign performance data",
+  "description": "Retrieve campaign performance metrics including impressions, clicks and conversions",
+  "task": "FETCH",
+  "dom": "MKT",
+  "packet": "FETCH|MKT|return:MKT-Agent|p:2|aacp:1.1|res:campaign_performance|period:current|fmt:json",
+  "tags": [
+    "campaign",
+    "performance",
+    "metrics",
+    "marketing"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

@@ -1,0 +1,18 @@
+{
+  "id": "hr-merge-calculate-payroll",
+  "name": "Merge and calculate payroll run",
+  "description": "Merge employee salary data with cost centre budgets and calculate full payroll including PAYE and pension",
+  "task": "MERGE",
+  "dom": "HR",
+  "packet": "MERGE|HR|return:HR-Agent|p:1|aacp:1.1|rules:payroll_v2|validate:budget_cc",
+  "tags": [
+    "payroll",
+    "merge",
+    "calculate",
+    "paye",
+    "pension"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

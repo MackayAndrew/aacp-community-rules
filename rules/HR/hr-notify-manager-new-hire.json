@@ -1,0 +1,17 @@
+{
+  "id": "hr-notify-manager-new-hire",
+  "name": "Notify manager of new hire provisioning complete",
+  "description": "Send notification to hiring manager confirming new hire provisioning is complete",
+  "task": "SEND",
+  "dom": "HR",
+  "packet": "SEND|HR|return:HR-Agent|p:2|aacp:1.1|subj:new_hire_ready|flag_msg:provisioning_complete",
+  "tags": [
+    "onboarding",
+    "manager",
+    "notification",
+    "joiner"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

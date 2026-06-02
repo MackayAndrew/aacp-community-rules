@@ -1,0 +1,17 @@
+{
+  "id": "hr-fetch-salary-bands",
+  "name": "Fetch salary band data",
+  "description": "Retrieve current salary band data for benchmarking and compensation review",
+  "task": "FETCH",
+  "dom": "HR",
+  "packet": "FETCH|HR|return:HR-Agent|p:2|aacp:1.1|res:salary_bands|fmt:json",
+  "tags": [
+    "compensation",
+    "salary",
+    "bands",
+    "benchmarking"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

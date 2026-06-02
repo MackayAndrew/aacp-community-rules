@@ -1,0 +1,17 @@
+{
+  "id": "legal-fetch-policy-versions",
+  "name": "Fetch current policy versions",
+  "description": "Retrieve all current policy documents and their version history",
+  "task": "FETCH",
+  "dom": "LEGAL",
+  "packet": "FETCH|LEGAL|return:LEG-Agent|p:2|aacp:1.1|res:policy_documents|filter:status=current|fmt:json",
+  "tags": [
+    "policy",
+    "versioning",
+    "legal",
+    "compliance"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

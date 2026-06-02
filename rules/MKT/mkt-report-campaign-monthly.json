@@ -1,0 +1,17 @@
+{
+  "id": "mkt-report-campaign-monthly",
+  "name": "Generate monthly campaign performance report",
+  "description": "Generate monthly campaign performance report for marketing director review",
+  "task": "REPORT",
+  "dom": "MKT",
+  "packet": "REPORT|MKT|return:MKT-Agent|p:2|aacp:1.1|res:campaign_monthly|fmt:xlsx,pdf|period:current",
+  "tags": [
+    "campaign",
+    "monthly",
+    "report",
+    "marketing"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

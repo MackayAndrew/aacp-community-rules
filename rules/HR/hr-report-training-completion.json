@@ -1,0 +1,17 @@
+{
+  "id": "hr-report-training-completion",
+  "name": "Report mandatory training completion",
+  "description": "Generate mandatory training completion report by department and training type",
+  "task": "REPORT",
+  "dom": "HR",
+  "packet": "REPORT|HR|return:HR-Agent|p:2|aacp:1.1|res:training_completion|fmt:xlsx|highlight:BELOW_TARGET",
+  "tags": [
+    "training",
+    "compliance",
+    "completion",
+    "mandatory"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

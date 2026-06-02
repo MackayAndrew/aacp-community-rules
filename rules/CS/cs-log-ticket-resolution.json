@@ -1,0 +1,17 @@
+{
+  "id": "cs-log-ticket-resolution",
+  "name": "Log ticket resolution to audit trail",
+  "description": "Write ticket resolution outcome to CS audit trail for reporting",
+  "task": "LOG",
+  "dom": "CS",
+  "packet": "LOG|CS|return:AUD-Agent|p:3|aacp:1.1|actor:CS-Agent|res:ticket|status:resolved",
+  "tags": [
+    "ticket",
+    "resolution",
+    "audit",
+    "log"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fin-report-cash-flow",
+  "name": "Generate cash flow report",
+  "description": "Generate cash flow statement for the period including operating and investing activities",
+  "task": "REPORT",
+  "dom": "FIN",
+  "packet": "REPORT|FIN|return:FIN-Agent|p:2|aacp:1.1|res:cash_flow|fmt:pdf,xlsx|period:current",
+  "tags": [
+    "cash-flow",
+    "report",
+    "finance",
+    "board"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

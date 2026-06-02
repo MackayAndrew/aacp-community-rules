@@ -1,0 +1,17 @@
+{
+  "id": "legal-proc-trademark-watch",
+  "name": "Process trademark watch alert",
+  "description": "Process trademark watch alert for potential conflict with company marks",
+  "task": "PROC",
+  "dom": "LEGAL",
+  "packet": "PROC|LEGAL|return:LEG-Agent|p:2|aacp:1.1|res:trademark_alert|req:conflict_assessment",
+  "tags": [
+    "trademark",
+    "watch",
+    "ip",
+    "legal"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

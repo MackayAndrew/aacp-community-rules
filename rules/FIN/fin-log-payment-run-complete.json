@@ -1,0 +1,17 @@
+{
+  "id": "fin-log-payment-run-complete",
+  "name": "Log payment run completion",
+  "description": "Write payment run completion record to finance audit trail",
+  "task": "LOG",
+  "dom": "FIN",
+  "packet": "LOG|FIN|return:AUD-Agent|p:2|aacp:1.1|res:payment_run|actor:FIN-Agent|status:complete",
+  "tags": [
+    "payment",
+    "run",
+    "audit",
+    "log"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

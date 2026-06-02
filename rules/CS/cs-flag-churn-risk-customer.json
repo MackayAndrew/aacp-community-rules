@@ -1,0 +1,17 @@
+{
+  "id": "cs-flag-churn-risk-customer",
+  "name": "Flag customer at churn risk",
+  "description": "Flag customer showing churn risk signals for proactive retention outreach",
+  "task": "FLAG",
+  "dom": "CS",
+  "packet": "FLAG|CS|return:CS-Agent|p:1|aacp:1.1|res:customer_profile|validate:churn_score>=7|highlight:CHURN_RISK",
+  "tags": [
+    "churn",
+    "retention",
+    "flag",
+    "customer"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

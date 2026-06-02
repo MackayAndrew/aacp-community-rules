@@ -1,0 +1,17 @@
+{
+  "id": "hr-calc-net-pay",
+  "name": "Calculate net pay from gross",
+  "description": "Calculate net pay by applying PAYE, NI, and pension deductions to gross salary",
+  "task": "CALC",
+  "dom": "HR",
+  "packet": "CALC|HR|return:HR-Agent|p:1|aacp:1.1|res:net_pay|rules:payroll_v2|validate:deductions",
+  "tags": [
+    "payroll",
+    "net-pay",
+    "paye",
+    "pension"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

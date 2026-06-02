@@ -1,0 +1,17 @@
+{
+  "id": "it-log-change-implemented",
+  "name": "Log change implementation completion",
+  "description": "Write change implementation completion record to change audit trail",
+  "task": "LOG",
+  "dom": "IT",
+  "packet": "LOG|IT|return:AUD-Agent|p:2|aacp:1.1|res:change_request|actor:IT-Agent|status:implemented",
+  "tags": [
+    "change",
+    "audit",
+    "log",
+    "itsm"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

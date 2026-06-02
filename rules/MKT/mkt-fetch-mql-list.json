@@ -1,0 +1,17 @@
+{
+  "id": "mkt-fetch-mql-list",
+  "name": "Fetch marketing qualified leads",
+  "description": "Retrieve marketing qualified leads meeting scoring threshold for sales handoff",
+  "task": "FETCH",
+  "dom": "MKT",
+  "packet": "FETCH|MKT|return:MKT-Agent|p:1|aacp:1.1|res:mql_list|filter:score>=threshold|fmt:json",
+  "tags": [
+    "leads",
+    "mql",
+    "scoring",
+    "handoff"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

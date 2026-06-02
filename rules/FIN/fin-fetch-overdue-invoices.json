@@ -1,0 +1,17 @@
+{
+  "id": "fin-fetch-overdue-invoices",
+  "name": "Fetch overdue supplier invoices",
+  "description": "Retrieve all supplier invoices past payment due date for chasing",
+  "task": "FETCH",
+  "dom": "FIN",
+  "packet": "FETCH|FIN|return:FIN-Agent|p:2|aacp:1.1|res:invoices|filter:status=overdue|fmt:json",
+  "tags": [
+    "invoice",
+    "overdue",
+    "ap",
+    "supplier"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

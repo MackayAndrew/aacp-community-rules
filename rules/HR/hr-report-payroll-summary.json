@@ -1,0 +1,17 @@
+{
+  "id": "hr-report-payroll-summary",
+  "name": "Generate payroll summary report",
+  "description": "Generate formatted payroll report highlighting items requiring review in PDF and Excel format",
+  "task": "REPORT",
+  "dom": "HR",
+  "packet": "REPORT|HR|return:HR-Agent|p:2|aacp:1.1|fmt:pdf,xlsx|highlight:REVIEW_REQ",
+  "tags": [
+    "payroll",
+    "report",
+    "summary",
+    "review"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

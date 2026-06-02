@@ -1,0 +1,17 @@
+{
+  "id": "sales-proc-route-to-nurture",
+  "name": "Route unqualified lead to nurture",
+  "description": "Route unqualified lead to marketing nurture sequence for future qualification",
+  "task": "PROC",
+  "dom": "SALES",
+  "packet": "PROC|SALES|return:SALES-Agent|p:2|aacp:1.1|res:lead_routing|req:nurture_sequence",
+  "tags": [
+    "leads",
+    "nurture",
+    "unqualified",
+    "marketing"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

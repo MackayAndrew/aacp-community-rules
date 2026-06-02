@@ -1,0 +1,17 @@
+{
+  "id": "legal-flag-nda-clause",
+  "name": "Flag NDA clause for review",
+  "description": "Flag specific NDA clause requiring legal review due to non-standard terms",
+  "task": "FLAG",
+  "dom": "LEGAL",
+  "packet": "FLAG|LEGAL|return:LEG-Agent|p:1|aacp:1.1|type:NDA|issue:non_standard_clause|risk:high|highlight:REVIEW_REQ",
+  "tags": [
+    "nda",
+    "contract",
+    "clause",
+    "review"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

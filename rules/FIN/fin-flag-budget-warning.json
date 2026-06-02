@@ -1,0 +1,17 @@
+{
+  "id": "fin-flag-budget-warning",
+  "name": "Flag cost centre budget warning",
+  "description": "Flag cost centres approaching approved budget limit requiring attention",
+  "task": "FLAG",
+  "dom": "FIN",
+  "packet": "FLAG|FIN|return:FIN-Agent|p:2|aacp:1.1|res:budget_cc|validate:threshold=85|highlight:WARNING",
+  "tags": [
+    "budget",
+    "warning",
+    "flag",
+    "cost-centre"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

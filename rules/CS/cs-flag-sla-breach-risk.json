@@ -1,0 +1,17 @@
+{
+  "id": "cs-flag-sla-breach-risk",
+  "name": "Flag ticket at risk of SLA breach",
+  "description": "Flag tickets approaching SLA breach threshold for priority action",
+  "task": "FLAG",
+  "dom": "CS",
+  "packet": "FLAG|CS|return:CS-Agent|p:1|aacp:1.1|res:ticket|validate:time_to_sla_mins<=30|highlight:SLA_RISK",
+  "tags": [
+    "sla",
+    "breach",
+    "risk",
+    "flag"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

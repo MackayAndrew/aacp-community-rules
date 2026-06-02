@@ -1,0 +1,17 @@
+{
+  "id": "cs-report-sla-compliance",
+  "name": "Generate SLA compliance report",
+  "description": "Generate SLA compliance report by ticket category and agent for management review",
+  "task": "REPORT",
+  "dom": "CS",
+  "packet": "REPORT|CS|return:CS-Agent|p:2|aacp:1.1|res:sla_compliance|fmt:xlsx|period:current",
+  "tags": [
+    "sla",
+    "compliance",
+    "report",
+    "management"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

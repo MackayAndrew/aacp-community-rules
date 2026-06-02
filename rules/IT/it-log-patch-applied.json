@@ -1,0 +1,17 @@
+{
+  "id": "it-log-patch-applied",
+  "name": "Log patch deployment completion",
+  "description": "Write patch deployment completion record to security audit trail",
+  "task": "LOG",
+  "dom": "IT",
+  "packet": "LOG|IT|return:AUD-Agent|p:1|aacp:1.1|res:patch_deployment|actor:IT-Agent|status:applied",
+  "tags": [
+    "security",
+    "patching",
+    "audit",
+    "log"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

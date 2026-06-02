@@ -1,0 +1,17 @@
+{
+  "id": "hr-report-compensation-review",
+  "name": "Generate annual compensation review report",
+  "description": "Generate annual compensation review report for board and remuneration committee",
+  "task": "REPORT",
+  "dom": "HR",
+  "packet": "REPORT|HR|return:HR-Agent|p:2|aacp:1.1|res:compensation_review|fmt:pdf,xlsx|period:annual",
+  "tags": [
+    "compensation",
+    "review",
+    "board",
+    "annual"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

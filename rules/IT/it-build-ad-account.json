@@ -1,0 +1,17 @@
+{
+  "id": "it-build-ad-account",
+  "name": "Create Active Directory account",
+  "description": "Create new user account in Active Directory or Entra ID with birthright access",
+  "task": "BUILD",
+  "dom": "IT",
+  "packet": "BUILD|IT|return:IT-Agent|p:1|aacp:1.1|res:ad_account|fields:email,dept,grp,pwd_reset",
+  "tags": [
+    "provisioning",
+    "ad",
+    "entra",
+    "joiner"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

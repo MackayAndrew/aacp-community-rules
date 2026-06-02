@@ -1,0 +1,17 @@
+{
+  "id": "cs-send-retention-outreach",
+  "name": "Send proactive retention outreach",
+  "description": "Send proactive retention outreach to at-risk customer with personalised offer",
+  "task": "SEND",
+  "dom": "CS",
+  "packet": "SEND|CS|return:CS-Agent|p:1|aacp:1.1|subj:retention_outreach|tone:empathetic|sentiment:positive",
+  "tags": [
+    "churn",
+    "retention",
+    "outreach",
+    "proactive"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

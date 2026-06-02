@@ -1,0 +1,17 @@
+{
+  "id": "fin-calc-fx-revaluation",
+  "name": "Calculate FX revaluation",
+  "description": "Revalue foreign currency balances at current exchange rates",
+  "task": "CALC",
+  "dom": "FIN",
+  "packet": "CALC|FIN|return:FIN-Agent|p:2|aacp:1.1|res:fx_revaluation|rules:fx_policy|validate:period_end_rates",
+  "tags": [
+    "fx",
+    "revaluation",
+    "currency",
+    "month-end"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

@@ -1,0 +1,17 @@
+{
+  "id": "hr-fetch-performance-reviews-due",
+  "name": "Fetch performance reviews due",
+  "description": "Retrieve list of employees with performance reviews due in the next 30 days",
+  "task": "FETCH",
+  "dom": "HR",
+  "packet": "FETCH|HR|return:HR-Agent|p:2|aacp:1.1|res:performance_reviews|filter:due_days<=30|fmt:json",
+  "tags": [
+    "performance",
+    "review",
+    "due",
+    "hr"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fin-report-pnl",
+  "name": "Generate profit and loss report",
+  "description": "Generate P&L report for the period for board and management review",
+  "task": "REPORT",
+  "dom": "FIN",
+  "packet": "REPORT|FIN|return:FIN-Agent|p:2|aacp:1.1|res:pnl|fmt:pdf,xlsx|period:current|highlight:REVIEW_REQ",
+  "tags": [
+    "pnl",
+    "report",
+    "finance",
+    "board"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

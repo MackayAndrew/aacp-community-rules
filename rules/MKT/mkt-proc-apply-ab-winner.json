@@ -1,0 +1,17 @@
+{
+  "id": "mkt-proc-apply-ab-winner",
+  "name": "Apply A/B test winning variant",
+  "description": "Apply winning variant from completed A/B test to production environment",
+  "task": "PROC",
+  "dom": "MKT",
+  "packet": "PROC|MKT|return:MKT-Agent|p:2|aacp:1.1|res:ab_test|req:apply_winner|validate:statistical_significance",
+  "tags": [
+    "ab-test",
+    "winner",
+    "conversion",
+    "optimisation"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

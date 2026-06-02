@@ -1,0 +1,17 @@
+{
+  "id": "it-flag-unused-licences",
+  "name": "Flag unused software licences",
+  "description": "Identify software licences not used in the last 90 days for potential reclamation",
+  "task": "FLAG",
+  "dom": "IT",
+  "packet": "FLAG|IT|return:IT-Agent|p:3|aacp:1.1|res:licence_usage|validate:last_used_days>=90|highlight:RECLAIM",
+  "tags": [
+    "licences",
+    "unused",
+    "reclaim",
+    "optimisation"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}

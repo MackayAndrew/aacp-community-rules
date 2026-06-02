@@ -1,0 +1,17 @@
+{
+  "id": "sales-send-competitive-battlecard",
+  "name": "Send competitive battlecard to rep",
+  "description": "Send relevant competitive battlecard to sales rep ahead of key competitor meeting",
+  "task": "SEND",
+  "dom": "SALES",
+  "packet": "SEND|SALES|return:SALES-Agent|p:2|aacp:1.1|subj:competitive_battlecard|flag_msg:battlecard_sent",
+  "tags": [
+    "competitive",
+    "battlecard",
+    "rep",
+    "meeting"
+  ],
+  "version": "1.1",
+  "source": "community",
+  "validated": true
+}
