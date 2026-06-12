@@ -4,7 +4,7 @@
   "description": "Resolve dispute where employee claims incorrect system access has been granted or denied",
   "task": "RESOLVE",
   "dom": "IT",
-  "packet": "RESOLVE|IT|return:IT-Agent|p:2|aacp:1.1|res:access_dispute|req:access_review,manager_confirm",
+  "packet": "RESOLVE|IT|return:IT-Agent|p:2|aacp:1.4|res:access_dispute|req:access_review,manager_confirm",
   "tags": [
     "access",
     "dispute",

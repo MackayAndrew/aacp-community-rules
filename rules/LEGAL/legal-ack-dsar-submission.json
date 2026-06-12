@@ -4,7 +4,7 @@
   "description": "Acknowledge receipt of Data Subject Access Request and confirm 30-day response window",
   "task": "ACK",
   "dom": "LEGAL",
-  "packet": "ACK|LEGAL|return:LEG-Agent|p:1|aacp:1.1|res:dsar_request|status:acknowledged",
+  "packet": "ACK|LEGAL|return:LEG-Agent|p:1|aacp:1.4|res:dsar_request|status:acknowledged",
   "tags": [
     "dsar",
     "gdpr",

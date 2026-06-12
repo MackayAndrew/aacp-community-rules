@@ -4,7 +4,7 @@
   "description": "Write policy approval record to compliance audit trail",
   "task": "LOG",
   "dom": "LEGAL",
-  "packet": "LOG|LEGAL|return:AUD-Agent|p:2|aacp:1.1|res:policy_document|actor:LEG-Agent|status:approved",
+  "packet": "LOG|LEGAL|return:AUD-Agent|p:2|aacp:1.4|res:policy_document|actor:LEG-Agent|status:approved",
   "tags": [
     "policy",
     "approval",

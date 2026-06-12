@@ -4,7 +4,7 @@
   "description": "Retrieve lead profile including engagement history and intent signals from CRM",
   "task": "FETCH",
   "dom": "SALES",
-  "packet": "FETCH|SALES|return:SALES-Agent|p:1|aacp:1.1|res:lead_profile|filter:status=active|fmt:json",
+  "packet": "FETCH|SALES|return:SALES-Agent|p:1|aacp:1.4|res:lead_profile|filter:status=active|fmt:json",
   "tags": [
     "leads",
     "crm",

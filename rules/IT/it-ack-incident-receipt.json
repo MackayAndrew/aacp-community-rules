@@ -4,7 +4,7 @@
   "description": "Acknowledge receipt of incident ticket and confirm SLA clock has started",
   "task": "ACK",
   "dom": "IT",
-  "packet": "ACK|IT|return:IT-Agent|p:1|aacp:1.1|res:incident_ticket|status:acknowledged",
+  "packet": "ACK|IT|return:IT-Agent|p:1|aacp:1.4|res:incident_ticket|status:acknowledged",
   "tags": [
     "incident",
     "receipt",

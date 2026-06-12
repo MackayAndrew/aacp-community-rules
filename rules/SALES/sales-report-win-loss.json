@@ -4,7 +4,7 @@
   "description": "Generate win-loss analysis by competitor, deal size and industry segment",
   "task": "REPORT",
   "dom": "SALES",
-  "packet": "REPORT|SALES|return:SALES-Agent|p:3|aacp:1.1|res:win_loss_analysis|fmt:xlsx|period:quarter",
+  "packet": "REPORT|SALES|return:SALES-Agent|p:3|aacp:1.4|res:win_loss_analysis|fmt:xlsx|period:quarter",
   "tags": [
     "win-loss",
     "analysis",

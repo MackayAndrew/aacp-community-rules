@@ -4,7 +4,7 @@
   "description": "Retrieve customer profile including LTV, loyalty and complaint history for ticket context",
   "task": "FETCH",
   "dom": "CS",
-  "packet": "FETCH|CS|return:CS-Agent|p:1|aacp:1.1|res:customer_profile|fields:history,ltv,loyalty,open_tickets|fmt:json",
+  "packet": "FETCH|CS|return:CS-Agent|p:1|aacp:1.4|res:customer_profile|fields:history,ltv,loyalty,open_tickets|fmt:json",
   "tags": [
     "customer",
     "profile",

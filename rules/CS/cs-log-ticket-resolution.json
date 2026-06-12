@@ -4,7 +4,7 @@
   "description": "Write ticket resolution outcome to CS audit trail for reporting",
   "task": "LOG",
   "dom": "CS",
-  "packet": "LOG|CS|return:AUD-Agent|p:3|aacp:1.1|actor:CS-Agent|res:ticket|status:resolved",
+  "packet": "LOG|CS|return:AUD-Agent|p:3|aacp:1.4|actor:CS-Agent|res:ticket|status:resolved",
   "tags": [
     "ticket",
     "resolution",

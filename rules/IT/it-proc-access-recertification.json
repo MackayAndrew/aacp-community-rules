@@ -4,7 +4,7 @@
   "description": "Trigger quarterly access recertification for all users requiring manager sign-off",
   "task": "PROC",
   "dom": "IT",
-  "packet": "PROC|IT|return:IT-Agent|p:2|aacp:1.1|res:access_recertification|req:manager_review|period:quarterly",
+  "packet": "PROC|IT|return:IT-Agent|p:2|aacp:1.4|res:access_recertification|req:manager_review|period:quarterly",
   "tags": [
     "access",
     "recertification",

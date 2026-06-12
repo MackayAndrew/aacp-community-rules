@@ -4,7 +4,7 @@
   "description": "Calculate statutory and contractual redundancy entitlement for affected employee",
   "task": "BUILD",
   "dom": "HR",
-  "packet": "BUILD|HR|return:HR-Agent|p:1|aacp:1.1|res:redundancy_calc|req:service_length,salary,notice_entitlement",
+  "packet": "BUILD|HR|return:HR-Agent|p:1|aacp:1.4|res:redundancy_calc|req:service_length,salary,notice_entitlement",
   "tags": [
     "redundancy",
     "calculation",

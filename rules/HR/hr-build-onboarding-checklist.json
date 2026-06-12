@@ -4,7 +4,7 @@
   "description": "Generate personalised onboarding checklist for new hire based on role and department",
   "task": "BUILD",
   "dom": "HR",
-  "packet": "BUILD|HR|return:HR-Agent|p:1|aacp:1.1|res:onboarding_checklist|req:role_config,dept_config,manager_tasks",
+  "packet": "BUILD|HR|return:HR-Agent|p:1|aacp:1.4|res:onboarding_checklist|req:role_config,dept_config,manager_tasks",
   "tags": [
     "onboarding",
     "checklist",

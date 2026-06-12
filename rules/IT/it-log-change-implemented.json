@@ -4,7 +4,7 @@
   "description": "Write change implementation completion record to change audit trail",
   "task": "LOG",
   "dom": "IT",
-  "packet": "LOG|IT|return:AUD-Agent|p:2|aacp:1.1|res:change_request|actor:IT-Agent|status:implemented",
+  "packet": "LOG|IT|return:AUD-Agent|p:2|aacp:1.4|res:change_request|actor:IT-Agent|status:implemented",
   "tags": [
     "change",
     "audit",

@@ -4,7 +4,7 @@
   "description": "Generate structured account plan for key account including goals, stakeholders, and next steps",
   "task": "BUILD",
   "dom": "SALES",
-  "packet": "BUILD|SALES|return:SALES-Agent|p:2|aacp:1.1|res:account_plan|req:account_data,stakeholder_map,revenue_targets",
+  "packet": "BUILD|SALES|return:SALES-Agent|p:2|aacp:1.4|res:account_plan|req:account_data,stakeholder_map,revenue_targets",
   "tags": [
     "account",
     "plan",

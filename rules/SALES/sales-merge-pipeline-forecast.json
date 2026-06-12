@@ -4,7 +4,7 @@
   "description": "Merge CRM pipeline data with sales forecast for unified revenue view",
   "task": "MERGE",
   "dom": "SALES",
-  "packet": "MERGE|SALES|return:SALES-Agent|p:2|aacp:1.1|res:pipeline_forecast_merged|rules:forecast_v1|validate:period_match",
+  "packet": "MERGE|SALES|return:SALES-Agent|p:2|aacp:1.4|res:pipeline_forecast_merged|rules:forecast_v1|validate:period_match",
   "tags": [
     "pipeline",
     "forecast",

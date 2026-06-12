@@ -4,7 +4,7 @@
   "description": "Flag Priority 1 incident and trigger major incident management process",
   "task": "FLAG",
   "dom": "IT",
-  "packet": "FLAG|IT|return:IT-Agent|p:1|aacp:1.1|res:incident|status:P1|highlight:MAJOR_INCIDENT",
+  "packet": "FLAG|IT|return:IT-Agent|p:1|aacp:1.4|res:incident|status:P1|highlight:MAJOR_INCIDENT",
   "tags": [
     "incident",
     "p1",

@@ -4,7 +4,7 @@
   "description": "Resolve conflict where licence count is exceeded and allocation must be reassigned",
   "task": "RESOLVE",
   "dom": "IT",
-  "packet": "RESOLVE|IT|return:IT-Agent|p:2|aacp:1.1|res:licence_conflict|req:usage_review,reallocation",
+  "packet": "RESOLVE|IT|return:IT-Agent|p:2|aacp:1.4|res:licence_conflict|req:usage_review,reallocation",
   "tags": [
     "licence",
     "conflict",

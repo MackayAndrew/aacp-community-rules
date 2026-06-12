@@ -4,7 +4,7 @@
   "description": "Merge CRM closed won data with finance invoicing for commission calculation",
   "task": "MERGE",
   "dom": "SALES",
-  "packet": "MERGE|SALES|return:SALES-Agent|p:2|aacp:1.1|res:commission_data_merged|rules:commission_plan_v2|validate:invoice_match",
+  "packet": "MERGE|SALES|return:SALES-Agent|p:2|aacp:1.4|res:commission_data_merged|rules:commission_plan_v2|validate:invoice_match",
   "tags": [
     "commission",
     "crm",

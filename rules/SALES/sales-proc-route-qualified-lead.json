@@ -4,7 +4,7 @@
   "description": "Route qualified lead to assigned sales representative with context and next steps",
   "task": "PROC",
   "dom": "SALES",
-  "packet": "PROC|SALES|return:SALES-Agent|p:1|aacp:1.1|res:lead_routing|validate:score>=60",
+  "packet": "PROC|SALES|return:SALES-Agent|p:1|aacp:1.4|res:lead_routing|validate:score>=60",
   "tags": [
     "leads",
     "routing",

@@ -4,7 +4,7 @@
   "description": "Flag NPS detractor response for priority follow-up from CS team",
   "task": "FLAG",
   "dom": "CS",
-  "packet": "FLAG|CS|return:CS-Agent|p:2|aacp:1.1|res:nps_response|validate:score<=6|highlight:DETRACTOR",
+  "packet": "FLAG|CS|return:CS-Agent|p:2|aacp:1.4|res:nps_response|validate:score<=6|highlight:DETRACTOR",
   "tags": [
     "nps",
     "detractor",

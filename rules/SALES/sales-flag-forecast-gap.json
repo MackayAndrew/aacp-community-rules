@@ -4,7 +4,7 @@
   "description": "Flag significant gap between current forecast and sales target requiring action",
   "task": "FLAG",
   "dom": "SALES",
-  "packet": "FLAG|SALES|return:SALES-Agent|p:1|aacp:1.1|res:forecast_gap|validate:gap_pct>=15|highlight:ACTION_REQUIRED",
+  "packet": "FLAG|SALES|return:SALES-Agent|p:1|aacp:1.4|res:forecast_gap|validate:gap_pct>=15|highlight:ACTION_REQUIRED",
   "tags": [
     "forecast",
     "gap",

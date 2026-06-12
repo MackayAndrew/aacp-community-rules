@@ -4,7 +4,7 @@
   "description": "Send incident status update to affected users and stakeholders",
   "task": "SEND",
   "dom": "IT",
-  "packet": "SEND|IT|return:IT-Agent|p:2|aacp:1.1|subj:incident_status_update|flag_msg:update_sent",
+  "packet": "SEND|IT|return:IT-Agent|p:2|aacp:1.4|subj:incident_status_update|flag_msg:update_sent",
   "tags": [
     "incident",
     "update",

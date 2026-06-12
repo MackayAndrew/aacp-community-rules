@@ -4,7 +4,7 @@
   "description": "Generate weekly marketing KPI dashboard for senior leadership review",
   "task": "REPORT",
   "dom": "MKT",
-  "packet": "REPORT|MKT|return:MKT-Agent|p:2|aacp:1.1|res:marketing_kpis|fmt:pdf|period:week|highlight:OFF_TRACK",
+  "packet": "REPORT|MKT|return:MKT-Agent|p:2|aacp:1.4|res:marketing_kpis|fmt:pdf|period:week|highlight:OFF_TRACK",
   "tags": [
     "kpi",
     "dashboard",

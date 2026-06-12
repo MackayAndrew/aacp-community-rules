@@ -4,7 +4,7 @@
   "description": "Write VAT return submission confirmation to compliance audit trail",
   "task": "LOG",
   "dom": "FIN",
-  "packet": "LOG|FIN|return:AUD-Agent|p:1|aacp:1.1|res:vat_return|actor:FIN-Agent|status:submitted",
+  "packet": "LOG|FIN|return:AUD-Agent|p:1|aacp:1.4|res:vat_return|actor:FIN-Agent|status:submitted",
   "tags": [
     "vat",
     "tax",

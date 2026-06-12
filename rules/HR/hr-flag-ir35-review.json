@@ -4,7 +4,7 @@
   "description": "Identify contractors requiring IR35 status review due to engagement length or role change",
   "task": "FLAG",
   "dom": "HR",
-  "packet": "FLAG|HR|return:HR-Agent|p:1|aacp:1.1|res:ir35_review|validate:engagement_rules|highlight:REVIEW_REQ",
+  "packet": "FLAG|HR|return:HR-Agent|p:1|aacp:1.4|res:ir35_review|validate:engagement_rules|highlight:REVIEW_REQ",
   "tags": [
     "contractor",
     "ir35",

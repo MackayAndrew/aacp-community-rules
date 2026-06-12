@@ -4,7 +4,7 @@
   "description": "Generate expense claims summary report by department and category",
   "task": "REPORT",
   "dom": "FIN",
-  "packet": "REPORT|FIN|return:FIN-Agent|p:3|aacp:1.1|res:expense_summary|fmt:xlsx|period:current",
+  "packet": "REPORT|FIN|return:FIN-Agent|p:3|aacp:1.4|res:expense_summary|fmt:xlsx|period:current",
   "tags": [
     "expenses",
     "summary",

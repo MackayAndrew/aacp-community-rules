@@ -4,7 +4,7 @@
   "description": "Build sales territory assignment for new or reorganised sales team",
   "task": "BUILD",
   "dom": "SALES",
-  "packet": "BUILD|SALES|return:SALES-Agent|p:2|aacp:1.1|res:sales_territory|req:geo_config,account_assignment,quota_allocation",
+  "packet": "BUILD|SALES|return:SALES-Agent|p:2|aacp:1.4|res:sales_territory|req:geo_config,account_assignment,quota_allocation",
   "tags": [
     "territory",
     "sales",

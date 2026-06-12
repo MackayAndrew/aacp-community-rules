@@ -4,7 +4,7 @@
   "description": "Retrieve employee record for offboarding triggered by resignation or termination",
   "task": "FETCH",
   "dom": "HR",
-  "packet": "FETCH|HR|return:HR-Agent|p:1|aacp:1.1|res:employee_record|filter:status=leaver|fmt:json",
+  "packet": "FETCH|HR|return:HR-Agent|p:1|aacp:1.4|res:employee_record|filter:status=leaver|fmt:json",
   "tags": [
     "offboarding",
     "leaver",

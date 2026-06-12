@@ -4,7 +4,7 @@
   "description": "Acknowledge receipt of change request and confirm CAB review date",
   "task": "ACK",
   "dom": "IT",
-  "packet": "ACK|IT|return:IT-Agent|p:2|aacp:1.1|res:change_request|status:acknowledged",
+  "packet": "ACK|IT|return:IT-Agent|p:2|aacp:1.4|res:change_request|status:acknowledged",
   "tags": [
     "change",
     "request",

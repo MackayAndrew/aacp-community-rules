@@ -4,7 +4,7 @@
   "description": "Generate monthly absence summary report by department and absence type",
   "task": "REPORT",
   "dom": "HR",
-  "packet": "REPORT|HR|return:HR-Agent|p:3|aacp:1.1|res:absence_summary|fmt:xlsx|period:current",
+  "packet": "REPORT|HR|return:HR-Agent|p:3|aacp:1.4|res:absence_summary|fmt:xlsx|period:current",
   "tags": [
     "absence",
     "report",

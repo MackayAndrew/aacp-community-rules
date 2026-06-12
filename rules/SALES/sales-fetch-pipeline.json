@@ -4,7 +4,7 @@
   "description": "Retrieve all active opportunities in the sales pipeline by stage",
   "task": "FETCH",
   "dom": "SALES",
-  "packet": "FETCH|SALES|return:SALES-Agent|p:2|aacp:1.1|res:pipeline|filter:status=active|fmt:json",
+  "packet": "FETCH|SALES|return:SALES-Agent|p:2|aacp:1.4|res:pipeline|filter:status=active|fmt:json",
   "tags": [
     "pipeline",
     "deals",

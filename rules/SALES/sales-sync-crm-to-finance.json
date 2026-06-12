@@ -4,7 +4,7 @@
   "description": "Synchronise closed-won opportunities from CRM to finance system for invoicing",
   "task": "SYNC",
   "dom": "SALES",
-  "packet": "SYNC|SALES|return:SALES-Agent|p:1|aacp:1.1|res:crm_finance_sync|validate:no_duplicates",
+  "packet": "SYNC|SALES|return:SALES-Agent|p:1|aacp:1.4|res:crm_finance_sync|validate:no_duplicates",
   "tags": [
     "sync",
     "crm",

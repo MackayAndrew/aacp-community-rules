@@ -4,7 +4,7 @@
   "description": "Resolve identified data quality issue including source identification and correction",
   "task": "RESOLVE",
   "dom": "IT",
-  "packet": "RESOLVE|IT|return:IT-Agent|p:2|aacp:1.1|res:data_quality|req:source_id,correction,validation",
+  "packet": "RESOLVE|IT|return:IT-Agent|p:2|aacp:1.4|res:data_quality|req:source_id,correction,validation",
   "tags": [
     "data",
     "quality",

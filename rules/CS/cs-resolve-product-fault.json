@@ -4,7 +4,7 @@
   "description": "Resolve customer complaint about product fault with replacement, repair, or refund decision",
   "task": "RESOLVE",
   "dom": "CS",
-  "packet": "RESOLVE|CS|return:CS-Agent|p:1|aacp:1.1|res:product_fault|sentiment:negative|tone:empathetic|req:fault_assess,remedy_decision",
+  "packet": "RESOLVE|CS|return:CS-Agent|p:1|aacp:1.4|res:product_fault|sentiment:negative|tone:empathetic|req:fault_assess,remedy_decision",
   "tags": [
     "product",
     "fault",

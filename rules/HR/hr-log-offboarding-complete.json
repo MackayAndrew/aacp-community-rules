@@ -4,7 +4,7 @@
   "description": "Write offboarding completion record to HR audit trail",
   "task": "LOG",
   "dom": "HR",
-  "packet": "LOG|HR|return:AUD-Agent|p:1|aacp:1.1|actor:HR-Agent|status:offboarded",
+  "packet": "LOG|HR|return:AUD-Agent|p:1|aacp:1.4|actor:HR-Agent|status:offboarded",
   "tags": [
     "offboarding",
     "audit",

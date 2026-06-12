@@ -4,7 +4,7 @@
   "description": "Calculate revenue attribution by marketing channel using configured attribution model",
   "task": "CALC",
   "dom": "MKT",
-  "packet": "CALC|MKT|return:MKT-Agent|p:2|aacp:1.1|res:channel_attribution|rules:attribution_model|period:current",
+  "packet": "CALC|MKT|return:MKT-Agent|p:2|aacp:1.4|res:channel_attribution|rules:attribution_model|period:current",
   "tags": [
     "attribution",
     "channels",

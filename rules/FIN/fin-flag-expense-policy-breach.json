@@ -4,7 +4,7 @@
   "description": "Flag expense claims that exceed policy limits or lack required receipts",
   "task": "FLAG",
   "dom": "FIN",
-  "packet": "FLAG|FIN|return:FIN-Agent|p:2|aacp:1.1|res:expense_claims|validate:expense_policy|highlight:REVIEW_REQ",
+  "packet": "FLAG|FIN|return:FIN-Agent|p:2|aacp:1.4|res:expense_claims|validate:expense_policy|highlight:REVIEW_REQ",
   "tags": [
     "expenses",
     "policy",

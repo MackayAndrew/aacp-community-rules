@@ -4,7 +4,7 @@
   "description": "Write DSAR completion record to data protection audit trail",
   "task": "LOG",
   "dom": "LEGAL",
-  "packet": "LOG|LEGAL|return:AUD-Agent|p:1|aacp:1.1|res:dsar_response|actor:LEG-Agent|status:completed",
+  "packet": "LOG|LEGAL|return:AUD-Agent|p:1|aacp:1.4|res:dsar_response|actor:LEG-Agent|status:completed",
   "tags": [
     "gdpr",
     "dsar",

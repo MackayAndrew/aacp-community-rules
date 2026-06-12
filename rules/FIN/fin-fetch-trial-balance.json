@@ -4,7 +4,7 @@
   "description": "Retrieve trial balance and open items from GL for month-end close",
   "task": "FETCH",
   "dom": "FIN",
-  "packet": "FETCH|FIN|return:FIN-Agent|p:1|aacp:1.1|res:trial_balance|period:current|fmt:json",
+  "packet": "FETCH|FIN|return:FIN-Agent|p:1|aacp:1.4|res:trial_balance|period:current|fmt:json",
   "tags": [
     "month-end",
     "trial-balance",

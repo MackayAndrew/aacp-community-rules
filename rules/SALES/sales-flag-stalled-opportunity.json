@@ -4,7 +4,7 @@
   "description": "Flag opportunities with no activity in 14+ days for sales manager review",
   "task": "FLAG",
   "dom": "SALES",
-  "packet": "FLAG|SALES|return:SALES-Agent|p:2|aacp:1.1|res:pipeline|validate:last_activity_days>=14|highlight:STALLED",
+  "packet": "FLAG|SALES|return:SALES-Agent|p:2|aacp:1.4|res:pipeline|validate:last_activity_days>=14|highlight:STALLED",
   "tags": [
     "pipeline",
     "stalled",

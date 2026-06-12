@@ -4,7 +4,7 @@
   "description": "Acknowledge receipt of signed policy document from authorised approver",
   "task": "ACK",
   "dom": "HR",
-  "packet": "ACK|HR|return:HR-Agent|p:2|aacp:1.1|res:policy_sign_off|status:acknowledged",
+  "packet": "ACK|HR|return:HR-Agent|p:2|aacp:1.4|res:policy_sign_off|status:acknowledged",
   "tags": [
     "policy",
     "sign-off",

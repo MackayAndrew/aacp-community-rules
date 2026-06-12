@@ -4,7 +4,7 @@
   "description": "Configure system access profile including email, VPN, and SharePoint permissions",
   "task": "BUILD",
   "dom": "IT",
-  "packet": "BUILD|IT|return:IT-Agent|p:1|aacp:1.1|res:access_profile|req:email,vpn,sharepoint",
+  "packet": "BUILD|IT|return:IT-Agent|p:1|aacp:1.4|res:access_profile|req:email,vpn,sharepoint",
   "tags": [
     "provisioning",
     "access",

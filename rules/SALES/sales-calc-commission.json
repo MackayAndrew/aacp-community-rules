@@ -4,7 +4,7 @@
   "description": "Calculate sales commission for the period based on closed deals and commission plan",
   "task": "CALC",
   "dom": "SALES",
-  "packet": "CALC|SALES|return:SALES-Agent|p:2|aacp:1.1|res:commission|rules:commission_plan_v2|period:current",
+  "packet": "CALC|SALES|return:SALES-Agent|p:2|aacp:1.4|res:commission|rules:commission_plan_v2|period:current",
   "tags": [
     "commission",
     "compensation",

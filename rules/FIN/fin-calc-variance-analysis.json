@@ -4,7 +4,7 @@
   "description": "Run variance analysis comparing current period to prior period and budget",
   "task": "CALC",
   "dom": "FIN",
-  "packet": "CALC|FIN|return:FIN-Agent|p:2|aacp:1.1|res:variance_analysis|highlight:MATERIAL_VARIANCE",
+  "packet": "CALC|FIN|return:FIN-Agent|p:2|aacp:1.4|res:variance_analysis|highlight:MATERIAL_VARIANCE",
   "tags": [
     "month-end",
     "variance",

@@ -4,7 +4,7 @@
   "description": "Flag devices accessing corporate resources that are not enrolled in MDM",
   "task": "FLAG",
   "dom": "IT",
-  "packet": "FLAG|IT|return:IT-Agent|p:1|aacp:1.1|res:device_access|validate:mdm_enrolled|highlight:UNMANAGED",
+  "packet": "FLAG|IT|return:IT-Agent|p:1|aacp:1.4|res:device_access|validate:mdm_enrolled|highlight:UNMANAGED",
   "tags": [
     "device",
     "security",

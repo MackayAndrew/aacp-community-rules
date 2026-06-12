@@ -4,7 +4,7 @@
   "description": "Score lead against MEDDIC criteria for enterprise sales qualification",
   "task": "CALC",
   "dom": "SALES",
-  "packet": "CALC|SALES|return:SALES-Agent|p:1|aacp:1.1|res:lead_score|rules:meddic",
+  "packet": "CALC|SALES|return:SALES-Agent|p:1|aacp:1.4|res:lead_score|rules:meddic",
   "tags": [
     "leads",
     "meddic",

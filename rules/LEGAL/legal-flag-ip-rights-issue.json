@@ -4,7 +4,7 @@
   "description": "Flag IP rights clause in contract that may compromise company intellectual property",
   "task": "FLAG",
   "dom": "LEGAL",
-  "packet": "FLAG|LEGAL|return:LEG-Agent|p:1|aacp:1.1|type:NDA|clause:ip_rights|issue:ip_rights_restriction|risk:high|block:signature",
+  "packet": "FLAG|LEGAL|return:LEG-Agent|p:1|aacp:1.4|type:NDA|clause:ip_rights|issue:ip_rights_restriction|risk:high|block:signature",
   "tags": [
     "ip",
     "rights",

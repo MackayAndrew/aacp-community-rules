@@ -4,7 +4,7 @@
   "description": "Route approved expense claims for payment in next payment run",
   "task": "PROC",
   "dom": "FIN",
-  "packet": "PROC|FIN|return:FIN-Agent|p:2|aacp:1.1|res:expense_claims|req:approve|validate:manager_sign_off",
+  "packet": "PROC|FIN|return:FIN-Agent|p:2|aacp:1.4|res:expense_claims|req:approve|validate:manager_sign_off",
   "tags": [
     "expenses",
     "approval",

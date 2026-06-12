@@ -4,7 +4,7 @@
   "description": "Merge period payroll actuals with cost centre budget data for month-end close",
   "task": "MERGE",
   "dom": "FIN",
-  "packet": "MERGE|FIN|return:FIN-Agent|p:1|aacp:1.1|res:payroll_budget_merged|rules:close_v1|validate:budget_cc",
+  "packet": "MERGE|FIN|return:FIN-Agent|p:1|aacp:1.4|res:payroll_budget_merged|rules:close_v1|validate:budget_cc",
   "tags": [
     "payroll",
     "budget",

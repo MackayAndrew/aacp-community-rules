@@ -4,7 +4,7 @@
   "description": "Write close certification to audit trail confirming month-end is complete",
   "task": "LOG",
   "dom": "FIN",
-  "packet": "LOG|FIN|return:AUD-Agent|p:2|aacp:1.1|res:close_certification|actor:FIN-Agent|status:certified",
+  "packet": "LOG|FIN|return:AUD-Agent|p:2|aacp:1.4|res:close_certification|actor:FIN-Agent|status:certified",
   "tags": [
     "month-end",
     "certification",

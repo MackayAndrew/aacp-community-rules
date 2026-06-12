@@ -4,7 +4,7 @@
   "description": "Resolve identified ambiguity in contract clause through legal interpretation and proposed amendment",
   "task": "RESOLVE",
   "dom": "LEGAL",
-  "packet": "RESOLVE|LEGAL|return:LEG-Agent|p:1|aacp:1.1|res:contract_ambiguity|req:legal_interpretation,amendment_draft",
+  "packet": "RESOLVE|LEGAL|return:LEG-Agent|p:1|aacp:1.4|res:contract_ambiguity|req:legal_interpretation,amendment_draft",
   "tags": [
     "contract",
     "ambiguity",

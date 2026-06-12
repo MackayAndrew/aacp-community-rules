@@ -4,7 +4,7 @@
   "description": "Generate formatted payroll report highlighting items requiring review in PDF and Excel format",
   "task": "REPORT",
   "dom": "HR",
-  "packet": "REPORT|HR|return:HR-Agent|p:2|aacp:1.1|fmt:pdf,xlsx|highlight:REVIEW_REQ",
+  "packet": "REPORT|HR|return:HR-Agent|p:2|aacp:1.4|fmt:pdf,xlsx|highlight:REVIEW_REQ",
   "tags": [
     "payroll",
     "report",

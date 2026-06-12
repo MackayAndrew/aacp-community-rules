@@ -4,7 +4,7 @@
   "description": "Calculate period accruals and post journal entries to GL",
   "task": "CALC",
   "dom": "FIN",
-  "packet": "CALC|FIN|return:FIN-Agent|p:1|aacp:1.1|res:accruals|rules:accrual_policy_v2|validate:period_cutoff",
+  "packet": "CALC|FIN|return:FIN-Agent|p:1|aacp:1.4|res:accruals|rules:accrual_policy_v2|validate:period_cutoff",
   "tags": [
     "month-end",
     "accruals",

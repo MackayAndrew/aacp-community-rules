@@ -4,7 +4,7 @@
   "description": "Route marketing qualified lead to sales for qualification and follow-up",
   "task": "PROC",
   "dom": "MKT",
-  "packet": "PROC|MKT|return:MKT-Agent|p:1|aacp:1.1|res:mql_handoff|req:sales_routing|validate:score>=threshold",
+  "packet": "PROC|MKT|return:MKT-Agent|p:1|aacp:1.4|res:mql_handoff|req:sales_routing|validate:score>=threshold",
   "tags": [
     "leads",
     "mql",

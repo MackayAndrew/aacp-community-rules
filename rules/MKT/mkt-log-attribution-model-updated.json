@@ -4,7 +4,7 @@
   "description": "Write attribution model update record to marketing audit trail",
   "task": "LOG",
   "dom": "MKT",
-  "packet": "LOG|MKT|return:AUD-Agent|p:3|aacp:1.1|res:attribution_model|actor:MKT-Agent|status:updated",
+  "packet": "LOG|MKT|return:AUD-Agent|p:3|aacp:1.4|res:attribution_model|actor:MKT-Agent|status:updated",
   "tags": [
     "attribution",
     "model",

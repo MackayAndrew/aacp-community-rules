@@ -4,7 +4,7 @@
   "description": "Process trademark watch alert for potential conflict with company marks",
   "task": "PROC",
   "dom": "LEGAL",
-  "packet": "PROC|LEGAL|return:LEG-Agent|p:2|aacp:1.1|res:trademark_alert|req:conflict_assessment",
+  "packet": "PROC|LEGAL|return:LEG-Agent|p:2|aacp:1.4|res:trademark_alert|req:conflict_assessment",
   "tags": [
     "trademark",
     "watch",

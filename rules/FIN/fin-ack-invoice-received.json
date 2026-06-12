@@ -4,7 +4,7 @@
   "description": "Acknowledge receipt of supplier invoice and confirm expected payment date",
   "task": "ACK",
   "dom": "FIN",
-  "packet": "ACK|FIN|return:FIN-Agent|p:3|aacp:1.1|res:invoice|status:acknowledged",
+  "packet": "ACK|FIN|return:FIN-Agent|p:3|aacp:1.4|res:invoice|status:acknowledged",
   "tags": [
     "invoice",
     "receipt",

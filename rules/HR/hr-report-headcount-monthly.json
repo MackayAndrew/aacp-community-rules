@@ -4,7 +4,7 @@
   "description": "Generate monthly headcount report for board pack including joiners and leavers",
   "task": "REPORT",
   "dom": "HR",
-  "packet": "REPORT|HR|return:HR-Agent|p:2|aacp:1.1|res:headcount_monthly|fmt:pdf,xlsx|period:current",
+  "packet": "REPORT|HR|return:HR-Agent|p:2|aacp:1.4|res:headcount_monthly|fmt:pdf,xlsx|period:current",
   "tags": [
     "headcount",
     "monthly",

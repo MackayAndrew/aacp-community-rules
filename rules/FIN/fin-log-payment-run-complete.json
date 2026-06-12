@@ -4,7 +4,7 @@
   "description": "Write payment run completion record to finance audit trail",
   "task": "LOG",
   "dom": "FIN",
-  "packet": "LOG|FIN|return:AUD-Agent|p:2|aacp:1.1|res:payment_run|actor:FIN-Agent|status:complete",
+  "packet": "LOG|FIN|return:AUD-Agent|p:2|aacp:1.4|res:payment_run|actor:FIN-Agent|status:complete",
   "tags": [
     "payment",
     "run",

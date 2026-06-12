@@ -4,7 +4,7 @@
   "description": "Immediately revoke all system access for departing employee on notification of departure",
   "task": "PROC",
   "dom": "IT",
-  "packet": "PROC|IT|return:IT-Agent|p:1|aacp:1.1|res:access_revocation|req:disable_ad,revoke_licences,revoke_vpn",
+  "packet": "PROC|IT|return:IT-Agent|p:1|aacp:1.4|res:access_revocation|req:disable_ad,revoke_licences,revoke_vpn",
   "tags": [
     "access",
     "revocation",

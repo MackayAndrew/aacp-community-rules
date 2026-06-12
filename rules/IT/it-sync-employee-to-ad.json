@@ -4,7 +4,7 @@
   "description": "Synchronise HR system employee records to Active Directory for user account consistency",
   "task": "SYNC",
   "dom": "IT",
-  "packet": "SYNC|IT|return:IT-Agent|p:1|aacp:1.1|res:employee_ad_sync|validate:no_orphaned_accounts",
+  "packet": "SYNC|IT|return:IT-Agent|p:1|aacp:1.4|res:employee_ad_sync|validate:no_orphaned_accounts",
   "tags": [
     "sync",
     "active-directory",

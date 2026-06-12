@@ -4,7 +4,7 @@
   "description": "Retrieve latest regulatory updates relevant to company operations for legal review",
   "task": "FETCH",
   "dom": "LEGAL",
-  "packet": "FETCH|LEGAL|return:LEG-Agent|p:2|aacp:1.1|res:regulatory_updates|filter:relevance=high|fmt:json",
+  "packet": "FETCH|LEGAL|return:LEG-Agent|p:2|aacp:1.4|res:regulatory_updates|filter:relevance=high|fmt:json",
   "tags": [
     "regulatory",
     "compliance",

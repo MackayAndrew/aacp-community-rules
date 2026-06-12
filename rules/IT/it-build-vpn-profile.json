@@ -4,7 +4,7 @@
   "description": "Create VPN access profile with appropriate network zones for new or updated user",
   "task": "BUILD",
   "dom": "IT",
-  "packet": "BUILD|IT|return:IT-Agent|p:1|aacp:1.1|res:vpn_profile|req:network_zones,mfa_required",
+  "packet": "BUILD|IT|return:IT-Agent|p:1|aacp:1.4|res:vpn_profile|req:network_zones,mfa_required",
   "tags": [
     "vpn",
     "profile",

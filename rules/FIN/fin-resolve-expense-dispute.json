@@ -4,7 +4,7 @@
   "description": "Resolve dispute where employee challenges rejected expense claim with review and final decision",
   "task": "RESOLVE",
   "dom": "FIN",
-  "packet": "RESOLVE|FIN|return:FIN-Agent|p:2|aacp:1.1|res:expense_dispute|req:policy_review,manager_confirm,final_decision",
+  "packet": "RESOLVE|FIN|return:FIN-Agent|p:2|aacp:1.4|res:expense_dispute|req:policy_review,manager_confirm,final_decision",
   "tags": [
     "expense",
     "dispute",

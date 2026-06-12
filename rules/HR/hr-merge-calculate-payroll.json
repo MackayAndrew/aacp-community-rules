@@ -4,7 +4,7 @@
   "description": "Merge employee salary data with cost centre budgets and calculate full payroll including PAYE and pension",
   "task": "MERGE",
   "dom": "HR",
-  "packet": "MERGE|HR|return:HR-Agent|p:1|aacp:1.1|rules:payroll_v2|validate:budget_cc",
+  "packet": "MERGE|HR|return:HR-Agent|p:1|aacp:1.4|rules:payroll_v2|validate:budget_cc",
   "tags": [
     "payroll",
     "merge",

@@ -4,7 +4,7 @@
   "description": "Write litigation hold activation record to legal audit trail",
   "task": "LOG",
   "dom": "LEGAL",
-  "packet": "LOG|LEGAL|return:AUD-Agent|p:1|aacp:1.1|res:litigation_hold|actor:LEG-Agent|status:active",
+  "packet": "LOG|LEGAL|return:AUD-Agent|p:1|aacp:1.4|res:litigation_hold|actor:LEG-Agent|status:active",
   "tags": [
     "litigation",
     "hold",

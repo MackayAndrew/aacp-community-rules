@@ -4,7 +4,7 @@
   "description": "Send automated exit survey to departing employee on final day",
   "task": "SEND",
   "dom": "HR",
-  "packet": "SEND|HR|return:HR-Agent|p:3|aacp:1.1|subj:exit_survey|tone:empathetic",
+  "packet": "SEND|HR|return:HR-Agent|p:3|aacp:1.4|subj:exit_survey|tone:empathetic",
   "tags": [
     "offboarding",
     "exit",

@@ -4,7 +4,7 @@
   "description": "Generate P&L report for the period for board and management review",
   "task": "REPORT",
   "dom": "FIN",
-  "packet": "REPORT|FIN|return:FIN-Agent|p:2|aacp:1.1|res:pnl|fmt:pdf,xlsx|period:current|highlight:REVIEW_REQ",
+  "packet": "REPORT|FIN|return:FIN-Agent|p:2|aacp:1.4|res:pnl|fmt:pdf,xlsx|period:current|highlight:REVIEW_REQ",
   "tags": [
     "pnl",
     "report",

@@ -4,7 +4,7 @@
   "description": "Synchronise current exchange rates from treasury system to GL for period-end revaluation",
   "task": "SYNC",
   "dom": "FIN",
-  "packet": "SYNC|FIN|return:FIN-Agent|p:1|aacp:1.1|res:fx_rate_sync|validate:rate_freshness",
+  "packet": "SYNC|FIN|return:FIN-Agent|p:1|aacp:1.4|res:fx_rate_sync|validate:rate_freshness",
   "tags": [
     "sync",
     "fx",

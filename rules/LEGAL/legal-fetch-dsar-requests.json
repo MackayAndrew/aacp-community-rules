@@ -4,7 +4,7 @@
   "description": "Retrieve all outstanding Data Subject Access Requests requiring response",
   "task": "FETCH",
   "dom": "LEGAL",
-  "packet": "FETCH|LEGAL|return:LEG-Agent|p:1|aacp:1.1|res:dsar_requests|filter:status=outstanding|fmt:json",
+  "packet": "FETCH|LEGAL|return:LEG-Agent|p:1|aacp:1.4|res:dsar_requests|filter:status=outstanding|fmt:json",
   "tags": [
     "gdpr",
     "dsar",

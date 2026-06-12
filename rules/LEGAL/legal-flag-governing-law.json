@@ -4,7 +4,7 @@
   "description": "Flag contracts specifying governing law jurisdiction outside company policy",
   "task": "FLAG",
   "dom": "LEGAL",
-  "packet": "FLAG|LEGAL|return:LEG-Agent|p:2|aacp:1.1|type:CONTRACT|clause:governing_law|issue:non_standard_jurisdiction|risk:medium",
+  "packet": "FLAG|LEGAL|return:LEG-Agent|p:2|aacp:1.4|type:CONTRACT|clause:governing_law|issue:non_standard_jurisdiction|risk:medium",
   "tags": [
     "governing-law",
     "jurisdiction",

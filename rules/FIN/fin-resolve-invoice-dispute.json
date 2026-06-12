@@ -4,7 +4,7 @@
   "description": "Resolve dispute with supplier over invoiced amount, including investigation and agreed settlement",
   "task": "RESOLVE",
   "dom": "FIN",
-  "packet": "RESOLVE|FIN|return:FIN-Agent|p:2|aacp:1.1|res:invoice_dispute|req:po_review,supplier_contact,settlement",
+  "packet": "RESOLVE|FIN|return:FIN-Agent|p:2|aacp:1.4|res:invoice_dispute|req:po_review,supplier_contact,settlement",
   "tags": [
     "invoice",
     "dispute",

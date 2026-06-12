@@ -4,7 +4,7 @@
   "description": "Score lead against Budget, Authority, Need, Timeline criteria for qualification",
   "task": "CALC",
   "dom": "SALES",
-  "packet": "CALC|SALES|return:SALES-Agent|p:1|aacp:1.1|res:lead_score|rules:bant",
+  "packet": "CALC|SALES|return:SALES-Agent|p:1|aacp:1.4|res:lead_score|rules:bant",
   "tags": [
     "leads",
     "bant",

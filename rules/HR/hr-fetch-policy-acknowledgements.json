@@ -4,7 +4,7 @@
   "description": "Retrieve status of employee policy acknowledgements with outstanding items",
   "task": "FETCH",
   "dom": "HR",
-  "packet": "FETCH|HR|return:HR-Agent|p:2|aacp:1.1|res:policy_acknowledgements|filter:status=outstanding|fmt:json",
+  "packet": "FETCH|HR|return:HR-Agent|p:2|aacp:1.4|res:policy_acknowledgements|filter:status=outstanding|fmt:json",
   "tags": [
     "policy",
     "compliance",

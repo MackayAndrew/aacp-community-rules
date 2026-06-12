@@ -4,7 +4,7 @@
   "description": "Triage incoming ticket by intent, category, sentiment and priority for routing",
   "task": "PROC",
   "dom": "CS",
-  "packet": "PROC|CS|return:CS-Agent|p:1|aacp:1.1|res:ticket_triage|req:categorise,sentiment_score,priority_score",
+  "packet": "PROC|CS|return:CS-Agent|p:1|aacp:1.4|res:ticket_triage|req:categorise,sentiment_score,priority_score",
   "tags": [
     "ticket",
     "triage",

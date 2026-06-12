@@ -4,7 +4,7 @@
   "description": "Notify account manager of upcoming renewal with customer health score and talking points",
   "task": "SEND",
   "dom": "SALES",
-  "packet": "SEND|SALES|return:SALES-Agent|p:1|aacp:1.1|subj:renewal_action_required|highlight:ACTION_REQUIRED",
+  "packet": "SEND|SALES|return:SALES-Agent|p:1|aacp:1.4|subj:renewal_action_required|highlight:ACTION_REQUIRED",
   "tags": [
     "renewals",
     "outreach",

@@ -4,7 +4,7 @@
   "description": "Flag commission calculation where rep has raised a dispute requiring review",
   "task": "FLAG",
   "dom": "SALES",
-  "packet": "FLAG|SALES|return:SALES-Agent|p:2|aacp:1.1|res:commission|status:disputed|highlight:REVIEW_REQ",
+  "packet": "FLAG|SALES|return:SALES-Agent|p:2|aacp:1.4|res:commission|status:disputed|highlight:REVIEW_REQ",
   "tags": [
     "commission",
     "dispute",

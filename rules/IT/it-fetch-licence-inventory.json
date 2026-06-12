@@ -4,7 +4,7 @@
   "description": "Retrieve current software licence inventory including allocation and usage",
   "task": "FETCH",
   "dom": "IT",
-  "packet": "FETCH|IT|return:IT-Agent|p:2|aacp:1.1|res:licence_inventory|filter:status=active|fmt:json",
+  "packet": "FETCH|IT|return:IT-Agent|p:2|aacp:1.4|res:licence_inventory|filter:status=active|fmt:json",
   "tags": [
     "licences",
     "inventory",

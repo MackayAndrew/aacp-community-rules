@@ -4,7 +4,7 @@
   "description": "Generate cash flow statement for the period including operating and investing activities",
   "task": "REPORT",
   "dom": "FIN",
-  "packet": "REPORT|FIN|return:FIN-Agent|p:2|aacp:1.1|res:cash_flow|fmt:pdf,xlsx|period:current",
+  "packet": "REPORT|FIN|return:FIN-Agent|p:2|aacp:1.4|res:cash_flow|fmt:pdf,xlsx|period:current",
   "tags": [
     "cash-flow",
     "report",

@@ -4,7 +4,7 @@
   "description": "Retrieve list of employees with performance reviews due in the next 30 days",
   "task": "FETCH",
   "dom": "HR",
-  "packet": "FETCH|HR|return:HR-Agent|p:2|aacp:1.1|res:performance_reviews|filter:due_days<=30|fmt:json",
+  "packet": "FETCH|HR|return:HR-Agent|p:2|aacp:1.4|res:performance_reviews|filter:due_days<=30|fmt:json",
   "tags": [
     "performance",
     "review",

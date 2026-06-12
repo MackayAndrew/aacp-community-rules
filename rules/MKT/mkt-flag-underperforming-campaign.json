@@ -4,7 +4,7 @@
   "description": "Flag campaigns with conversion rate below target threshold for review and optimisation",
   "task": "FLAG",
   "dom": "MKT",
-  "packet": "FLAG|MKT|return:MKT-Agent|p:2|aacp:1.1|res:campaign_performance|validate:conversion_rate<target|highlight:REVIEW_REQ",
+  "packet": "FLAG|MKT|return:MKT-Agent|p:2|aacp:1.4|res:campaign_performance|validate:conversion_rate<target|highlight:REVIEW_REQ",
   "tags": [
     "campaign",
     "performance",

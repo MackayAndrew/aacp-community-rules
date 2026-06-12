@@ -4,7 +4,7 @@
   "description": "Retrieve new hire record from HR system triggered by start date",
   "task": "FETCH",
   "dom": "HR",
-  "packet": "FETCH|HR|return:HR-Agent|p:1|aacp:1.1|res:employee_record|filter:status=new_hire|fmt:json",
+  "packet": "FETCH|HR|return:HR-Agent|p:1|aacp:1.4|res:employee_record|filter:status=new_hire|fmt:json",
   "tags": [
     "onboarding",
     "jml",

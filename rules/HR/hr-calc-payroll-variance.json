@@ -4,7 +4,7 @@
   "description": "Calculate variance between current and prior period payroll, flag material differences",
   "task": "CALC",
   "dom": "HR",
-  "packet": "CALC|HR|return:HR-Agent|p:2|aacp:1.1|res:payroll_variance|highlight:MATERIAL_VARIANCE",
+  "packet": "CALC|HR|return:HR-Agent|p:2|aacp:1.4|res:payroll_variance|highlight:MATERIAL_VARIANCE",
   "tags": [
     "payroll",
     "variance",

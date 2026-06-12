@@ -4,7 +4,7 @@
   "description": "Write onboarding completion record to HR audit trail",
   "task": "LOG",
   "dom": "HR",
-  "packet": "LOG|HR|return:AUD-Agent|p:2|aacp:1.1|actor:HR-Agent|status:onboarding_complete",
+  "packet": "LOG|HR|return:AUD-Agent|p:2|aacp:1.4|actor:HR-Agent|status:onboarding_complete",
   "tags": [
     "onboarding",
     "audit",

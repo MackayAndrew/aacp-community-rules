@@ -4,7 +4,7 @@
   "description": "Process and route employee leave request for manager approval",
   "task": "PROC",
   "dom": "HR",
-  "packet": "PROC|HR|return:HR-Agent|p:2|aacp:1.1|res:leave_request|req:manager_approval",
+  "packet": "PROC|HR|return:HR-Agent|p:2|aacp:1.4|res:leave_request|req:manager_approval",
   "tags": [
     "absence",
     "leave",

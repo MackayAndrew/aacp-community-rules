@@ -4,7 +4,7 @@
   "description": "Reconcile bank statements against GL entries for month-end close",
   "task": "PROC",
   "dom": "FIN",
-  "packet": "PROC|FIN|return:FIN-Agent|p:1|aacp:1.1|res:bank_reconciliation|rules:recon_v1|validate:gl_match",
+  "packet": "PROC|FIN|return:FIN-Agent|p:1|aacp:1.4|res:bank_reconciliation|rules:recon_v1|validate:gl_match",
   "tags": [
     "month-end",
     "reconciliation",

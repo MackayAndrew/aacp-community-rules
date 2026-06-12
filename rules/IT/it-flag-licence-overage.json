@@ -4,7 +4,7 @@
   "description": "Flag software titles where actual usage exceeds licensed quantity",
   "task": "FLAG",
   "dom": "IT",
-  "packet": "FLAG|IT|return:IT-Agent|p:1|aacp:1.1|res:licence_inventory|validate:licence_limits|highlight:OVERAGE",
+  "packet": "FLAG|IT|return:IT-Agent|p:1|aacp:1.4|res:licence_inventory|validate:licence_limits|highlight:OVERAGE",
   "tags": [
     "licences",
     "overage",

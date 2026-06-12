@@ -4,7 +4,7 @@
   "description": "Merge inbound lead records with enrichment data for improved qualification",
   "task": "MERGE",
   "dom": "MKT",
-  "packet": "MERGE|MKT|return:MKT-Agent|p:1|aacp:1.1|res:enriched_leads|rules:enrichment_v1|validate:no_duplicates",
+  "packet": "MERGE|MKT|return:MKT-Agent|p:1|aacp:1.4|res:enriched_leads|rules:enrichment_v1|validate:no_duplicates",
   "tags": [
     "leads",
     "enrichment",

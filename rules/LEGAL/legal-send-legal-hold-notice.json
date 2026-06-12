@@ -4,7 +4,7 @@
   "description": "Send litigation hold notice to relevant employees to preserve documents and records",
   "task": "SEND",
   "dom": "LEGAL",
-  "packet": "SEND|LEGAL|return:LEG-Agent|p:1|aacp:1.1|subj:litigation_hold_notice|highlight:ACTION_REQUIRED|tone:formal",
+  "packet": "SEND|LEGAL|return:LEG-Agent|p:1|aacp:1.4|subj:litigation_hold_notice|highlight:ACTION_REQUIRED|tone:formal",
   "tags": [
     "litigation",
     "hold",

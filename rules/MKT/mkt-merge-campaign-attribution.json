@@ -4,7 +4,7 @@
   "description": "Merge multi-channel campaign data with attribution model for unified performance view",
   "task": "MERGE",
   "dom": "MKT",
-  "packet": "MERGE|MKT|return:MKT-Agent|p:2|aacp:1.1|res:campaign_attribution_merged|rules:attribution_model|validate:channel_match",
+  "packet": "MERGE|MKT|return:MKT-Agent|p:2|aacp:1.4|res:campaign_attribution_merged|rules:attribution_model|validate:channel_match",
   "tags": [
     "campaign",
     "attribution",

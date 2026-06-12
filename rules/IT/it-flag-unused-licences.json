@@ -4,7 +4,7 @@
   "description": "Identify software licences not used in the last 90 days for potential reclamation",
   "task": "FLAG",
   "dom": "IT",
-  "packet": "FLAG|IT|return:IT-Agent|p:3|aacp:1.1|res:licence_usage|validate:last_used_days>=90|highlight:RECLAIM",
+  "packet": "FLAG|IT|return:IT-Agent|p:3|aacp:1.4|res:licence_usage|validate:last_used_days>=90|highlight:RECLAIM",
   "tags": [
     "licences",
     "unused",

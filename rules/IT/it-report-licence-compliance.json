@@ -4,7 +4,7 @@
   "description": "Generate software licence compliance report for SAM audit purposes",
   "task": "REPORT",
   "dom": "IT",
-  "packet": "REPORT|IT|return:IT-Agent|p:2|aacp:1.1|res:licence_compliance|fmt:xlsx|highlight:NON_COMPLIANT",
+  "packet": "REPORT|IT|return:IT-Agent|p:2|aacp:1.4|res:licence_compliance|fmt:xlsx|highlight:NON_COMPLIANT",
   "tags": [
     "licences",
     "compliance",

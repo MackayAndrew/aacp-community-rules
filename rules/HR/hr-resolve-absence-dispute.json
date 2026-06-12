@@ -4,7 +4,7 @@
   "description": "Resolve dispute where employee challenges absence record or Bradford factor calculation",
   "task": "RESOLVE",
   "dom": "HR",
-  "packet": "RESOLVE|HR|return:HR-Agent|p:2|aacp:1.1|res:absence_dispute|req:record_review,manager_confirm",
+  "packet": "RESOLVE|HR|return:HR-Agent|p:2|aacp:1.4|res:absence_dispute|req:record_review,manager_confirm",
   "tags": [
     "absence",
     "dispute",

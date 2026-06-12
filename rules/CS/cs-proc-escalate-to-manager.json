@@ -4,7 +4,7 @@
   "description": "Escalate unresolved or high-priority ticket to CS manager for intervention",
   "task": "PROC",
   "dom": "CS",
-  "packet": "PROC|CS|return:CS-Agent|p:1|aacp:1.1|res:ticket|req:manager_escalation|status:escalated",
+  "packet": "PROC|CS|return:CS-Agent|p:1|aacp:1.4|res:ticket|req:manager_escalation|status:escalated",
   "tags": [
     "escalation",
     "manager",

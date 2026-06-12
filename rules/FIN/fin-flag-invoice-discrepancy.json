@@ -4,7 +4,7 @@
   "description": "Flag invoices where amount does not match purchase order for manual review",
   "task": "FLAG",
   "dom": "FIN",
-  "packet": "FLAG|FIN|return:FIN-Agent|p:1|aacp:1.1|res:invoice|issue:amount_mismatch|highlight:REVIEW_REQ",
+  "packet": "FLAG|FIN|return:FIN-Agent|p:1|aacp:1.4|res:invoice|issue:amount_mismatch|highlight:REVIEW_REQ",
   "tags": [
     "invoice",
     "discrepancy",

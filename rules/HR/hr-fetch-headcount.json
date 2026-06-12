@@ -4,7 +4,7 @@
   "description": "Retrieve current headcount figures broken down by department and employment type",
   "task": "FETCH",
   "dom": "HR",
-  "packet": "FETCH|HR|return:HR-Agent|p:2|aacp:1.1|res:headcount|filter:status=active|fmt:json",
+  "packet": "FETCH|HR|return:HR-Agent|p:2|aacp:1.4|res:headcount|filter:status=active|fmt:json",
   "tags": [
     "headcount",
     "department",

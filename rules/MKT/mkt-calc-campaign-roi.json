@@ -4,7 +4,7 @@
   "description": "Calculate return on investment for active campaigns against spend and revenue attribution",
   "task": "CALC",
   "dom": "MKT",
-  "packet": "CALC|MKT|return:MKT-Agent|p:2|aacp:1.1|res:campaign_roi|rules:attribution_model|period:current",
+  "packet": "CALC|MKT|return:MKT-Agent|p:2|aacp:1.4|res:campaign_roi|rules:attribution_model|period:current",
   "tags": [
     "campaign",
     "roi",

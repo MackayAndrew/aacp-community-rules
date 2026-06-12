@@ -4,7 +4,7 @@
   "description": "Send payment remittance advice to supplier confirming payment details",
   "task": "SEND",
   "dom": "FIN",
-  "packet": "SEND|FIN|return:FIN-Agent|p:3|aacp:1.1|subj:payment_remittance|flag_msg:payment_sent",
+  "packet": "SEND|FIN|return:FIN-Agent|p:3|aacp:1.4|subj:payment_remittance|flag_msg:payment_sent",
   "tags": [
     "invoice",
     "remittance",

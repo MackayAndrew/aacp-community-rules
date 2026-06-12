@@ -4,7 +4,7 @@
   "description": "Merge financial accounts from multiple legal entities for consolidated reporting",
   "task": "MERGE",
   "dom": "FIN",
-  "packet": "MERGE|FIN|return:FIN-Agent|p:2|aacp:1.1|res:consolidated_accounts|rules:consolidation_v1|validate:intercompany_elim",
+  "packet": "MERGE|FIN|return:FIN-Agent|p:2|aacp:1.4|res:consolidated_accounts|rules:consolidation_v1|validate:intercompany_elim",
   "tags": [
     "consolidation",
     "multi-entity",

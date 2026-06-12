@@ -4,7 +4,7 @@
   "description": "Send notification to hiring manager confirming new hire provisioning is complete",
   "task": "SEND",
   "dom": "HR",
-  "packet": "SEND|HR|return:HR-Agent|p:2|aacp:1.1|subj:new_hire_ready|flag_msg:provisioning_complete",
+  "packet": "SEND|HR|return:HR-Agent|p:2|aacp:1.4|subj:new_hire_ready|flag_msg:provisioning_complete",
   "tags": [
     "onboarding",
     "manager",

@@ -4,7 +4,7 @@
   "description": "Apply winning variant from completed A/B test to production environment",
   "task": "PROC",
   "dom": "MKT",
-  "packet": "PROC|MKT|return:MKT-Agent|p:2|aacp:1.1|res:ab_test|req:apply_winner|validate:statistical_significance",
+  "packet": "PROC|MKT|return:MKT-Agent|p:2|aacp:1.4|res:ab_test|req:apply_winner|validate:statistical_significance",
   "tags": [
     "ab-test",
     "winner",

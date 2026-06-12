@@ -4,7 +4,7 @@
   "description": "Resolve customer dispute over billing amount including investigation and credit or correction",
   "task": "RESOLVE",
   "dom": "CS",
-  "packet": "RESOLVE|CS|return:CS-Agent|p:1|aacp:1.1|res:billing_dispute|sentiment:negative|tone:empathetic|req:billing_review,correction_or_credit",
+  "packet": "RESOLVE|CS|return:CS-Agent|p:1|aacp:1.4|res:billing_dispute|sentiment:negative|tone:empathetic|req:billing_review,correction_or_credit",
   "tags": [
     "billing",
     "dispute",

@@ -4,7 +4,7 @@
   "description": "Process goodwill gesture approval for high-value customer complaint resolution",
   "task": "PROC",
   "dom": "CS",
-  "packet": "PROC|CS|return:CS-Agent|p:1|aacp:1.1|res:goodwill_approval|req:manager_sign_off|validate:ltv_threshold",
+  "packet": "PROC|CS|return:CS-Agent|p:1|aacp:1.4|res:goodwill_approval|req:manager_sign_off|validate:ltv_threshold",
   "tags": [
     "goodwill",
     "approval",

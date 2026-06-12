@@ -4,7 +4,7 @@
   "description": "Flag renewals at high churn risk based on product usage and NPS signals",
   "task": "FLAG",
   "dom": "SALES",
-  "packet": "FLAG|SALES|return:SALES-Agent|p:1|aacp:1.1|res:renewals|validate:churn_score>=7|highlight:CHURN_RISK",
+  "packet": "FLAG|SALES|return:SALES-Agent|p:1|aacp:1.4|res:renewals|validate:churn_score>=7|highlight:CHURN_RISK",
   "tags": [
     "renewals",
     "churn",

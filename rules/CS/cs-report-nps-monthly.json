@@ -4,7 +4,7 @@
   "description": "Generate monthly NPS report by product line and customer segment",
   "task": "REPORT",
   "dom": "CS",
-  "packet": "REPORT|CS|return:CS-Agent|p:2|aacp:1.1|res:nps_monthly|fmt:xlsx|period:current",
+  "packet": "REPORT|CS|return:CS-Agent|p:2|aacp:1.4|res:nps_monthly|fmt:xlsx|period:current",
   "tags": [
     "nps",
     "report",

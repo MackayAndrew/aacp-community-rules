@@ -4,7 +4,7 @@
   "description": "Retrieve all expense claims submitted in the current period for processing",
   "task": "FETCH",
   "dom": "FIN",
-  "packet": "FETCH|FIN|return:FIN-Agent|p:2|aacp:1.1|res:expense_claims|filter:status=submitted|fmt:json",
+  "packet": "FETCH|FIN|return:FIN-Agent|p:2|aacp:1.4|res:expense_claims|filter:status=submitted|fmt:json",
   "tags": [
     "expenses",
     "claims",

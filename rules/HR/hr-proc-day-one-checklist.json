@@ -4,7 +4,7 @@
   "description": "Trigger and track completion of day one onboarding checklist items",
   "task": "PROC",
   "dom": "HR",
-  "packet": "PROC|HR|return:HR-Agent|p:1|aacp:1.1|res:onboarding_checklist|req:id_check,contract_sign,system_access",
+  "packet": "PROC|HR|return:HR-Agent|p:1|aacp:1.4|res:onboarding_checklist|req:id_check,contract_sign,system_access",
   "tags": [
     "onboarding",
     "checklist",

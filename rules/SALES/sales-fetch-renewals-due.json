@@ -4,7 +4,7 @@
   "description": "Retrieve all customer contracts due for renewal in next 90 days",
   "task": "FETCH",
   "dom": "SALES",
-  "packet": "FETCH|SALES|return:SALES-Agent|p:1|aacp:1.1|res:renewals|filter:due_days<=90|fmt:json",
+  "packet": "FETCH|SALES|return:SALES-Agent|p:1|aacp:1.4|res:renewals|filter:due_days<=90|fmt:json",
   "tags": [
     "renewals",
     "contracts",

@@ -4,7 +4,7 @@
   "description": "Synchronise SSO role-based permissions across connected systems after role change",
   "task": "SYNC",
   "dom": "IT",
-  "packet": "SYNC|IT|return:IT-Agent|p:1|aacp:1.1|res:sso_permission_sync|validate:rbac_policy",
+  "packet": "SYNC|IT|return:IT-Agent|p:1|aacp:1.4|res:sso_permission_sync|validate:rbac_policy",
   "tags": [
     "sync",
     "sso",

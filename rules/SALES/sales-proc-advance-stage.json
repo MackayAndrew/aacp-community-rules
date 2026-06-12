@@ -4,7 +4,7 @@
   "description": "Update opportunity stage in CRM and trigger next stage workflow",
   "task": "PROC",
   "dom": "SALES",
-  "packet": "PROC|SALES|return:SALES-Agent|p:2|aacp:1.1|res:opportunity|req:stage_update,next_step_set",
+  "packet": "PROC|SALES|return:SALES-Agent|p:2|aacp:1.4|res:opportunity|req:stage_update,next_step_set",
   "tags": [
     "pipeline",
     "stage",

@@ -4,7 +4,7 @@
   "description": "Flag user accounts with permissions beyond their role requirements for review",
   "task": "FLAG",
   "dom": "IT",
-  "packet": "FLAG|IT|return:IT-Agent|p:1|aacp:1.1|res:access_review|validate:rbac_policy|highlight:EXCESS_PERMISSIONS",
+  "packet": "FLAG|IT|return:IT-Agent|p:1|aacp:1.4|res:access_review|validate:rbac_policy|highlight:EXCESS_PERMISSIONS",
   "tags": [
     "access",
     "permissions",

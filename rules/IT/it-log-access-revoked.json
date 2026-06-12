@@ -4,7 +4,7 @@
   "description": "Write access revocation completion record to security audit trail",
   "task": "LOG",
   "dom": "IT",
-  "packet": "LOG|IT|return:AUD-Agent|p:1|aacp:1.1|actor:IT-Agent|status:access_revoked",
+  "packet": "LOG|IT|return:AUD-Agent|p:1|aacp:1.4|actor:IT-Agent|status:access_revoked",
   "tags": [
     "access",
     "revocation",

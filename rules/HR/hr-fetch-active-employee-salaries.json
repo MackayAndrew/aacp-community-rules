@@ -4,7 +4,7 @@
   "description": "Retrieve all active employee salary records for a given period, return as JSON array",
   "task": "FETCH",
   "dom": "HR",
-  "packet": "FETCH|HR|return:HR-Agent|p:1|aacp:1.1|res:emp_salary|filter:status=active|fmt:json",
+  "packet": "FETCH|HR|return:HR-Agent|p:1|aacp:1.4|res:emp_salary|filter:status=active|fmt:json",
   "tags": [
     "payroll",
     "salary",

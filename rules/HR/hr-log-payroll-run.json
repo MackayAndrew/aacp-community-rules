@@ -4,7 +4,7 @@
   "description": "Write payroll run completion record to audit trail with agent chain and status",
   "task": "LOG",
   "dom": "HR",
-  "packet": "LOG|HR|return:AUD-Agent|p:2|aacp:1.1|actor:ORCHESTRATOR|status:review_required",
+  "packet": "LOG|HR|return:AUD-Agent|p:2|aacp:1.4|actor:ORCHESTRATOR|status:review_required",
   "tags": [
     "payroll",
     "audit",

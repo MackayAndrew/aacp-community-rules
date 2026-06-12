@@ -4,7 +4,7 @@
   "description": "Generate weekly sales pipeline report for sales management review",
   "task": "REPORT",
   "dom": "SALES",
-  "packet": "REPORT|SALES|return:SALES-Agent|p:2|aacp:1.1|res:pipeline_weekly|fmt:xlsx|period:week",
+  "packet": "REPORT|SALES|return:SALES-Agent|p:2|aacp:1.4|res:pipeline_weekly|fmt:xlsx|period:week",
   "tags": [
     "pipeline",
     "weekly",

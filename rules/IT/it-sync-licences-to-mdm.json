@@ -4,7 +4,7 @@
   "description": "Synchronise approved licence assignments to MDM for device-level enforcement",
   "task": "SYNC",
   "dom": "IT",
-  "packet": "SYNC|IT|return:IT-Agent|p:2|aacp:1.1|res:licence_mdm_sync|validate:assignment_match",
+  "packet": "SYNC|IT|return:IT-Agent|p:2|aacp:1.4|res:licence_mdm_sync|validate:assignment_match",
   "tags": [
     "sync",
     "mdm",

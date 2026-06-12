@@ -4,7 +4,7 @@
   "description": "Process and execute payment run for all approved items",
   "task": "PROC",
   "dom": "FIN",
-  "packet": "PROC|FIN|return:FIN-Agent|p:1|aacp:1.1|res:payment_run|req:execute|validate:dual_authorisation",
+  "packet": "PROC|FIN|return:FIN-Agent|p:1|aacp:1.4|res:payment_run|req:execute|validate:dual_authorisation",
   "tags": [
     "payment",
     "run",

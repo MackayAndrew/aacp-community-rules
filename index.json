@@ -18,7 +18,7 @@
       "description": "Acknowledge receipt of customer complaint and confirm investigation timeline",
       "task": "ACK",
       "dom": "CS",
-      "packet": "ACK|CS|return:CS-Agent|p:1|aacp:1.1|res:complaint|status:acknowledged|tone:empathetic",
+      "packet": "ACK|CS|return:CS-Agent|p:1|aacp:1.4|res:complaint|status:acknowledged|tone:empathetic",
       "tags": [
         "complaint",
         "receipt",
@@ -35,7 +35,7 @@
       "description": "Calculate customer satisfaction score for the period from post-resolution surveys",
       "task": "CALC",
       "dom": "CS",
-      "packet": "CALC|CS|return:CS-Agent|p:2|aacp:1.1|res:csat_score|period:current|rules:csat_methodology",
+      "packet": "CALC|CS|return:CS-Agent|p:2|aacp:1.4|res:csat_score|period:current|rules:csat_methodology",
       "tags": [
         "csat",
         "satisfaction",
@@ -52,7 +52,7 @@
       "description": "Retrieve customer profile including LTV, loyalty and complaint history for ticket context",
       "task": "FETCH",
       "dom": "CS",
-      "packet": "FETCH|CS|return:CS-Agent|p:1|aacp:1.1|res:customer_profile|fields:history,ltv,loyalty,open_tickets|fmt:json",
+      "packet": "FETCH|CS|return:CS-Agent|p:1|aacp:1.4|res:customer_profile|fields:history,ltv,loyalty,open_tickets|fmt:json",
       "tags": [
         "customer",
         "profile",
@@ -69,7 +69,7 @@
       "description": "Retrieve recent NPS survey responses for analysis and follow-up",
       "task": "FETCH",
       "dom": "CS",
-      "packet": "FETCH|CS|return:CS-Agent|p:2|aacp:1.1|res:nps_scores|filter:period=last_30_days|fmt:json",
+      "packet": "FETCH|CS|return:CS-Agent|p:2|aacp:1.4|res:nps_scores|filter:period=last_30_days|fmt:json",
       "tags": [
         "nps",
         "survey",
@@ -86,7 +86,7 @@
       "description": "Flag customer showing churn risk signals for proactive retention outreach",
       "task": "FLAG",
       "dom": "CS",
-      "packet": "FLAG|CS|return:CS-Agent|p:1|aacp:1.1|res:customer_profile|validate:churn_score>=7|highlight:CHURN_RISK",
+      "packet": "FLAG|CS|return:CS-Agent|p:1|aacp:1.4|res:customer_profile|validate:churn_score>=7|highlight:CHURN_RISK",
       "tags": [
         "churn",
         "retention",
@@ -103,7 +103,7 @@
       "description": "Flag NPS detractor response for priority follow-up from CS team",
       "task": "FLAG",
       "dom": "CS",
-      "packet": "FLAG|CS|return:CS-Agent|p:2|aacp:1.1|res:nps_response|validate:score<=6|highlight:DETRACTOR",
+      "packet": "FLAG|CS|return:CS-Agent|p:2|aacp:1.4|res:nps_response|validate:score<=6|highlight:DETRACTOR",
       "tags": [
         "nps",
         "detractor",
@@ -120,7 +120,7 @@
       "description": "Flag ticket requiring senior agent or management escalation based on complexity or LTV",
       "task": "FLAG",
       "dom": "CS",
-      "packet": "FLAG|CS|return:CS-Agent|p:1|aacp:1.1|res:ticket|status:escalation_required|highlight:ESCALATE",
+      "packet": "FLAG|CS|return:CS-Agent|p:1|aacp:1.4|res:ticket|status:escalation_required|highlight:ESCALATE",
       "tags": [
         "escalation",
         "flag",
@@ -137,7 +137,7 @@
       "description": "Flag tickets with high negative sentiment score for priority handling",
       "task": "FLAG",
       "dom": "CS",
-      "packet": "FLAG|CS|return:CS-Agent|p:1|aacp:1.1|res:ticket|validate:sentiment_score<=-7|highlight:PRIORITY",
+      "packet": "FLAG|CS|return:CS-Agent|p:1|aacp:1.4|res:ticket|validate:sentiment_score<=-7|highlight:PRIORITY",
       "tags": [
         "sentiment",
         "flag",
@@ -154,7 +154,7 @@
       "description": "Flag tickets approaching SLA breach threshold for priority action",
       "task": "FLAG",
       "dom": "CS",
-      "packet": "FLAG|CS|return:CS-Agent|p:1|aacp:1.1|res:ticket|validate:time_to_sla_mins<=30|highlight:SLA_RISK",
+      "packet": "FLAG|CS|return:CS-Agent|p:1|aacp:1.4|res:ticket|validate:time_to_sla_mins<=30|highlight:SLA_RISK",
       "tags": [
         "sla",
         "breach",
@@ -171,7 +171,7 @@
       "description": "Flag ticket where SLA has been breached for management reporting and RCA",
       "task": "FLAG",
       "dom": "CS",
-      "packet": "FLAG|CS|return:CS-Agent|p:1|aacp:1.1|res:ticket|status:sla_breached|highlight:SLA_BREACH",
+      "packet": "FLAG|CS|return:CS-Agent|p:1|aacp:1.4|res:ticket|status:sla_breached|highlight:SLA_BREACH",
       "tags": [
         "sla",
         "breach",
@@ -188,7 +188,7 @@
       "description": "Write goodwill gesture record to CS audit trail for finance reporting",
       "task": "LOG",
       "dom": "CS",
-      "packet": "LOG|CS|return:AUD-Agent|p:2|aacp:1.1|actor:CS-Agent|res:goodwill|status:issued",
+      "packet": "LOG|CS|return:AUD-Agent|p:2|aacp:1.4|actor:CS-Agent|res:goodwill|status:issued",
       "tags": [
         "goodwill",
         "audit",
@@ -205,7 +205,7 @@
       "description": "Write ticket resolution outcome to CS audit trail for reporting",
       "task": "LOG",
       "dom": "CS",
-      "packet": "LOG|CS|return:AUD-Agent|p:3|aacp:1.1|actor:CS-Agent|res:ticket|status:resolved",
+      "packet": "LOG|CS|return:AUD-Agent|p:3|aacp:1.4|actor:CS-Agent|res:ticket|status:resolved",
       "tags": [
         "ticket",
         "resolution",
@@ -222,7 +222,7 @@
       "description": "Process goodwill gesture approval for high-value customer complaint resolution",
       "task": "PROC",
       "dom": "CS",
-      "packet": "PROC|CS|return:CS-Agent|p:1|aacp:1.1|res:goodwill_approval|req:manager_sign_off|validate:ltv_threshold",
+      "packet": "PROC|CS|return:CS-Agent|p:1|aacp:1.4|res:goodwill_approval|req:manager_sign_off|validate:ltv_threshold",
       "tags": [
         "goodwill",
         "approval",
@@ -239,7 +239,7 @@
       "description": "Escalate unresolved or high-priority ticket to CS manager for intervention",
       "task": "PROC",
       "dom": "CS",
-      "packet": "PROC|CS|return:CS-Agent|p:1|aacp:1.1|res:ticket|req:manager_escalation|status:escalated",
+      "packet": "PROC|CS|return:CS-Agent|p:1|aacp:1.4|res:ticket|req:manager_escalation|status:escalated",
       "tags": [
         "escalation",
         "manager",
@@ -256,7 +256,7 @@
       "description": "Triage incoming ticket by intent, category, sentiment and priority for routing",
       "task": "PROC",
       "dom": "CS",
-      "packet": "PROC|CS|return:CS-Agent|p:1|aacp:1.1|res:ticket_triage|req:categorise,sentiment_score,priority_score",
+      "packet": "PROC|CS|return:CS-Agent|p:1|aacp:1.4|res:ticket_triage|req:categorise,sentiment_score,priority_score",
       "tags": [
         "ticket",
         "triage",
@@ -273,7 +273,7 @@
       "description": "Generate agent performance report including CSAT, resolution rate and AHT",
       "task": "REPORT",
       "dom": "CS",
-      "packet": "REPORT|CS|return:CS-Agent|p:2|aacp:1.1|res:agent_performance|fmt:xlsx|period:current",
+      "packet": "REPORT|CS|return:CS-Agent|p:2|aacp:1.4|res:agent_performance|fmt:xlsx|period:current",
       "tags": [
         "agent",
         "performance",
@@ -290,7 +290,7 @@
       "description": "Generate monthly NPS report by product line and customer segment",
       "task": "REPORT",
       "dom": "CS",
-      "packet": "REPORT|CS|return:CS-Agent|p:2|aacp:1.1|res:nps_monthly|fmt:xlsx|period:current",
+      "packet": "REPORT|CS|return:CS-Agent|p:2|aacp:1.4|res:nps_monthly|fmt:xlsx|period:current",
       "tags": [
         "nps",
         "report",
@@ -307,7 +307,7 @@
       "description": "Generate SLA compliance report by ticket category and agent for management review",
       "task": "REPORT",
       "dom": "CS",
-      "packet": "REPORT|CS|return:CS-Agent|p:2|aacp:1.1|res:sla_compliance|fmt:xlsx|period:current",
+      "packet": "REPORT|CS|return:CS-Agent|p:2|aacp:1.4|res:sla_compliance|fmt:xlsx|period:current",
       "tags": [
         "sla",
         "compliance",
@@ -324,7 +324,7 @@
       "description": "Generate ticket volume report by channel, category and resolution time",
       "task": "REPORT",
       "dom": "CS",
-      "packet": "REPORT|CS|return:CS-Agent|p:2|aacp:1.1|res:ticket_volume|fmt:xlsx|period:current",
+      "packet": "REPORT|CS|return:CS-Agent|p:2|aacp:1.4|res:ticket_volume|fmt:xlsx|period:current",
       "tags": [
         "tickets",
         "volume",
@@ -341,7 +341,7 @@
       "description": "Resolve customer dispute over billing amount including investigation and credit or correction",
       "task": "RESOLVE",
       "dom": "CS",
-      "packet": "RESOLVE|CS|return:CS-Agent|p:1|aacp:1.1|res:billing_dispute|sentiment:negative|tone:empathetic|req:billing_review,correction_or_credit",
+      "packet": "RESOLVE|CS|return:CS-Agent|p:1|aacp:1.4|res:billing_dispute|sentiment:negative|tone:empathetic|req:billing_review,correction_or_credit",
       "tags": [
         "billing",
         "dispute",
@@ -358,7 +358,7 @@
       "description": "Generate resolution strategy with tone and goodwill guidance based on customer value",
       "task": "RESOLVE",
       "dom": "CS",
-      "packet": "RESOLVE|CS|return:CS-Agent|p:1|aacp:1.1|res:complaint|req:resolve|sentiment:negative|tone:empathetic",
+      "packet": "RESOLVE|CS|return:CS-Agent|p:1|aacp:1.4|res:complaint|req:resolve|sentiment:negative|tone:empathetic",
       "tags": [
         "complaint",
         "resolution",
@@ -375,7 +375,7 @@
       "description": "Resolve customer complaint about non-delivery or late delivery with replacement or refund decision",
       "task": "RESOLVE",
       "dom": "CS",
-      "packet": "RESOLVE|CS|return:CS-Agent|p:1|aacp:1.1|res:delivery_complaint|sentiment:negative|tone:empathetic|req:carrier_check,remedy",
+      "packet": "RESOLVE|CS|return:CS-Agent|p:1|aacp:1.4|res:delivery_complaint|sentiment:negative|tone:empathetic|req:carrier_check,remedy",
       "tags": [
         "delivery",
         "complaint",
@@ -392,7 +392,7 @@
       "description": "Generate resolution with goodwill consideration for high-value customer complaints",
       "task": "RESOLVE",
       "dom": "CS",
-      "packet": "RESOLVE|CS|return:CS-Agent|p:1|aacp:1.1|res:complaint|req:resolve,goodwill_consider|sentiment:negative|tone:empathetic",
+      "packet": "RESOLVE|CS|return:CS-Agent|p:1|aacp:1.4|res:complaint|req:resolve,goodwill_consider|sentiment:negative|tone:empathetic",
       "tags": [
         "complaint",
         "resolution",
@@ -409,7 +409,7 @@
       "description": "Resolve customer complaint about product fault with replacement, repair, or refund decision",
       "task": "RESOLVE",
       "dom": "CS",
-      "packet": "RESOLVE|CS|return:CS-Agent|p:1|aacp:1.1|res:product_fault|sentiment:negative|tone:empathetic|req:fault_assess,remedy_decision",
+      "packet": "RESOLVE|CS|return:CS-Agent|p:1|aacp:1.4|res:product_fault|sentiment:negative|tone:empathetic|req:fault_assess,remedy_decision",
       "tags": [
         "product",
         "fault",
@@ -426,7 +426,7 @@
       "description": "Send personalised follow-up message to NPS detractor or passive",
       "task": "SEND",
       "dom": "CS",
-      "packet": "SEND|CS|return:CS-Agent|p:2|aacp:1.1|subj:nps_follow_up|tone:empathetic|flag_msg:follow_up_sent",
+      "packet": "SEND|CS|return:CS-Agent|p:2|aacp:1.4|subj:nps_follow_up|tone:empathetic|flag_msg:follow_up_sent",
       "tags": [
         "nps",
         "follow-up",
@@ -443,7 +443,7 @@
       "description": "Send resolution response to customer via their preferred channel",
       "task": "SEND",
       "dom": "CS",
-      "packet": "SEND|CS|return:CS-Agent|p:1|aacp:1.1|subj:complaint_resolution|tone:empathetic|flag_msg:resolution_sent",
+      "packet": "SEND|CS|return:CS-Agent|p:1|aacp:1.4|subj:complaint_resolution|tone:empathetic|flag_msg:resolution_sent",
       "tags": [
         "resolution",
         "response",
@@ -460,7 +460,7 @@
       "description": "Send proactive retention outreach to at-risk customer with personalised offer",
       "task": "SEND",
       "dom": "CS",
-      "packet": "SEND|CS|return:CS-Agent|p:1|aacp:1.1|subj:retention_outreach|tone:empathetic|sentiment:positive",
+      "packet": "SEND|CS|return:CS-Agent|p:1|aacp:1.4|subj:retention_outreach|tone:empathetic|sentiment:positive",
       "tags": [
         "churn",
         "retention",
@@ -477,7 +477,7 @@
       "description": "Acknowledge receipt of supplier invoice and confirm expected payment date",
       "task": "ACK",
       "dom": "FIN",
-      "packet": "ACK|FIN|return:FIN-Agent|p:3|aacp:1.1|res:invoice|status:acknowledged",
+      "packet": "ACK|FIN|return:FIN-Agent|p:3|aacp:1.4|res:invoice|status:acknowledged",
       "tags": [
         "invoice",
         "receipt",
@@ -494,7 +494,7 @@
       "description": "Generate annual budget template for department heads based on prior year actuals",
       "task": "BUILD",
       "dom": "FIN",
-      "packet": "BUILD|FIN|return:FIN-Agent|p:2|aacp:1.1|res:budget_template|req:prior_year_actuals,growth_assumptions,dept_config",
+      "packet": "BUILD|FIN|return:FIN-Agent|p:2|aacp:1.4|res:budget_template|req:prior_year_actuals,growth_assumptions,dept_config",
       "tags": [
         "budget",
         "template",
@@ -511,7 +511,7 @@
       "description": "Create new cost centre in the GL with approved budget allocation and owner assignment",
       "task": "BUILD",
       "dom": "FIN",
-      "packet": "BUILD|FIN|return:FIN-Agent|p:1|aacp:1.1|res:cost_centre|req:gl_code,budget_allocation,owner_assignment",
+      "packet": "BUILD|FIN|return:FIN-Agent|p:1|aacp:1.4|res:cost_centre|req:gl_code,budget_allocation,owner_assignment",
       "tags": [
         "cost-centre",
         "gl",
@@ -528,7 +528,7 @@
       "description": "Generate payment schedule for multi-stage contract or subscription agreement",
       "task": "BUILD",
       "dom": "FIN",
-      "packet": "BUILD|FIN|return:FIN-Agent|p:2|aacp:1.1|res:payment_schedule|req:contract_value,milestones,payment_terms",
+      "packet": "BUILD|FIN|return:FIN-Agent|p:2|aacp:1.4|res:payment_schedule|req:contract_value,milestones,payment_terms",
       "tags": [
         "payment",
         "schedule",
@@ -545,7 +545,7 @@
       "description": "Calculate period accruals and post journal entries to GL",
       "task": "CALC",
       "dom": "FIN",
-      "packet": "CALC|FIN|return:FIN-Agent|p:1|aacp:1.1|res:accruals|rules:accrual_policy_v2|validate:period_cutoff",
+      "packet": "CALC|FIN|return:FIN-Agent|p:1|aacp:1.4|res:accruals|rules:accrual_policy_v2|validate:period_cutoff",
       "tags": [
         "month-end",
         "accruals",
@@ -562,7 +562,7 @@
       "description": "Calculate variance between actual spend and approved budget for each cost centre",
       "task": "CALC",
       "dom": "FIN",
-      "packet": "CALC|FIN|return:FIN-Agent|p:2|aacp:1.1|res:budget_variance|validate:budget_cc|highlight:MATERIAL_VARIANCE",
+      "packet": "CALC|FIN|return:FIN-Agent|p:2|aacp:1.4|res:budget_variance|validate:budget_cc|highlight:MATERIAL_VARIANCE",
       "tags": [
         "budget",
         "variance",
@@ -579,7 +579,7 @@
       "description": "Revalue foreign currency balances at current exchange rates",
       "task": "CALC",
       "dom": "FIN",
-      "packet": "CALC|FIN|return:FIN-Agent|p:2|aacp:1.1|res:fx_revaluation|rules:fx_policy|validate:period_end_rates",
+      "packet": "CALC|FIN|return:FIN-Agent|p:2|aacp:1.4|res:fx_revaluation|rules:fx_policy|validate:period_end_rates",
       "tags": [
         "fx",
         "revaluation",
@@ -596,7 +596,7 @@
       "description": "Run variance analysis comparing current period to prior period and budget",
       "task": "CALC",
       "dom": "FIN",
-      "packet": "CALC|FIN|return:FIN-Agent|p:2|aacp:1.1|res:variance_analysis|highlight:MATERIAL_VARIANCE",
+      "packet": "CALC|FIN|return:FIN-Agent|p:2|aacp:1.4|res:variance_analysis|highlight:MATERIAL_VARIANCE",
       "tags": [
         "month-end",
         "variance",
@@ -613,7 +613,7 @@
       "description": "Calculate output and input VAT for quarterly VAT return submission",
       "task": "CALC",
       "dom": "FIN",
-      "packet": "CALC|FIN|return:FIN-Agent|p:1|aacp:1.1|res:vat_return|rules:vat_scheme|validate:hmrc_rules",
+      "packet": "CALC|FIN|return:FIN-Agent|p:1|aacp:1.4|res:vat_return|rules:vat_scheme|validate:hmrc_rules",
       "tags": [
         "vat",
         "tax",
@@ -630,7 +630,7 @@
       "description": "Retrieve approved budget and YTD spend for all cost centres",
       "task": "FETCH",
       "dom": "FIN",
-      "packet": "FETCH|FIN|return:FIN-Agent|p:1|aacp:1.1|res:budget_cc|period:current|fmt:json",
+      "packet": "FETCH|FIN|return:FIN-Agent|p:1|aacp:1.4|res:budget_cc|period:current|fmt:json",
       "tags": [
         "budget",
         "cost-centre",
@@ -647,7 +647,7 @@
       "description": "Retrieve all expense claims submitted in the current period for processing",
       "task": "FETCH",
       "dom": "FIN",
-      "packet": "FETCH|FIN|return:FIN-Agent|p:2|aacp:1.1|res:expense_claims|filter:status=submitted|fmt:json",
+      "packet": "FETCH|FIN|return:FIN-Agent|p:2|aacp:1.4|res:expense_claims|filter:status=submitted|fmt:json",
       "tags": [
         "expenses",
         "claims",
@@ -664,7 +664,7 @@
       "description": "Retrieve current foreign currency exposure by currency pair",
       "task": "FETCH",
       "dom": "FIN",
-      "packet": "FETCH|FIN|return:FIN-Agent|p:2|aacp:1.1|res:fx_exposure|filter:currency!=GBP|fmt:json",
+      "packet": "FETCH|FIN|return:FIN-Agent|p:2|aacp:1.4|res:fx_exposure|filter:currency!=GBP|fmt:json",
       "tags": [
         "fx",
         "currency",
@@ -681,7 +681,7 @@
       "description": "Retrieve all supplier invoices past payment due date for chasing",
       "task": "FETCH",
       "dom": "FIN",
-      "packet": "FETCH|FIN|return:FIN-Agent|p:2|aacp:1.1|res:invoices|filter:status=overdue|fmt:json",
+      "packet": "FETCH|FIN|return:FIN-Agent|p:2|aacp:1.4|res:invoices|filter:status=overdue|fmt:json",
       "tags": [
         "invoice",
         "overdue",
@@ -698,7 +698,7 @@
       "description": "Retrieve all approved invoices and expenses due for payment in current payment run",
       "task": "FETCH",
       "dom": "FIN",
-      "packet": "FETCH|FIN|return:FIN-Agent|p:1|aacp:1.1|res:payment_run|filter:status=approved|fmt:json",
+      "packet": "FETCH|FIN|return:FIN-Agent|p:1|aacp:1.4|res:payment_run|filter:status=approved|fmt:json",
       "tags": [
         "payment",
         "run",
@@ -715,7 +715,7 @@
       "description": "Retrieve trial balance and open items from GL for month-end close",
       "task": "FETCH",
       "dom": "FIN",
-      "packet": "FETCH|FIN|return:FIN-Agent|p:1|aacp:1.1|res:trial_balance|period:current|fmt:json",
+      "packet": "FETCH|FIN|return:FIN-Agent|p:1|aacp:1.4|res:trial_balance|period:current|fmt:json",
       "tags": [
         "month-end",
         "trial-balance",
@@ -732,7 +732,7 @@
       "description": "Retrieve all VAT-applicable transactions for the current VAT period",
       "task": "FETCH",
       "dom": "FIN",
-      "packet": "FETCH|FIN|return:FIN-Agent|p:1|aacp:1.1|res:vat_transactions|period:current|fmt:json",
+      "packet": "FETCH|FIN|return:FIN-Agent|p:1|aacp:1.4|res:vat_transactions|period:current|fmt:json",
       "tags": [
         "vat",
         "tax",
@@ -749,7 +749,7 @@
       "description": "Flag cost centres where actual spend has breached approved budget threshold",
       "task": "FLAG",
       "dom": "FIN",
-      "packet": "FLAG|FIN|return:FIN-Agent|p:1|aacp:1.1|res:budget_cc|validate:threshold=90|highlight:BREACH",
+      "packet": "FLAG|FIN|return:FIN-Agent|p:1|aacp:1.4|res:budget_cc|validate:threshold=90|highlight:BREACH",
       "tags": [
         "budget",
         "breach",
@@ -766,7 +766,7 @@
       "description": "Flag cost centres approaching approved budget limit requiring attention",
       "task": "FLAG",
       "dom": "FIN",
-      "packet": "FLAG|FIN|return:FIN-Agent|p:2|aacp:1.1|res:budget_cc|validate:threshold=85|highlight:WARNING",
+      "packet": "FLAG|FIN|return:FIN-Agent|p:2|aacp:1.4|res:budget_cc|validate:threshold=85|highlight:WARNING",
       "tags": [
         "budget",
         "warning",
@@ -783,7 +783,7 @@
       "description": "Flag expense claims that exceed policy limits or lack required receipts",
       "task": "FLAG",
       "dom": "FIN",
-      "packet": "FLAG|FIN|return:FIN-Agent|p:2|aacp:1.1|res:expense_claims|validate:expense_policy|highlight:REVIEW_REQ",
+      "packet": "FLAG|FIN|return:FIN-Agent|p:2|aacp:1.4|res:expense_claims|validate:expense_policy|highlight:REVIEW_REQ",
       "tags": [
         "expenses",
         "policy",
@@ -800,7 +800,7 @@
       "description": "Flag currency exposures that exceed approved hedging policy limits",
       "task": "FLAG",
       "dom": "FIN",
-      "packet": "FLAG|FIN|return:FIN-Agent|p:1|aacp:1.1|res:fx_exposure|validate:hedging_limits|highlight:BREACH",
+      "packet": "FLAG|FIN|return:FIN-Agent|p:1|aacp:1.4|res:fx_exposure|validate:hedging_limits|highlight:BREACH",
       "tags": [
         "fx",
         "limit",
@@ -817,7 +817,7 @@
       "description": "Flag invoices where amount does not match purchase order for manual review",
       "task": "FLAG",
       "dom": "FIN",
-      "packet": "FLAG|FIN|return:FIN-Agent|p:1|aacp:1.1|res:invoice|issue:amount_mismatch|highlight:REVIEW_REQ",
+      "packet": "FLAG|FIN|return:FIN-Agent|p:1|aacp:1.4|res:invoice|issue:amount_mismatch|highlight:REVIEW_REQ",
       "tags": [
         "invoice",
         "discrepancy",
@@ -834,7 +834,7 @@
       "description": "Write close certification to audit trail confirming month-end is complete",
       "task": "LOG",
       "dom": "FIN",
-      "packet": "LOG|FIN|return:AUD-Agent|p:2|aacp:1.1|res:close_certification|actor:FIN-Agent|status:certified",
+      "packet": "LOG|FIN|return:AUD-Agent|p:2|aacp:1.4|res:close_certification|actor:FIN-Agent|status:certified",
       "tags": [
         "month-end",
         "certification",
@@ -851,7 +851,7 @@
       "description": "Write invoice processing completion record to AP audit trail",
       "task": "LOG",
       "dom": "FIN",
-      "packet": "LOG|FIN|return:AUD-Agent|p:3|aacp:1.1|actor:FIN-Agent|status:processed|res:invoice",
+      "packet": "LOG|FIN|return:AUD-Agent|p:3|aacp:1.4|actor:FIN-Agent|status:processed|res:invoice",
       "tags": [
         "invoice",
         "audit",
@@ -868,7 +868,7 @@
       "description": "Write payment run completion record to finance audit trail",
       "task": "LOG",
       "dom": "FIN",
-      "packet": "LOG|FIN|return:AUD-Agent|p:2|aacp:1.1|res:payment_run|actor:FIN-Agent|status:complete",
+      "packet": "LOG|FIN|return:AUD-Agent|p:2|aacp:1.4|res:payment_run|actor:FIN-Agent|status:complete",
       "tags": [
         "payment",
         "run",
@@ -885,7 +885,7 @@
       "description": "Write VAT return submission confirmation to compliance audit trail",
       "task": "LOG",
       "dom": "FIN",
-      "packet": "LOG|FIN|return:AUD-Agent|p:1|aacp:1.1|res:vat_return|actor:FIN-Agent|status:submitted",
+      "packet": "LOG|FIN|return:AUD-Agent|p:1|aacp:1.4|res:vat_return|actor:FIN-Agent|status:submitted",
       "tags": [
         "vat",
         "tax",
@@ -902,7 +902,7 @@
       "description": "Merge GL transaction data with bank statement for period reconciliation",
       "task": "MERGE",
       "dom": "FIN",
-      "packet": "MERGE|FIN|return:FIN-Agent|p:1|aacp:1.1|res:gl_bank_merged|rules:recon_v1|validate:period_match",
+      "packet": "MERGE|FIN|return:FIN-Agent|p:1|aacp:1.4|res:gl_bank_merged|rules:recon_v1|validate:period_match",
       "tags": [
         "gl",
         "bank",
@@ -919,7 +919,7 @@
       "description": "Merge financial accounts from multiple legal entities for consolidated reporting",
       "task": "MERGE",
       "dom": "FIN",
-      "packet": "MERGE|FIN|return:FIN-Agent|p:2|aacp:1.1|res:consolidated_accounts|rules:consolidation_v1|validate:intercompany_elim",
+      "packet": "MERGE|FIN|return:FIN-Agent|p:2|aacp:1.4|res:consolidated_accounts|rules:consolidation_v1|validate:intercompany_elim",
       "tags": [
         "consolidation",
         "multi-entity",
@@ -936,7 +936,7 @@
       "description": "Merge period payroll actuals with cost centre budget data for month-end close",
       "task": "MERGE",
       "dom": "FIN",
-      "packet": "MERGE|FIN|return:FIN-Agent|p:1|aacp:1.1|res:payroll_budget_merged|rules:close_v1|validate:budget_cc",
+      "packet": "MERGE|FIN|return:FIN-Agent|p:1|aacp:1.4|res:payroll_budget_merged|rules:close_v1|validate:budget_cc",
       "tags": [
         "payroll",
         "budget",
@@ -953,7 +953,7 @@
       "description": "Route approved expense claims for payment in next payment run",
       "task": "PROC",
       "dom": "FIN",
-      "packet": "PROC|FIN|return:FIN-Agent|p:2|aacp:1.1|res:expense_claims|req:approve|validate:manager_sign_off",
+      "packet": "PROC|FIN|return:FIN-Agent|p:2|aacp:1.4|res:expense_claims|req:approve|validate:manager_sign_off",
       "tags": [
         "expenses",
         "approval",
@@ -970,7 +970,7 @@
       "description": "Approve payment run for invoices that have passed three-way match validation",
       "task": "PROC",
       "dom": "FIN",
-      "packet": "PROC|FIN|return:FIN-Agent|p:1|aacp:1.1|res:payment|req:approve|validate:authorisation_limit",
+      "packet": "PROC|FIN|return:FIN-Agent|p:1|aacp:1.4|res:payment|req:approve|validate:authorisation_limit",
       "tags": [
         "invoice",
         "payment",
@@ -987,7 +987,7 @@
       "description": "Reconcile bank statements against GL entries for month-end close",
       "task": "PROC",
       "dom": "FIN",
-      "packet": "PROC|FIN|return:FIN-Agent|p:1|aacp:1.1|res:bank_reconciliation|rules:recon_v1|validate:gl_match",
+      "packet": "PROC|FIN|return:FIN-Agent|p:1|aacp:1.4|res:bank_reconciliation|rules:recon_v1|validate:gl_match",
       "tags": [
         "month-end",
         "reconciliation",
@@ -1004,7 +1004,7 @@
       "description": "Process and execute payment run for all approved items",
       "task": "PROC",
       "dom": "FIN",
-      "packet": "PROC|FIN|return:FIN-Agent|p:1|aacp:1.1|res:payment_run|req:execute|validate:dual_authorisation",
+      "packet": "PROC|FIN|return:FIN-Agent|p:1|aacp:1.4|res:payment_run|req:execute|validate:dual_authorisation",
       "tags": [
         "payment",
         "run",
@@ -1021,7 +1021,7 @@
       "description": "Match supplier invoice against purchase order and goods receipt for AP processing",
       "task": "PROC",
       "dom": "FIN",
-      "packet": "PROC|FIN|return:FIN-Agent|p:2|aacp:1.1|res:invoice|req:po_match,gr_match|validate:three_way_match",
+      "packet": "PROC|FIN|return:FIN-Agent|p:2|aacp:1.4|res:invoice|req:po_match,gr_match|validate:three_way_match",
       "tags": [
         "invoice",
         "ap",
@@ -1038,7 +1038,7 @@
       "description": "Generate accounts payable aging report showing overdue invoices by aging bucket",
       "task": "REPORT",
       "dom": "FIN",
-      "packet": "REPORT|FIN|return:FIN-Agent|p:2|aacp:1.1|res:ap_aging|fmt:xlsx|highlight:OVERDUE",
+      "packet": "REPORT|FIN|return:FIN-Agent|p:2|aacp:1.4|res:ap_aging|fmt:xlsx|highlight:OVERDUE",
       "tags": [
         "invoice",
         "aging",
@@ -1055,7 +1055,7 @@
       "description": "Generate balance sheet as at period end for board reporting",
       "task": "REPORT",
       "dom": "FIN",
-      "packet": "REPORT|FIN|return:FIN-Agent|p:2|aacp:1.1|res:balance_sheet|fmt:pdf,xlsx|period:current",
+      "packet": "REPORT|FIN|return:FIN-Agent|p:2|aacp:1.4|res:balance_sheet|fmt:pdf,xlsx|period:current",
       "tags": [
         "balance-sheet",
         "report",
@@ -1072,7 +1072,7 @@
       "description": "Generate budget versus actual spend report for finance director review",
       "task": "REPORT",
       "dom": "FIN",
-      "packet": "REPORT|FIN|return:FIN-Agent|p:2|aacp:1.1|res:budget_vs_actual|fmt:xlsx,pdf|highlight:OVER_BUDGET",
+      "packet": "REPORT|FIN|return:FIN-Agent|p:2|aacp:1.4|res:budget_vs_actual|fmt:xlsx,pdf|highlight:OVER_BUDGET",
       "tags": [
         "budget",
         "actual",
@@ -1089,7 +1089,7 @@
       "description": "Generate cash flow statement for the period including operating and investing activities",
       "task": "REPORT",
       "dom": "FIN",
-      "packet": "REPORT|FIN|return:FIN-Agent|p:2|aacp:1.1|res:cash_flow|fmt:pdf,xlsx|period:current",
+      "packet": "REPORT|FIN|return:FIN-Agent|p:2|aacp:1.4|res:cash_flow|fmt:pdf,xlsx|period:current",
       "tags": [
         "cash-flow",
         "report",
@@ -1106,7 +1106,7 @@
       "description": "Generate expense claims summary report by department and category",
       "task": "REPORT",
       "dom": "FIN",
-      "packet": "REPORT|FIN|return:FIN-Agent|p:3|aacp:1.1|res:expense_summary|fmt:xlsx|period:current",
+      "packet": "REPORT|FIN|return:FIN-Agent|p:3|aacp:1.4|res:expense_summary|fmt:xlsx|period:current",
       "tags": [
         "expenses",
         "summary",
@@ -1123,7 +1123,7 @@
       "description": "Generate finance KPI dashboard with key metrics for CFO review",
       "task": "REPORT",
       "dom": "FIN",
-      "packet": "REPORT|FIN|return:FIN-Agent|p:2|aacp:1.1|res:finance_kpis|fmt:pdf|highlight:OFF_TRACK",
+      "packet": "REPORT|FIN|return:FIN-Agent|p:2|aacp:1.4|res:finance_kpis|fmt:pdf|highlight:OFF_TRACK",
       "tags": [
         "kpi",
         "dashboard",
@@ -1140,7 +1140,7 @@
       "description": "Generate management accounts pack for CFO and Finance Director review",
       "task": "REPORT",
       "dom": "FIN",
-      "packet": "REPORT|FIN|return:FIN-Agent|p:2|aacp:1.1|res:mgmt_accounts|fmt:pdf,xlsx|highlight:REVIEW_REQ",
+      "packet": "REPORT|FIN|return:FIN-Agent|p:2|aacp:1.4|res:mgmt_accounts|fmt:pdf,xlsx|highlight:REVIEW_REQ",
       "tags": [
         "month-end",
         "management-accounts",
@@ -1157,7 +1157,7 @@
       "description": "Generate P&L report for the period for board and management review",
       "task": "REPORT",
       "dom": "FIN",
-      "packet": "REPORT|FIN|return:FIN-Agent|p:2|aacp:1.1|res:pnl|fmt:pdf,xlsx|period:current|highlight:REVIEW_REQ",
+      "packet": "REPORT|FIN|return:FIN-Agent|p:2|aacp:1.4|res:pnl|fmt:pdf,xlsx|period:current|highlight:REVIEW_REQ",
       "tags": [
         "pnl",
         "report",
@@ -1174,7 +1174,7 @@
       "description": "Resolve dispute where employee challenges rejected expense claim with review and final decision",
       "task": "RESOLVE",
       "dom": "FIN",
-      "packet": "RESOLVE|FIN|return:FIN-Agent|p:2|aacp:1.1|res:expense_dispute|req:policy_review,manager_confirm,final_decision",
+      "packet": "RESOLVE|FIN|return:FIN-Agent|p:2|aacp:1.4|res:expense_dispute|req:policy_review,manager_confirm,final_decision",
       "tags": [
         "expense",
         "dispute",
@@ -1191,7 +1191,7 @@
       "description": "Resolve dispute with supplier over invoiced amount, including investigation and agreed settlement",
       "task": "RESOLVE",
       "dom": "FIN",
-      "packet": "RESOLVE|FIN|return:FIN-Agent|p:2|aacp:1.1|res:invoice_dispute|req:po_review,supplier_contact,settlement",
+      "packet": "RESOLVE|FIN|return:FIN-Agent|p:2|aacp:1.4|res:invoice_dispute|req:po_review,supplier_contact,settlement",
       "tags": [
         "invoice",
         "dispute",
@@ -1208,7 +1208,7 @@
       "description": "Send payment remittance advice to supplier confirming payment details",
       "task": "SEND",
       "dom": "FIN",
-      "packet": "SEND|FIN|return:FIN-Agent|p:3|aacp:1.1|subj:payment_remittance|flag_msg:payment_sent",
+      "packet": "SEND|FIN|return:FIN-Agent|p:3|aacp:1.4|subj:payment_remittance|flag_msg:payment_sent",
       "tags": [
         "invoice",
         "remittance",
@@ -1225,7 +1225,7 @@
       "description": "Synchronise current exchange rates from treasury system to GL for period-end revaluation",
       "task": "SYNC",
       "dom": "FIN",
-      "packet": "SYNC|FIN|return:FIN-Agent|p:1|aacp:1.1|res:fx_rate_sync|validate:rate_freshness",
+      "packet": "SYNC|FIN|return:FIN-Agent|p:1|aacp:1.4|res:fx_rate_sync|validate:rate_freshness",
       "tags": [
         "sync",
         "fx",
@@ -1242,7 +1242,7 @@
       "description": "Acknowledge receipt of payroll approval from Finance Director before processing",
       "task": "ACK",
       "dom": "HR",
-      "packet": "ACK|HR|return:HR-Agent|p:1|aacp:1.1|res:payroll_approval|status:acknowledged",
+      "packet": "ACK|HR|return:HR-Agent|p:1|aacp:1.4|res:payroll_approval|status:acknowledged",
       "tags": [
         "payroll",
         "approval",
@@ -1259,7 +1259,7 @@
       "description": "Acknowledge receipt of signed policy document from authorised approver",
       "task": "ACK",
       "dom": "HR",
-      "packet": "ACK|HR|return:HR-Agent|p:2|aacp:1.1|res:policy_sign_off|status:acknowledged",
+      "packet": "ACK|HR|return:HR-Agent|p:2|aacp:1.4|res:policy_sign_off|status:acknowledged",
       "tags": [
         "policy",
         "sign-off",
@@ -1276,7 +1276,7 @@
       "description": "Generate structured job description for new or updated role using approved template",
       "task": "BUILD",
       "dom": "HR",
-      "packet": "BUILD|HR|return:HR-Agent|p:2|aacp:1.1|res:job_description|req:role_template,grade,responsibilities",
+      "packet": "BUILD|HR|return:HR-Agent|p:2|aacp:1.4|res:job_description|req:role_template,grade,responsibilities",
       "tags": [
         "job-description",
         "recruitment",
@@ -1293,7 +1293,7 @@
       "description": "Generate personalised onboarding checklist for new hire based on role and department",
       "task": "BUILD",
       "dom": "HR",
-      "packet": "BUILD|HR|return:HR-Agent|p:1|aacp:1.1|res:onboarding_checklist|req:role_config,dept_config,manager_tasks",
+      "packet": "BUILD|HR|return:HR-Agent|p:1|aacp:1.4|res:onboarding_checklist|req:role_config,dept_config,manager_tasks",
       "tags": [
         "onboarding",
         "checklist",
@@ -1310,7 +1310,7 @@
       "description": "Calculate statutory and contractual redundancy entitlement for affected employee",
       "task": "BUILD",
       "dom": "HR",
-      "packet": "BUILD|HR|return:HR-Agent|p:1|aacp:1.1|res:redundancy_calc|req:service_length,salary,notice_entitlement",
+      "packet": "BUILD|HR|return:HR-Agent|p:1|aacp:1.4|res:redundancy_calc|req:service_length,salary,notice_entitlement",
       "tags": [
         "redundancy",
         "calculation",
@@ -1327,7 +1327,7 @@
       "description": "Calculate variance between actual headcount and approved headcount plan",
       "task": "CALC",
       "dom": "HR",
-      "packet": "CALC|HR|return:HR-Agent|p:2|aacp:1.1|res:headcount_variance|validate:headcount_plan|highlight:MATERIAL_VARIANCE",
+      "packet": "CALC|HR|return:HR-Agent|p:2|aacp:1.4|res:headcount_variance|validate:headcount_plan|highlight:MATERIAL_VARIANCE",
       "tags": [
         "headcount",
         "variance",
@@ -1344,7 +1344,7 @@
       "description": "Calculate net pay by applying PAYE, NI, and pension deductions to gross salary",
       "task": "CALC",
       "dom": "HR",
-      "packet": "CALC|HR|return:HR-Agent|p:1|aacp:1.1|res:net_pay|rules:payroll_v2|validate:deductions",
+      "packet": "CALC|HR|return:HR-Agent|p:1|aacp:1.4|res:net_pay|rules:payroll_v2|validate:deductions",
       "tags": [
         "payroll",
         "net-pay",
@@ -1361,7 +1361,7 @@
       "description": "Calculate pay equity metrics across gender, ethnicity and role level for reporting",
       "task": "CALC",
       "dom": "HR",
-      "packet": "CALC|HR|return:HR-Agent|p:2|aacp:1.1|res:pay_equity|validate:equity_rules|highlight:MATERIAL_VARIANCE",
+      "packet": "CALC|HR|return:HR-Agent|p:2|aacp:1.4|res:pay_equity|validate:equity_rules|highlight:MATERIAL_VARIANCE",
       "tags": [
         "compensation",
         "equity",
@@ -1378,7 +1378,7 @@
       "description": "Calculate variance between current and prior period payroll, flag material differences",
       "task": "CALC",
       "dom": "HR",
-      "packet": "CALC|HR|return:HR-Agent|p:2|aacp:1.1|res:payroll_variance|highlight:MATERIAL_VARIANCE",
+      "packet": "CALC|HR|return:HR-Agent|p:2|aacp:1.4|res:payroll_variance|highlight:MATERIAL_VARIANCE",
       "tags": [
         "payroll",
         "variance",
@@ -1395,7 +1395,7 @@
       "description": "Retrieve all absence records for the current period including type and duration",
       "task": "FETCH",
       "dom": "HR",
-      "packet": "FETCH|HR|return:HR-Agent|p:2|aacp:1.1|res:absence_records|period:current|fmt:json",
+      "packet": "FETCH|HR|return:HR-Agent|p:2|aacp:1.4|res:absence_records|period:current|fmt:json",
       "tags": [
         "absence",
         "leave",
@@ -1412,7 +1412,7 @@
       "description": "Retrieve all active employee salary records for a given period, return as JSON array",
       "task": "FETCH",
       "dom": "HR",
-      "packet": "FETCH|HR|return:HR-Agent|p:1|aacp:1.1|res:emp_salary|filter:status=active|fmt:json",
+      "packet": "FETCH|HR|return:HR-Agent|p:1|aacp:1.4|res:emp_salary|filter:status=active|fmt:json",
       "tags": [
         "payroll",
         "salary",
@@ -1429,7 +1429,7 @@
       "description": "Retrieve all active contractors with engagement details and classification status",
       "task": "FETCH",
       "dom": "HR",
-      "packet": "FETCH|HR|return:HR-Agent|p:2|aacp:1.1|res:contractors|filter:status=active|fmt:json",
+      "packet": "FETCH|HR|return:HR-Agent|p:2|aacp:1.4|res:contractors|filter:status=active|fmt:json",
       "tags": [
         "contractor",
         "ir35",
@@ -1446,7 +1446,7 @@
       "description": "Retrieve current headcount figures broken down by department and employment type",
       "task": "FETCH",
       "dom": "HR",
-      "packet": "FETCH|HR|return:HR-Agent|p:2|aacp:1.1|res:headcount|filter:status=active|fmt:json",
+      "packet": "FETCH|HR|return:HR-Agent|p:2|aacp:1.4|res:headcount|filter:status=active|fmt:json",
       "tags": [
         "headcount",
         "department",
@@ -1463,7 +1463,7 @@
       "description": "Retrieve employee record for offboarding triggered by resignation or termination",
       "task": "FETCH",
       "dom": "HR",
-      "packet": "FETCH|HR|return:HR-Agent|p:1|aacp:1.1|res:employee_record|filter:status=leaver|fmt:json",
+      "packet": "FETCH|HR|return:HR-Agent|p:1|aacp:1.4|res:employee_record|filter:status=leaver|fmt:json",
       "tags": [
         "offboarding",
         "leaver",
@@ -1480,7 +1480,7 @@
       "description": "Retrieve new hire record from HR system triggered by start date",
       "task": "FETCH",
       "dom": "HR",
-      "packet": "FETCH|HR|return:HR-Agent|p:1|aacp:1.1|res:employee_record|filter:status=new_hire|fmt:json",
+      "packet": "FETCH|HR|return:HR-Agent|p:1|aacp:1.4|res:employee_record|filter:status=new_hire|fmt:json",
       "tags": [
         "onboarding",
         "jml",
@@ -1497,7 +1497,7 @@
       "description": "Retrieve all salary changes, promotions, and adjustments for the current period",
       "task": "FETCH",
       "dom": "HR",
-      "packet": "FETCH|HR|return:HR-Agent|p:1|aacp:1.1|res:payroll_changes|filter:period=current|fmt:json",
+      "packet": "FETCH|HR|return:HR-Agent|p:1|aacp:1.4|res:payroll_changes|filter:period=current|fmt:json",
       "tags": [
         "payroll",
         "changes",
@@ -1514,7 +1514,7 @@
       "description": "Retrieve list of employees with performance reviews due in the next 30 days",
       "task": "FETCH",
       "dom": "HR",
-      "packet": "FETCH|HR|return:HR-Agent|p:2|aacp:1.1|res:performance_reviews|filter:due_days<=30|fmt:json",
+      "packet": "FETCH|HR|return:HR-Agent|p:2|aacp:1.4|res:performance_reviews|filter:due_days<=30|fmt:json",
       "tags": [
         "performance",
         "review",
@@ -1531,7 +1531,7 @@
       "description": "Retrieve status of employee policy acknowledgements with outstanding items",
       "task": "FETCH",
       "dom": "HR",
-      "packet": "FETCH|HR|return:HR-Agent|p:2|aacp:1.1|res:policy_acknowledgements|filter:status=outstanding|fmt:json",
+      "packet": "FETCH|HR|return:HR-Agent|p:2|aacp:1.4|res:policy_acknowledgements|filter:status=outstanding|fmt:json",
       "tags": [
         "policy",
         "compliance",
@@ -1548,7 +1548,7 @@
       "description": "Retrieve current salary band data for benchmarking and compensation review",
       "task": "FETCH",
       "dom": "HR",
-      "packet": "FETCH|HR|return:HR-Agent|p:2|aacp:1.1|res:salary_bands|fmt:json",
+      "packet": "FETCH|HR|return:HR-Agent|p:2|aacp:1.4|res:salary_bands|fmt:json",
       "tags": [
         "compensation",
         "salary",
@@ -1565,7 +1565,7 @@
       "description": "Identify employees with Bradford factor score above threshold requiring manager review",
       "task": "FLAG",
       "dom": "HR",
-      "packet": "FLAG|HR|return:HR-Agent|p:2|aacp:1.1|res:bradford_factor|validate:threshold=400|highlight:REVIEW_REQ",
+      "packet": "FLAG|HR|return:HR-Agent|p:2|aacp:1.4|res:bradford_factor|validate:threshold=400|highlight:REVIEW_REQ",
       "tags": [
         "absence",
         "bradford",
@@ -1582,7 +1582,7 @@
       "description": "Identify contractors requiring IR35 status review due to engagement length or role change",
       "task": "FLAG",
       "dom": "HR",
-      "packet": "FLAG|HR|return:HR-Agent|p:1|aacp:1.1|res:ir35_review|validate:engagement_rules|highlight:REVIEW_REQ",
+      "packet": "FLAG|HR|return:HR-Agent|p:1|aacp:1.4|res:ir35_review|validate:engagement_rules|highlight:REVIEW_REQ",
       "tags": [
         "contractor",
         "ir35",
@@ -1599,7 +1599,7 @@
       "description": "Flag employees absent for more than 4 weeks for occupational health referral",
       "task": "FLAG",
       "dom": "HR",
-      "packet": "FLAG|HR|return:HR-Agent|p:1|aacp:1.1|res:long_term_sickness|validate:absence_days>=28|highlight:OH_REFERRAL",
+      "packet": "FLAG|HR|return:HR-Agent|p:1|aacp:1.4|res:long_term_sickness|validate:absence_days>=28|highlight:OH_REFERRAL",
       "tags": [
         "absence",
         "long-term",
@@ -1616,7 +1616,7 @@
       "description": "Flag performance reviews that are overdue and escalate to HR Director",
       "task": "FLAG",
       "dom": "HR",
-      "packet": "FLAG|HR|return:HR-Agent|p:1|aacp:1.1|res:overdue_reviews|status:overdue|highlight:ESCALATE",
+      "packet": "FLAG|HR|return:HR-Agent|p:1|aacp:1.4|res:overdue_reviews|status:overdue|highlight:ESCALATE",
       "tags": [
         "performance",
         "overdue",
@@ -1633,7 +1633,7 @@
       "description": "Write offboarding completion record to HR audit trail",
       "task": "LOG",
       "dom": "HR",
-      "packet": "LOG|HR|return:AUD-Agent|p:1|aacp:1.1|actor:HR-Agent|status:offboarded",
+      "packet": "LOG|HR|return:AUD-Agent|p:1|aacp:1.4|actor:HR-Agent|status:offboarded",
       "tags": [
         "offboarding",
         "audit",
@@ -1650,7 +1650,7 @@
       "description": "Write onboarding completion record to HR audit trail",
       "task": "LOG",
       "dom": "HR",
-      "packet": "LOG|HR|return:AUD-Agent|p:2|aacp:1.1|actor:HR-Agent|status:onboarding_complete",
+      "packet": "LOG|HR|return:AUD-Agent|p:2|aacp:1.4|actor:HR-Agent|status:onboarding_complete",
       "tags": [
         "onboarding",
         "audit",
@@ -1667,7 +1667,7 @@
       "description": "Write payroll run completion record to audit trail with agent chain and status",
       "task": "LOG",
       "dom": "HR",
-      "packet": "LOG|HR|return:AUD-Agent|p:2|aacp:1.1|actor:ORCHESTRATOR|status:review_required",
+      "packet": "LOG|HR|return:AUD-Agent|p:2|aacp:1.4|actor:ORCHESTRATOR|status:review_required",
       "tags": [
         "payroll",
         "audit",
@@ -1684,7 +1684,7 @@
       "description": "Merge employee salary data with cost centre budgets and calculate full payroll including PAYE and pension",
       "task": "MERGE",
       "dom": "HR",
-      "packet": "MERGE|HR|return:HR-Agent|p:1|aacp:1.1|rules:payroll_v2|validate:budget_cc",
+      "packet": "MERGE|HR|return:HR-Agent|p:1|aacp:1.4|rules:payroll_v2|validate:budget_cc",
       "tags": [
         "payroll",
         "merge",
@@ -1702,7 +1702,7 @@
       "description": "Merge permanent employee and contractor records for unified headcount reporting",
       "task": "MERGE",
       "dom": "HR",
-      "packet": "MERGE|HR|return:HR-Agent|p:2|aacp:1.1|res:unified_headcount|rules:headcount_v1|validate:no_duplicates",
+      "packet": "MERGE|HR|return:HR-Agent|p:2|aacp:1.4|res:unified_headcount|rules:headcount_v1|validate:no_duplicates",
       "tags": [
         "headcount",
         "merge",
@@ -1719,7 +1719,7 @@
       "description": "Send notification to hiring manager confirming new hire provisioning is complete",
       "task": "SEND",
       "dom": "HR",
-      "packet": "SEND|HR|return:HR-Agent|p:2|aacp:1.1|subj:new_hire_ready|flag_msg:provisioning_complete",
+      "packet": "SEND|HR|return:HR-Agent|p:2|aacp:1.4|subj:new_hire_ready|flag_msg:provisioning_complete",
       "tags": [
         "onboarding",
         "manager",
@@ -1736,7 +1736,7 @@
       "description": "Trigger and track completion of day one onboarding checklist items",
       "task": "PROC",
       "dom": "HR",
-      "packet": "PROC|HR|return:HR-Agent|p:1|aacp:1.1|res:onboarding_checklist|req:id_check,contract_sign,system_access",
+      "packet": "PROC|HR|return:HR-Agent|p:1|aacp:1.4|res:onboarding_checklist|req:id_check,contract_sign,system_access",
       "tags": [
         "onboarding",
         "checklist",
@@ -1753,7 +1753,7 @@
       "description": "Calculate and process final pay including accrued holiday and notice period pay",
       "task": "PROC",
       "dom": "HR",
-      "packet": "PROC|HR|return:HR-Agent|p:1|aacp:1.1|res:final_pay|req:holiday_accrual,notice_pay|validate:payroll_rules",
+      "packet": "PROC|HR|return:HR-Agent|p:1|aacp:1.4|res:final_pay|req:holiday_accrual,notice_pay|validate:payroll_rules",
       "tags": [
         "offboarding",
         "final-pay",
@@ -1770,7 +1770,7 @@
       "description": "Process and route employee leave request for manager approval",
       "task": "PROC",
       "dom": "HR",
-      "packet": "PROC|HR|return:HR-Agent|p:2|aacp:1.1|res:leave_request|req:manager_approval",
+      "packet": "PROC|HR|return:HR-Agent|p:2|aacp:1.4|res:leave_request|req:manager_approval",
       "tags": [
         "absence",
         "leave",
@@ -1787,7 +1787,7 @@
       "description": "Generate monthly absence summary report by department and absence type",
       "task": "REPORT",
       "dom": "HR",
-      "packet": "REPORT|HR|return:HR-Agent|p:3|aacp:1.1|res:absence_summary|fmt:xlsx|period:current",
+      "packet": "REPORT|HR|return:HR-Agent|p:3|aacp:1.4|res:absence_summary|fmt:xlsx|period:current",
       "tags": [
         "absence",
         "report",
@@ -1804,7 +1804,7 @@
       "description": "Generate annual compensation review report for board and remuneration committee",
       "task": "REPORT",
       "dom": "HR",
-      "packet": "REPORT|HR|return:HR-Agent|p:2|aacp:1.1|res:compensation_review|fmt:pdf,xlsx|period:annual",
+      "packet": "REPORT|HR|return:HR-Agent|p:2|aacp:1.4|res:compensation_review|fmt:pdf,xlsx|period:annual",
       "tags": [
         "compensation",
         "review",
@@ -1821,7 +1821,7 @@
       "description": "Generate contractor spend report comparing actual vs budgeted contractor costs",
       "task": "REPORT",
       "dom": "HR",
-      "packet": "REPORT|HR|return:HR-Agent|p:2|aacp:1.1|res:contractor_spend|fmt:xlsx|highlight:OVER_BUDGET",
+      "packet": "REPORT|HR|return:HR-Agent|p:2|aacp:1.4|res:contractor_spend|fmt:xlsx|highlight:OVER_BUDGET",
       "tags": [
         "contractor",
         "spend",
@@ -1838,7 +1838,7 @@
       "description": "Generate monthly headcount report for board pack including joiners and leavers",
       "task": "REPORT",
       "dom": "HR",
-      "packet": "REPORT|HR|return:HR-Agent|p:2|aacp:1.1|res:headcount_monthly|fmt:pdf,xlsx|period:current",
+      "packet": "REPORT|HR|return:HR-Agent|p:2|aacp:1.4|res:headcount_monthly|fmt:pdf,xlsx|period:current",
       "tags": [
         "headcount",
         "monthly",
@@ -1855,7 +1855,7 @@
       "description": "Generate formatted payroll report highlighting items requiring review in PDF and Excel format",
       "task": "REPORT",
       "dom": "HR",
-      "packet": "REPORT|HR|return:HR-Agent|p:2|aacp:1.1|fmt:pdf,xlsx|highlight:REVIEW_REQ",
+      "packet": "REPORT|HR|return:HR-Agent|p:2|aacp:1.4|fmt:pdf,xlsx|highlight:REVIEW_REQ",
       "tags": [
         "payroll",
         "report",
@@ -1872,7 +1872,7 @@
       "description": "Generate report showing performance review completion rate by department",
       "task": "REPORT",
       "dom": "HR",
-      "packet": "REPORT|HR|return:HR-Agent|p:2|aacp:1.1|res:review_completion|fmt:xlsx|highlight:BELOW_TARGET",
+      "packet": "REPORT|HR|return:HR-Agent|p:2|aacp:1.4|res:review_completion|fmt:xlsx|highlight:BELOW_TARGET",
       "tags": [
         "performance",
         "completion",
@@ -1889,7 +1889,7 @@
       "description": "Generate mandatory training completion report by department and training type",
       "task": "REPORT",
       "dom": "HR",
-      "packet": "REPORT|HR|return:HR-Agent|p:2|aacp:1.1|res:training_completion|fmt:xlsx|highlight:BELOW_TARGET",
+      "packet": "REPORT|HR|return:HR-Agent|p:2|aacp:1.4|res:training_completion|fmt:xlsx|highlight:BELOW_TARGET",
       "tags": [
         "training",
         "compliance",
@@ -1906,7 +1906,7 @@
       "description": "Resolve dispute where employee challenges absence record or Bradford factor calculation",
       "task": "RESOLVE",
       "dom": "HR",
-      "packet": "RESOLVE|HR|return:HR-Agent|p:2|aacp:1.1|res:absence_dispute|req:record_review,manager_confirm",
+      "packet": "RESOLVE|HR|return:HR-Agent|p:2|aacp:1.4|res:absence_dispute|req:record_review,manager_confirm",
       "tags": [
         "absence",
         "dispute",
@@ -1923,7 +1923,7 @@
       "description": "Route and manage formal employee grievance through HR resolution process",
       "task": "RESOLVE",
       "dom": "HR",
-      "packet": "RESOLVE|HR|return:HR-Agent|p:1|aacp:1.1|res:grievance|req:investigation,hearing,outcome_letter",
+      "packet": "RESOLVE|HR|return:HR-Agent|p:1|aacp:1.4|res:grievance|req:investigation,hearing,outcome_letter",
       "tags": [
         "grievance",
         "resolution",
@@ -1940,7 +1940,7 @@
       "description": "Resolve employee dispute over payroll calculation including investigation and correction",
       "task": "RESOLVE",
       "dom": "HR",
-      "packet": "RESOLVE|HR|return:HR-Agent|p:1|aacp:1.1|res:payroll_dispute|req:calculation_review,correction_if_needed",
+      "packet": "RESOLVE|HR|return:HR-Agent|p:1|aacp:1.4|res:payroll_dispute|req:calculation_review,correction_if_needed",
       "tags": [
         "payroll",
         "dispute",
@@ -1957,7 +1957,7 @@
       "description": "Send automated exit survey to departing employee on final day",
       "task": "SEND",
       "dom": "HR",
-      "packet": "SEND|HR|return:HR-Agent|p:3|aacp:1.1|subj:exit_survey|tone:empathetic",
+      "packet": "SEND|HR|return:HR-Agent|p:3|aacp:1.4|subj:exit_survey|tone:empathetic",
       "tags": [
         "offboarding",
         "exit",
@@ -1974,7 +1974,7 @@
       "description": "Distribute completed payroll report to Finance Director and HR Director for sign-off",
       "task": "SEND",
       "dom": "HR",
-      "packet": "SEND|HR|return:HR-Agent|p:2|aacp:1.1|to:fin_director,hr_director|subj:payroll_review_required|flag_msg:review_required",
+      "packet": "SEND|HR|return:HR-Agent|p:2|aacp:1.4|to:fin_director,hr_director|subj:payroll_review_required|flag_msg:review_required",
       "tags": [
         "payroll",
         "send",
@@ -1991,7 +1991,7 @@
       "description": "Send reminder to employees with outstanding policy acknowledgements",
       "task": "SEND",
       "dom": "HR",
-      "packet": "SEND|HR|return:HR-Agent|p:2|aacp:1.1|subj:policy_acknowledgement_required|highlight:ACTION_REQUIRED",
+      "packet": "SEND|HR|return:HR-Agent|p:2|aacp:1.4|subj:policy_acknowledgement_required|highlight:ACTION_REQUIRED",
       "tags": [
         "policy",
         "reminder",
@@ -2008,7 +2008,7 @@
       "description": "Send reminder to managers with performance reviews due in the next 14 days",
       "task": "SEND",
       "dom": "HR",
-      "packet": "SEND|HR|return:HR-Agent|p:2|aacp:1.1|subj:performance_review_reminder|highlight:ACTION_REQUIRED",
+      "packet": "SEND|HR|return:HR-Agent|p:2|aacp:1.4|subj:performance_review_reminder|highlight:ACTION_REQUIRED",
       "tags": [
         "performance",
         "reminder",
@@ -2025,7 +2025,7 @@
       "description": "Send welcome email to new hire with credentials and onboarding instructions",
       "task": "SEND",
       "dom": "HR",
-      "packet": "SEND|HR|return:HR-Agent|p:2|aacp:1.1|subj:welcome_onboarding|flag_msg:onboarding_complete",
+      "packet": "SEND|HR|return:HR-Agent|p:2|aacp:1.4|subj:welcome_onboarding|flag_msg:onboarding_complete",
       "tags": [
         "onboarding",
         "welcome",
@@ -2042,7 +2042,7 @@
       "description": "Synchronise actual headcount figures to workforce planning system for variance tracking",
       "task": "SYNC",
       "dom": "HR",
-      "packet": "SYNC|HR|return:HR-Agent|p:2|aacp:1.1|res:headcount_plan_sync|validate:period_match",
+      "packet": "SYNC|HR|return:HR-Agent|p:2|aacp:1.4|res:headcount_plan_sync|validate:period_match",
       "tags": [
         "sync",
         "headcount",
@@ -2059,7 +2059,7 @@
       "description": "Acknowledge receipt of change request and confirm CAB review date",
       "task": "ACK",
       "dom": "IT",
-      "packet": "ACK|IT|return:IT-Agent|p:2|aacp:1.1|res:change_request|status:acknowledged",
+      "packet": "ACK|IT|return:IT-Agent|p:2|aacp:1.4|res:change_request|status:acknowledged",
       "tags": [
         "change",
         "request",
@@ -2076,7 +2076,7 @@
       "description": "Acknowledge receipt of incident ticket and confirm SLA clock has started",
       "task": "ACK",
       "dom": "IT",
-      "packet": "ACK|IT|return:IT-Agent|p:1|aacp:1.1|res:incident_ticket|status:acknowledged",
+      "packet": "ACK|IT|return:IT-Agent|p:1|aacp:1.4|res:incident_ticket|status:acknowledged",
       "tags": [
         "incident",
         "receipt",
@@ -2093,7 +2093,7 @@
       "description": "Configure system access profile including email, VPN, and SharePoint permissions",
       "task": "BUILD",
       "dom": "IT",
-      "packet": "BUILD|IT|return:IT-Agent|p:1|aacp:1.1|res:access_profile|req:email,vpn,sharepoint",
+      "packet": "BUILD|IT|return:IT-Agent|p:1|aacp:1.4|res:access_profile|req:email,vpn,sharepoint",
       "tags": [
         "provisioning",
         "access",
@@ -2110,7 +2110,7 @@
       "description": "Create new user account in Active Directory or Entra ID with birthright access",
       "task": "BUILD",
       "dom": "IT",
-      "packet": "BUILD|IT|return:IT-Agent|p:1|aacp:1.1|res:ad_account|fields:email,dept,grp,pwd_reset",
+      "packet": "BUILD|IT|return:IT-Agent|p:1|aacp:1.4|res:ad_account|fields:email,dept,grp,pwd_reset",
       "tags": [
         "provisioning",
         "ad",
@@ -2127,7 +2127,7 @@
       "description": "Create API credentials and service account for new system integration",
       "task": "BUILD",
       "dom": "IT",
-      "packet": "BUILD|IT|return:IT-Agent|p:1|aacp:1.1|res:api_credentials|req:scope_review,secret_rotation_schedule",
+      "packet": "BUILD|IT|return:IT-Agent|p:1|aacp:1.4|res:api_credentials|req:scope_review,secret_rotation_schedule",
       "tags": [
         "api",
         "credentials",
@@ -2144,7 +2144,7 @@
       "description": "Create backup policy for new system including schedule, retention, and recovery test",
       "task": "BUILD",
       "dom": "IT",
-      "packet": "BUILD|IT|return:IT-Agent|p:2|aacp:1.1|res:backup_policy|req:schedule,retention_period,rto_rpo",
+      "packet": "BUILD|IT|return:IT-Agent|p:2|aacp:1.4|res:backup_policy|req:schedule,retention_period,rto_rpo",
       "tags": [
         "backup",
         "policy",
@@ -2161,7 +2161,7 @@
       "description": "Provision full developer environment including IDE, repositories, and cloud access",
       "task": "BUILD",
       "dom": "IT",
-      "packet": "BUILD|IT|return:IT-Agent|p:1|aacp:1.1|res:dev_environment|req:ide,repo_access,cloud_sandbox",
+      "packet": "BUILD|IT|return:IT-Agent|p:1|aacp:1.4|res:dev_environment|req:ide,repo_access,cloud_sandbox",
       "tags": [
         "developer",
         "environment",
@@ -2178,7 +2178,7 @@
       "description": "Create new monitoring alert rule for system or application threshold breach",
       "task": "BUILD",
       "dom": "IT",
-      "packet": "BUILD|IT|return:IT-Agent|p:2|aacp:1.1|res:alert_rule|req:threshold_config,notification_routing",
+      "packet": "BUILD|IT|return:IT-Agent|p:2|aacp:1.4|res:alert_rule|req:threshold_config,notification_routing",
       "tags": [
         "monitoring",
         "alert",
@@ -2195,7 +2195,7 @@
       "description": "Create VPN access profile with appropriate network zones for new or updated user",
       "task": "BUILD",
       "dom": "IT",
-      "packet": "BUILD|IT|return:IT-Agent|p:1|aacp:1.1|res:vpn_profile|req:network_zones,mfa_required",
+      "packet": "BUILD|IT|return:IT-Agent|p:1|aacp:1.4|res:vpn_profile|req:network_zones,mfa_required",
       "tags": [
         "vpn",
         "profile",
@@ -2212,7 +2212,7 @@
       "description": "Retrieve current software licence inventory including allocation and usage",
       "task": "FETCH",
       "dom": "IT",
-      "packet": "FETCH|IT|return:IT-Agent|p:2|aacp:1.1|res:licence_inventory|filter:status=active|fmt:json",
+      "packet": "FETCH|IT|return:IT-Agent|p:2|aacp:1.4|res:licence_inventory|filter:status=active|fmt:json",
       "tags": [
         "licences",
         "inventory",
@@ -2229,7 +2229,7 @@
       "description": "Retrieve all open IT incidents prioritised by severity for triage",
       "task": "FETCH",
       "dom": "IT",
-      "packet": "FETCH|IT|return:IT-Agent|p:1|aacp:1.1|res:incidents|filter:status=open|fmt:json",
+      "packet": "FETCH|IT|return:IT-Agent|p:1|aacp:1.4|res:incidents|filter:status=open|fmt:json",
       "tags": [
         "incident",
         "triage",
@@ -2246,7 +2246,7 @@
       "description": "Retrieve latest vulnerability scan results prioritised by CVSS score",
       "task": "FETCH",
       "dom": "IT",
-      "packet": "FETCH|IT|return:IT-Agent|p:1|aacp:1.1|res:vulnerabilities|filter:status=open|fmt:json",
+      "packet": "FETCH|IT|return:IT-Agent|p:1|aacp:1.4|res:vulnerabilities|filter:status=open|fmt:json",
       "tags": [
         "security",
         "vulnerability",
@@ -2263,7 +2263,7 @@
       "description": "Flag critical or high vulnerabilities requiring emergency patching within SLA",
       "task": "FLAG",
       "dom": "IT",
-      "packet": "FLAG|IT|return:IT-Agent|p:1|aacp:1.1|res:vulnerabilities|validate:cvss>=7|highlight:URGENT_PATCH",
+      "packet": "FLAG|IT|return:IT-Agent|p:1|aacp:1.4|res:vulnerabilities|validate:cvss>=7|highlight:URGENT_PATCH",
       "tags": [
         "security",
         "vulnerability",
@@ -2280,7 +2280,7 @@
       "description": "Flag user accounts with permissions beyond their role requirements for review",
       "task": "FLAG",
       "dom": "IT",
-      "packet": "FLAG|IT|return:IT-Agent|p:1|aacp:1.1|res:access_review|validate:rbac_policy|highlight:EXCESS_PERMISSIONS",
+      "packet": "FLAG|IT|return:IT-Agent|p:1|aacp:1.4|res:access_review|validate:rbac_policy|highlight:EXCESS_PERMISSIONS",
       "tags": [
         "access",
         "permissions",
@@ -2297,7 +2297,7 @@
       "description": "Flag software titles where actual usage exceeds licensed quantity",
       "task": "FLAG",
       "dom": "IT",
-      "packet": "FLAG|IT|return:IT-Agent|p:1|aacp:1.1|res:licence_inventory|validate:licence_limits|highlight:OVERAGE",
+      "packet": "FLAG|IT|return:IT-Agent|p:1|aacp:1.4|res:licence_inventory|validate:licence_limits|highlight:OVERAGE",
       "tags": [
         "licences",
         "overage",
@@ -2314,7 +2314,7 @@
       "description": "Flag Priority 1 incident and trigger major incident management process",
       "task": "FLAG",
       "dom": "IT",
-      "packet": "FLAG|IT|return:IT-Agent|p:1|aacp:1.1|res:incident|status:P1|highlight:MAJOR_INCIDENT",
+      "packet": "FLAG|IT|return:IT-Agent|p:1|aacp:1.4|res:incident|status:P1|highlight:MAJOR_INCIDENT",
       "tags": [
         "incident",
         "p1",
@@ -2331,7 +2331,7 @@
       "description": "Flag devices accessing corporate resources that are not enrolled in MDM",
       "task": "FLAG",
       "dom": "IT",
-      "packet": "FLAG|IT|return:IT-Agent|p:1|aacp:1.1|res:device_access|validate:mdm_enrolled|highlight:UNMANAGED",
+      "packet": "FLAG|IT|return:IT-Agent|p:1|aacp:1.4|res:device_access|validate:mdm_enrolled|highlight:UNMANAGED",
       "tags": [
         "device",
         "security",
@@ -2348,7 +2348,7 @@
       "description": "Identify software licences not used in the last 90 days for potential reclamation",
       "task": "FLAG",
       "dom": "IT",
-      "packet": "FLAG|IT|return:IT-Agent|p:3|aacp:1.1|res:licence_usage|validate:last_used_days>=90|highlight:RECLAIM",
+      "packet": "FLAG|IT|return:IT-Agent|p:3|aacp:1.4|res:licence_usage|validate:last_used_days>=90|highlight:RECLAIM",
       "tags": [
         "licences",
         "unused",
@@ -2365,7 +2365,7 @@
       "description": "Write access revocation completion record to security audit trail",
       "task": "LOG",
       "dom": "IT",
-      "packet": "LOG|IT|return:AUD-Agent|p:1|aacp:1.1|actor:IT-Agent|status:access_revoked",
+      "packet": "LOG|IT|return:AUD-Agent|p:1|aacp:1.4|actor:IT-Agent|status:access_revoked",
       "tags": [
         "access",
         "revocation",
@@ -2382,7 +2382,7 @@
       "description": "Write change implementation completion record to change audit trail",
       "task": "LOG",
       "dom": "IT",
-      "packet": "LOG|IT|return:AUD-Agent|p:2|aacp:1.1|res:change_request|actor:IT-Agent|status:implemented",
+      "packet": "LOG|IT|return:AUD-Agent|p:2|aacp:1.4|res:change_request|actor:IT-Agent|status:implemented",
       "tags": [
         "change",
         "audit",
@@ -2399,7 +2399,7 @@
       "description": "Write incident resolution record to ITSM audit trail",
       "task": "LOG",
       "dom": "IT",
-      "packet": "LOG|IT|return:AUD-Agent|p:2|aacp:1.1|res:incident|actor:IT-Agent|status:resolved",
+      "packet": "LOG|IT|return:AUD-Agent|p:2|aacp:1.4|res:incident|actor:IT-Agent|status:resolved",
       "tags": [
         "incident",
         "resolution",
@@ -2416,7 +2416,7 @@
       "description": "Write patch deployment completion record to security audit trail",
       "task": "LOG",
       "dom": "IT",
-      "packet": "LOG|IT|return:AUD-Agent|p:1|aacp:1.1|res:patch_deployment|actor:IT-Agent|status:applied",
+      "packet": "LOG|IT|return:AUD-Agent|p:1|aacp:1.4|res:patch_deployment|actor:IT-Agent|status:applied",
       "tags": [
         "security",
         "patching",
@@ -2433,7 +2433,7 @@
       "description": "Write provisioning completion record to IT audit trail for compliance",
       "task": "LOG",
       "dom": "IT",
-      "packet": "LOG|IT|return:AUD-Agent|p:2|aacp:1.1|actor:IT-Agent|status:provisioned",
+      "packet": "LOG|IT|return:AUD-Agent|p:2|aacp:1.4|actor:IT-Agent|status:provisioned",
       "tags": [
         "provisioning",
         "audit",
@@ -2450,7 +2450,7 @@
       "description": "Trigger quarterly access recertification for all users requiring manager sign-off",
       "task": "PROC",
       "dom": "IT",
-      "packet": "PROC|IT|return:IT-Agent|p:2|aacp:1.1|res:access_recertification|req:manager_review|period:quarterly",
+      "packet": "PROC|IT|return:IT-Agent|p:2|aacp:1.4|res:access_recertification|req:manager_review|period:quarterly",
       "tags": [
         "access",
         "recertification",
@@ -2467,7 +2467,7 @@
       "description": "Process employee request for additional system access pending manager approval",
       "task": "PROC",
       "dom": "IT",
-      "packet": "PROC|IT|return:IT-Agent|p:2|aacp:1.1|res:access_request|req:manager_approval,security_review",
+      "packet": "PROC|IT|return:IT-Agent|p:2|aacp:1.4|res:access_request|req:manager_approval,security_review",
       "tags": [
         "access",
         "request",
@@ -2484,7 +2484,7 @@
       "description": "Assign role-based application licences to new user based on department and role",
       "task": "PROC",
       "dom": "IT",
-      "packet": "PROC|IT|return:IT-Agent|p:1|aacp:1.1|res:licence_assignment|req:M365,Slack|validate:licence_policy",
+      "packet": "PROC|IT|return:IT-Agent|p:1|aacp:1.4|res:licence_assignment|req:M365,Slack|validate:licence_policy",
       "tags": [
         "provisioning",
         "licences",
@@ -2501,7 +2501,7 @@
       "description": "Process and route IT change request through CAB approval process",
       "task": "PROC",
       "dom": "IT",
-      "packet": "PROC|IT|return:IT-Agent|p:2|aacp:1.1|res:change_request|req:risk_assessment,cab_approval",
+      "packet": "PROC|IT|return:IT-Agent|p:2|aacp:1.4|res:change_request|req:risk_assessment,cab_approval",
       "tags": [
         "change",
         "cab",
@@ -2518,7 +2518,7 @@
       "description": "Enrol employee device in mobile device management for corporate access",
       "task": "PROC",
       "dom": "IT",
-      "packet": "PROC|IT|return:IT-Agent|p:2|aacp:1.1|res:device_enrolment|req:mdm_policy,encryption",
+      "packet": "PROC|IT|return:IT-Agent|p:2|aacp:1.4|res:device_enrolment|req:mdm_policy,encryption",
       "tags": [
         "device",
         "mdm",
@@ -2535,7 +2535,7 @@
       "description": "Enrol new user in multi-factor authentication and issue hardware token if required",
       "task": "PROC",
       "dom": "IT",
-      "packet": "PROC|IT|return:IT-Agent|p:1|aacp:1.1|res:mfa_enrolment|req:authenticator_app,backup_codes",
+      "packet": "PROC|IT|return:IT-Agent|p:1|aacp:1.4|res:mfa_enrolment|req:authenticator_app,backup_codes",
       "tags": [
         "security",
         "mfa",
@@ -2552,7 +2552,7 @@
       "description": "Deploy approved security patches to affected systems within maintenance window",
       "task": "PROC",
       "dom": "IT",
-      "packet": "PROC|IT|return:IT-Agent|p:1|aacp:1.1|res:patch_deployment|req:change_approval|validate:maintenance_window",
+      "packet": "PROC|IT|return:IT-Agent|p:1|aacp:1.4|res:patch_deployment|req:change_approval|validate:maintenance_window",
       "tags": [
         "security",
         "patching",
@@ -2569,7 +2569,7 @@
       "description": "Execute remote wipe of lost or stolen corporate device",
       "task": "PROC",
       "dom": "IT",
-      "packet": "PROC|IT|return:IT-Agent|p:1|aacp:1.1|res:device_wipe|req:remote_wipe|validate:wipe_authorisation",
+      "packet": "PROC|IT|return:IT-Agent|p:1|aacp:1.4|res:device_wipe|req:remote_wipe|validate:wipe_authorisation",
       "tags": [
         "device",
         "remote-wipe",
@@ -2586,7 +2586,7 @@
       "description": "Immediately revoke all system access for departing employee on notification of departure",
       "task": "PROC",
       "dom": "IT",
-      "packet": "PROC|IT|return:IT-Agent|p:1|aacp:1.1|res:access_revocation|req:disable_ad,revoke_licences,revoke_vpn",
+      "packet": "PROC|IT|return:IT-Agent|p:1|aacp:1.4|res:access_revocation|req:disable_ad,revoke_licences,revoke_vpn",
       "tags": [
         "access",
         "revocation",
@@ -2603,7 +2603,7 @@
       "description": "Triage incoming IT incident and assign priority and category for routing",
       "task": "PROC",
       "dom": "IT",
-      "packet": "PROC|IT|return:IT-Agent|p:1|aacp:1.1|res:incident_triage|req:categorise,prioritise,assign",
+      "packet": "PROC|IT|return:IT-Agent|p:1|aacp:1.4|res:incident_triage|req:categorise,prioritise,assign",
       "tags": [
         "incident",
         "triage",
@@ -2620,7 +2620,7 @@
       "description": "Generate monthly incident metrics report including MTTR and SLA compliance",
       "task": "REPORT",
       "dom": "IT",
-      "packet": "REPORT|IT|return:IT-Agent|p:2|aacp:1.1|res:incident_metrics|fmt:xlsx|period:current",
+      "packet": "REPORT|IT|return:IT-Agent|p:2|aacp:1.4|res:incident_metrics|fmt:xlsx|period:current",
       "tags": [
         "incident",
         "metrics",
@@ -2637,7 +2637,7 @@
       "description": "Generate software licence compliance report for SAM audit purposes",
       "task": "REPORT",
       "dom": "IT",
-      "packet": "REPORT|IT|return:IT-Agent|p:2|aacp:1.1|res:licence_compliance|fmt:xlsx|highlight:NON_COMPLIANT",
+      "packet": "REPORT|IT|return:IT-Agent|p:2|aacp:1.4|res:licence_compliance|fmt:xlsx|highlight:NON_COMPLIANT",
       "tags": [
         "licences",
         "compliance",
@@ -2654,7 +2654,7 @@
       "description": "Resolve dispute where employee claims incorrect system access has been granted or denied",
       "task": "RESOLVE",
       "dom": "IT",
-      "packet": "RESOLVE|IT|return:IT-Agent|p:2|aacp:1.1|res:access_dispute|req:access_review,manager_confirm",
+      "packet": "RESOLVE|IT|return:IT-Agent|p:2|aacp:1.4|res:access_dispute|req:access_review,manager_confirm",
       "tags": [
         "access",
         "dispute",
@@ -2671,7 +2671,7 @@
       "description": "Resolve identified data quality issue including source identification and correction",
       "task": "RESOLVE",
       "dom": "IT",
-      "packet": "RESOLVE|IT|return:IT-Agent|p:2|aacp:1.1|res:data_quality|req:source_id,correction,validation",
+      "packet": "RESOLVE|IT|return:IT-Agent|p:2|aacp:1.4|res:data_quality|req:source_id,correction,validation",
       "tags": [
         "data",
         "quality",
@@ -2688,7 +2688,7 @@
       "description": "Resolve employee-reported device fault including remote diagnosis and replacement decision",
       "task": "RESOLVE",
       "dom": "IT",
-      "packet": "RESOLVE|IT|return:IT-Agent|p:2|aacp:1.1|res:device_fault|req:remote_diag,repair_or_replace",
+      "packet": "RESOLVE|IT|return:IT-Agent|p:2|aacp:1.4|res:device_fault|req:remote_diag,repair_or_replace",
       "tags": [
         "device",
         "fault",
@@ -2705,7 +2705,7 @@
       "description": "Resolve conflict where licence count is exceeded and allocation must be reassigned",
       "task": "RESOLVE",
       "dom": "IT",
-      "packet": "RESOLVE|IT|return:IT-Agent|p:2|aacp:1.1|res:licence_conflict|req:usage_review,reallocation",
+      "packet": "RESOLVE|IT|return:IT-Agent|p:2|aacp:1.4|res:licence_conflict|req:usage_review,reallocation",
       "tags": [
         "licence",
         "conflict",
@@ -2722,7 +2722,7 @@
       "description": "Resolve Priority 1 incident with root cause analysis and stakeholder communication",
       "task": "RESOLVE",
       "dom": "IT",
-      "packet": "RESOLVE|IT|return:IT-Agent|p:1|aacp:1.1|res:incident|req:rca,stakeholder_notify,post_incident_review",
+      "packet": "RESOLVE|IT|return:IT-Agent|p:1|aacp:1.4|res:incident|req:rca,stakeholder_notify,post_incident_review",
       "tags": [
         "incident",
         "p1",
@@ -2739,7 +2739,7 @@
       "description": "Send temporary credentials and system access instructions to new user",
       "task": "SEND",
       "dom": "IT",
-      "packet": "SEND|IT|return:IT-Agent|p:1|aacp:1.1|subj:system_access_credentials|flag_msg:credentials_sent",
+      "packet": "SEND|IT|return:IT-Agent|p:1|aacp:1.4|subj:system_access_credentials|flag_msg:credentials_sent",
       "tags": [
         "provisioning",
         "credentials",
@@ -2756,7 +2756,7 @@
       "description": "Send incident status update to affected users and stakeholders",
       "task": "SEND",
       "dom": "IT",
-      "packet": "SEND|IT|return:IT-Agent|p:2|aacp:1.1|subj:incident_status_update|flag_msg:update_sent",
+      "packet": "SEND|IT|return:IT-Agent|p:2|aacp:1.4|subj:incident_status_update|flag_msg:update_sent",
       "tags": [
         "incident",
         "update",
@@ -2773,7 +2773,7 @@
       "description": "Synchronise HR system employee records to Active Directory for user account consistency",
       "task": "SYNC",
       "dom": "IT",
-      "packet": "SYNC|IT|return:IT-Agent|p:1|aacp:1.1|res:employee_ad_sync|validate:no_orphaned_accounts",
+      "packet": "SYNC|IT|return:IT-Agent|p:1|aacp:1.4|res:employee_ad_sync|validate:no_orphaned_accounts",
       "tags": [
         "sync",
         "active-directory",
@@ -2790,7 +2790,7 @@
       "description": "Synchronise approved licence assignments to MDM for device-level enforcement",
       "task": "SYNC",
       "dom": "IT",
-      "packet": "SYNC|IT|return:IT-Agent|p:2|aacp:1.1|res:licence_mdm_sync|validate:assignment_match",
+      "packet": "SYNC|IT|return:IT-Agent|p:2|aacp:1.4|res:licence_mdm_sync|validate:assignment_match",
       "tags": [
         "sync",
         "mdm",
@@ -2807,7 +2807,7 @@
       "description": "Synchronise SSO role-based permissions across connected systems after role change",
       "task": "SYNC",
       "dom": "IT",
-      "packet": "SYNC|IT|return:IT-Agent|p:1|aacp:1.1|res:sso_permission_sync|validate:rbac_policy",
+      "packet": "SYNC|IT|return:IT-Agent|p:1|aacp:1.4|res:sso_permission_sync|validate:rbac_policy",
       "tags": [
         "sync",
         "sso",
@@ -2824,7 +2824,7 @@
       "description": "Acknowledge receipt of contract for legal review and confirm expected turnaround",
       "task": "ACK",
       "dom": "LEGAL",
-      "packet": "ACK|LEGAL|return:LEG-Agent|p:2|aacp:1.1|res:contract|status:acknowledged",
+      "packet": "ACK|LEGAL|return:LEG-Agent|p:2|aacp:1.4|res:contract|status:acknowledged",
       "tags": [
         "contract",
         "receipt",
@@ -2841,7 +2841,7 @@
       "description": "Acknowledge receipt of Data Subject Access Request and confirm 30-day response window",
       "task": "ACK",
       "dom": "LEGAL",
-      "packet": "ACK|LEGAL|return:LEG-Agent|p:1|aacp:1.1|res:dsar_request|status:acknowledged",
+      "packet": "ACK|LEGAL|return:LEG-Agent|p:1|aacp:1.4|res:dsar_request|status:acknowledged",
       "tags": [
         "dsar",
         "gdpr",
@@ -2858,7 +2858,7 @@
       "description": "Retrieve all contracts expiring within 60 days requiring renewal or termination decision",
       "task": "FETCH",
       "dom": "LEGAL",
-      "packet": "FETCH|LEGAL|return:LEG-Agent|p:1|aacp:1.1|res:contracts|filter:expiry_days<=60|fmt:json",
+      "packet": "FETCH|LEGAL|return:LEG-Agent|p:1|aacp:1.4|res:contracts|filter:expiry_days<=60|fmt:json",
       "tags": [
         "contracts",
         "expiry",
@@ -2875,7 +2875,7 @@
       "description": "Retrieve all contracts pending legal review in the current queue",
       "task": "FETCH",
       "dom": "LEGAL",
-      "packet": "FETCH|LEGAL|return:LEG-Agent|p:1|aacp:1.1|res:contracts|filter:status=pending_review|fmt:json",
+      "packet": "FETCH|LEGAL|return:LEG-Agent|p:1|aacp:1.4|res:contracts|filter:status=pending_review|fmt:json",
       "tags": [
         "contracts",
         "review",
@@ -2892,7 +2892,7 @@
       "description": "Retrieve all outstanding Data Subject Access Requests requiring response",
       "task": "FETCH",
       "dom": "LEGAL",
-      "packet": "FETCH|LEGAL|return:LEG-Agent|p:1|aacp:1.1|res:dsar_requests|filter:status=outstanding|fmt:json",
+      "packet": "FETCH|LEGAL|return:LEG-Agent|p:1|aacp:1.4|res:dsar_requests|filter:status=outstanding|fmt:json",
       "tags": [
         "gdpr",
         "dsar",
@@ -2909,7 +2909,7 @@
       "description": "Retrieve all current policy documents and their version history",
       "task": "FETCH",
       "dom": "LEGAL",
-      "packet": "FETCH|LEGAL|return:LEG-Agent|p:2|aacp:1.1|res:policy_documents|filter:status=current|fmt:json",
+      "packet": "FETCH|LEGAL|return:LEG-Agent|p:2|aacp:1.4|res:policy_documents|filter:status=current|fmt:json",
       "tags": [
         "policy",
         "versioning",
@@ -2926,7 +2926,7 @@
       "description": "Retrieve latest regulatory updates relevant to company operations for legal review",
       "task": "FETCH",
       "dom": "LEGAL",
-      "packet": "FETCH|LEGAL|return:LEG-Agent|p:2|aacp:1.1|res:regulatory_updates|filter:relevance=high|fmt:json",
+      "packet": "FETCH|LEGAL|return:LEG-Agent|p:2|aacp:1.4|res:regulatory_updates|filter:relevance=high|fmt:json",
       "tags": [
         "regulatory",
         "compliance",
@@ -2943,7 +2943,7 @@
       "description": "Flag contracts with auto-renewal clauses requiring notice period action",
       "task": "FLAG",
       "dom": "LEGAL",
-      "packet": "FLAG|LEGAL|return:LEG-Agent|p:2|aacp:1.1|type:MSA|clause:auto_renewal|issue:notice_period_required|risk:medium",
+      "packet": "FLAG|LEGAL|return:LEG-Agent|p:2|aacp:1.4|type:MSA|clause:auto_renewal|issue:notice_period_required|risk:medium",
       "tags": [
         "contract",
         "renewal",
@@ -2960,7 +2960,7 @@
       "description": "Flag DSAR requests approaching the 30-day legal response deadline",
       "task": "FLAG",
       "dom": "LEGAL",
-      "packet": "FLAG|LEGAL|return:LEG-Agent|p:1|aacp:1.1|res:dsar_requests|validate:days_remaining<=7|highlight:DEADLINE",
+      "packet": "FLAG|LEGAL|return:LEG-Agent|p:1|aacp:1.4|res:dsar_requests|validate:days_remaining<=7|highlight:DEADLINE",
       "tags": [
         "gdpr",
         "dsar",
@@ -2977,7 +2977,7 @@
       "description": "Flag contracts specifying governing law jurisdiction outside company policy",
       "task": "FLAG",
       "dom": "LEGAL",
-      "packet": "FLAG|LEGAL|return:LEG-Agent|p:2|aacp:1.1|type:CONTRACT|clause:governing_law|issue:non_standard_jurisdiction|risk:medium",
+      "packet": "FLAG|LEGAL|return:LEG-Agent|p:2|aacp:1.4|type:CONTRACT|clause:governing_law|issue:non_standard_jurisdiction|risk:medium",
       "tags": [
         "governing-law",
         "jurisdiction",
@@ -2994,7 +2994,7 @@
       "description": "Flag content or product feature with potential IP infringement requiring legal review",
       "task": "FLAG",
       "dom": "LEGAL",
-      "packet": "FLAG|LEGAL|return:LEG-Agent|p:1|aacp:1.1|res:ip_review|issue:potential_infringement|risk:high|highlight:LEGAL_REVIEW",
+      "packet": "FLAG|LEGAL|return:LEG-Agent|p:1|aacp:1.4|res:ip_review|issue:potential_infringement|risk:high|highlight:LEGAL_REVIEW",
       "tags": [
         "ip",
         "infringement",
@@ -3011,7 +3011,7 @@
       "description": "Flag IP rights clause in contract that may compromise company intellectual property",
       "task": "FLAG",
       "dom": "LEGAL",
-      "packet": "FLAG|LEGAL|return:LEG-Agent|p:1|aacp:1.1|type:NDA|clause:ip_rights|issue:ip_rights_restriction|risk:high|block:signature",
+      "packet": "FLAG|LEGAL|return:LEG-Agent|p:1|aacp:1.4|type:NDA|clause:ip_rights|issue:ip_rights_restriction|risk:high|block:signature",
       "tags": [
         "ip",
         "rights",
@@ -3028,7 +3028,7 @@
       "description": "Flag contracts where liability cap is below company minimum acceptable threshold",
       "task": "FLAG",
       "dom": "LEGAL",
-      "packet": "FLAG|LEGAL|return:LEG-Agent|p:1|aacp:1.1|type:MSA|clause:liability_cap|issue:below_threshold|risk:high|block:signature",
+      "packet": "FLAG|LEGAL|return:LEG-Agent|p:1|aacp:1.4|type:MSA|clause:liability_cap|issue:below_threshold|risk:high|block:signature",
       "tags": [
         "liability",
         "cap",
@@ -3045,7 +3045,7 @@
       "description": "Flag specific NDA clause requiring legal review due to non-standard terms",
       "task": "FLAG",
       "dom": "LEGAL",
-      "packet": "FLAG|LEGAL|return:LEG-Agent|p:1|aacp:1.1|type:NDA|issue:non_standard_clause|risk:high|highlight:review_req",
+      "packet": "FLAG|LEGAL|return:LEG-Agent|p:1|aacp:1.4|type:NDA|issue:non_standard_clause|risk:high|highlight:review_req",
       "tags": [
         "nda",
         "contract",
@@ -3062,7 +3062,7 @@
       "description": "Flag regulatory update with material operational impact requiring board notification",
       "task": "FLAG",
       "dom": "LEGAL",
-      "packet": "FLAG|LEGAL|return:LEG-Agent|p:1|aacp:1.1|res:regulatory_change|issue:operational_impact|risk:high|highlight:BOARD_NOTIFY",
+      "packet": "FLAG|LEGAL|return:LEG-Agent|p:1|aacp:1.4|res:regulatory_change|issue:operational_impact|risk:high|highlight:BOARD_NOTIFY",
       "tags": [
         "regulatory",
         "impact",
@@ -3079,7 +3079,7 @@
       "description": "Write contract execution record to legal audit trail",
       "task": "LOG",
       "dom": "LEGAL",
-      "packet": "LOG|LEGAL|return:AUD-Agent|p:2|aacp:1.1|res:contract|actor:LEG-Agent|status:executed",
+      "packet": "LOG|LEGAL|return:AUD-Agent|p:2|aacp:1.4|res:contract|actor:LEG-Agent|status:executed",
       "tags": [
         "contract",
         "execution",
@@ -3096,7 +3096,7 @@
       "description": "Write DSAR completion record to data protection audit trail",
       "task": "LOG",
       "dom": "LEGAL",
-      "packet": "LOG|LEGAL|return:AUD-Agent|p:1|aacp:1.1|res:dsar_response|actor:LEG-Agent|status:completed",
+      "packet": "LOG|LEGAL|return:AUD-Agent|p:1|aacp:1.4|res:dsar_response|actor:LEG-Agent|status:completed",
       "tags": [
         "gdpr",
         "dsar",
@@ -3113,7 +3113,7 @@
       "description": "Write litigation hold activation record to legal audit trail",
       "task": "LOG",
       "dom": "LEGAL",
-      "packet": "LOG|LEGAL|return:AUD-Agent|p:1|aacp:1.1|res:litigation_hold|actor:LEG-Agent|status:active",
+      "packet": "LOG|LEGAL|return:AUD-Agent|p:1|aacp:1.4|res:litigation_hold|actor:LEG-Agent|status:active",
       "tags": [
         "litigation",
         "hold",
@@ -3130,7 +3130,7 @@
       "description": "Write policy approval record to compliance audit trail",
       "task": "LOG",
       "dom": "LEGAL",
-      "packet": "LOG|LEGAL|return:AUD-Agent|p:2|aacp:1.1|res:policy_document|actor:LEG-Agent|status:approved",
+      "packet": "LOG|LEGAL|return:AUD-Agent|p:2|aacp:1.4|res:policy_document|actor:LEG-Agent|status:approved",
       "tags": [
         "policy",
         "approval",
@@ -3147,7 +3147,7 @@
       "description": "Trigger annual policy review cycle and route to policy owners for update",
       "task": "PROC",
       "dom": "LEGAL",
-      "packet": "PROC|LEGAL|return:LEG-Agent|p:2|aacp:1.1|res:policy_review|req:owner_review,legal_sign_off|period:annual",
+      "packet": "PROC|LEGAL|return:LEG-Agent|p:2|aacp:1.4|res:policy_review|req:owner_review,legal_sign_off|period:annual",
       "tags": [
         "policy",
         "review",
@@ -3164,7 +3164,7 @@
       "description": "Compile and review personal data for DSAR response within legal timeframe",
       "task": "PROC",
       "dom": "LEGAL",
-      "packet": "PROC|LEGAL|return:LEG-Agent|p:1|aacp:1.1|res:dsar_response|req:data_compilation,legal_review",
+      "packet": "PROC|LEGAL|return:LEG-Agent|p:1|aacp:1.4|res:dsar_response|req:data_compilation,legal_review",
       "tags": [
         "gdpr",
         "dsar",
@@ -3181,7 +3181,7 @@
       "description": "Route reviewed and approved contract to DocuSign or equivalent for signature",
       "task": "PROC",
       "dom": "LEGAL",
-      "packet": "PROC|LEGAL|return:LEG-Agent|p:2|aacp:1.1|res:contract|req:docusign_routing|status:approved",
+      "packet": "PROC|LEGAL|return:LEG-Agent|p:2|aacp:1.4|res:contract|req:docusign_routing|status:approved",
       "tags": [
         "contract",
         "signature",
@@ -3198,7 +3198,7 @@
       "description": "Process trademark watch alert for potential conflict with company marks",
       "task": "PROC",
       "dom": "LEGAL",
-      "packet": "PROC|LEGAL|return:LEG-Agent|p:2|aacp:1.1|res:trademark_alert|req:conflict_assessment",
+      "packet": "PROC|LEGAL|return:LEG-Agent|p:2|aacp:1.4|res:trademark_alert|req:conflict_assessment",
       "tags": [
         "trademark",
         "watch",
@@ -3215,7 +3215,7 @@
       "description": "Resolve identified ambiguity in contract clause through legal interpretation and proposed amendment",
       "task": "RESOLVE",
       "dom": "LEGAL",
-      "packet": "RESOLVE|LEGAL|return:LEG-Agent|p:1|aacp:1.1|res:contract_ambiguity|req:legal_interpretation,amendment_draft",
+      "packet": "RESOLVE|LEGAL|return:LEG-Agent|p:1|aacp:1.4|res:contract_ambiguity|req:legal_interpretation,amendment_draft",
       "tags": [
         "contract",
         "ambiguity",
@@ -3232,7 +3232,7 @@
       "description": "Resolve dispute over intellectual property ownership between internal teams or with external party",
       "task": "RESOLVE",
       "dom": "LEGAL",
-      "packet": "RESOLVE|LEGAL|return:LEG-Agent|p:1|aacp:1.1|res:ip_dispute|req:ownership_review,legal_opinion",
+      "packet": "RESOLVE|LEGAL|return:LEG-Agent|p:1|aacp:1.4|res:ip_dispute|req:ownership_review,legal_opinion",
       "tags": [
         "ip",
         "dispute",
@@ -3249,7 +3249,7 @@
       "description": "Send litigation hold notice to relevant employees to preserve documents and records",
       "task": "SEND",
       "dom": "LEGAL",
-      "packet": "SEND|LEGAL|return:LEG-Agent|p:1|aacp:1.1|subj:litigation_hold_notice|highlight:ACTION_REQUIRED|tone:formal",
+      "packet": "SEND|LEGAL|return:LEG-Agent|p:1|aacp:1.4|subj:litigation_hold_notice|highlight:ACTION_REQUIRED|tone:formal",
       "tags": [
         "litigation",
         "hold",
@@ -3266,7 +3266,7 @@
       "description": "Calculate revenue attribution by marketing channel using configured attribution model",
       "task": "CALC",
       "dom": "MKT",
-      "packet": "CALC|MKT|return:MKT-Agent|p:2|aacp:1.1|res:channel_attribution|rules:attribution_model|period:current",
+      "packet": "CALC|MKT|return:MKT-Agent|p:2|aacp:1.4|res:channel_attribution|rules:attribution_model|period:current",
       "tags": [
         "attribution",
         "channels",
@@ -3283,7 +3283,7 @@
       "description": "Calculate return on investment for active campaigns against spend and revenue attribution",
       "task": "CALC",
       "dom": "MKT",
-      "packet": "CALC|MKT|return:MKT-Agent|p:2|aacp:1.1|res:campaign_roi|rules:attribution_model|period:current",
+      "packet": "CALC|MKT|return:MKT-Agent|p:2|aacp:1.4|res:campaign_roi|rules:attribution_model|period:current",
       "tags": [
         "campaign",
         "roi",
@@ -3300,7 +3300,7 @@
       "description": "Retrieve A/B test results for active experiments requiring analysis",
       "task": "FETCH",
       "dom": "MKT",
-      "packet": "FETCH|MKT|return:MKT-Agent|p:2|aacp:1.1|res:ab_test_results|filter:status=complete|fmt:json",
+      "packet": "FETCH|MKT|return:MKT-Agent|p:2|aacp:1.4|res:ab_test_results|filter:status=complete|fmt:json",
       "tags": [
         "ab-test",
         "experiments",
@@ -3317,7 +3317,7 @@
       "description": "Retrieve multi-touch attribution data for marketing channel analysis",
       "task": "FETCH",
       "dom": "MKT",
-      "packet": "FETCH|MKT|return:MKT-Agent|p:2|aacp:1.1|res:attribution_data|period:current|fmt:json",
+      "packet": "FETCH|MKT|return:MKT-Agent|p:2|aacp:1.4|res:attribution_data|period:current|fmt:json",
       "tags": [
         "attribution",
         "channels",
@@ -3334,7 +3334,7 @@
       "description": "Retrieve campaign performance metrics including impressions, clicks and conversions",
       "task": "FETCH",
       "dom": "MKT",
-      "packet": "FETCH|MKT|return:MKT-Agent|p:2|aacp:1.1|res:campaign_performance|period:current|fmt:json",
+      "packet": "FETCH|MKT|return:MKT-Agent|p:2|aacp:1.4|res:campaign_performance|period:current|fmt:json",
       "tags": [
         "campaign",
         "performance",
@@ -3351,7 +3351,7 @@
       "description": "Retrieve marketing qualified leads meeting scoring threshold for sales handoff",
       "task": "FETCH",
       "dom": "MKT",
-      "packet": "FETCH|MKT|return:MKT-Agent|p:1|aacp:1.1|res:mql_list|filter:score>=threshold|fmt:json",
+      "packet": "FETCH|MKT|return:MKT-Agent|p:1|aacp:1.4|res:mql_list|filter:score>=threshold|fmt:json",
       "tags": [
         "leads",
         "mql",
@@ -3368,7 +3368,7 @@
       "description": "Flag lead source generating low quality leads with poor conversion rates",
       "task": "FLAG",
       "dom": "MKT",
-      "packet": "FLAG|MKT|return:MKT-Agent|p:2|aacp:1.1|res:lead_quality|validate:conversion_rate<5|highlight:REVIEW_SOURCE",
+      "packet": "FLAG|MKT|return:MKT-Agent|p:2|aacp:1.4|res:lead_quality|validate:conversion_rate<5|highlight:REVIEW_SOURCE",
       "tags": [
         "leads",
         "quality",
@@ -3385,7 +3385,7 @@
       "description": "Flag campaigns with conversion rate below target threshold for review and optimisation",
       "task": "FLAG",
       "dom": "MKT",
-      "packet": "FLAG|MKT|return:MKT-Agent|p:2|aacp:1.1|res:campaign_performance|validate:conversion_rate<target|highlight:REVIEW_REQ",
+      "packet": "FLAG|MKT|return:MKT-Agent|p:2|aacp:1.4|res:campaign_performance|validate:conversion_rate<target|highlight:REVIEW_REQ",
       "tags": [
         "campaign",
         "performance",
@@ -3402,7 +3402,7 @@
       "description": "Write attribution model update record to marketing audit trail",
       "task": "LOG",
       "dom": "MKT",
-      "packet": "LOG|MKT|return:AUD-Agent|p:3|aacp:1.1|res:attribution_model|actor:MKT-Agent|status:updated",
+      "packet": "LOG|MKT|return:AUD-Agent|p:3|aacp:1.4|res:attribution_model|actor:MKT-Agent|status:updated",
       "tags": [
         "attribution",
         "model",
@@ -3419,7 +3419,7 @@
       "description": "Write content publication record to marketing audit trail",
       "task": "LOG",
       "dom": "MKT",
-      "packet": "LOG|MKT|return:AUD-Agent|p:3|aacp:1.1|actor:MKT-Agent|res:content|status:published",
+      "packet": "LOG|MKT|return:AUD-Agent|p:3|aacp:1.4|actor:MKT-Agent|res:content|status:published",
       "tags": [
         "content",
         "publication",
@@ -3436,7 +3436,7 @@
       "description": "Merge multi-channel campaign data with attribution model for unified performance view",
       "task": "MERGE",
       "dom": "MKT",
-      "packet": "MERGE|MKT|return:MKT-Agent|p:2|aacp:1.1|res:campaign_attribution_merged|rules:attribution_model|validate:channel_match",
+      "packet": "MERGE|MKT|return:MKT-Agent|p:2|aacp:1.4|res:campaign_attribution_merged|rules:attribution_model|validate:channel_match",
       "tags": [
         "campaign",
         "attribution",
@@ -3453,7 +3453,7 @@
       "description": "Merge inbound lead records with enrichment data for improved qualification",
       "task": "MERGE",
       "dom": "MKT",
-      "packet": "MERGE|MKT|return:MKT-Agent|p:1|aacp:1.1|res:enriched_leads|rules:enrichment_v1|validate:no_duplicates",
+      "packet": "MERGE|MKT|return:MKT-Agent|p:1|aacp:1.4|res:enriched_leads|rules:enrichment_v1|validate:no_duplicates",
       "tags": [
         "leads",
         "enrichment",
@@ -3470,7 +3470,7 @@
       "description": "Apply winning variant from completed A/B test to production environment",
       "task": "PROC",
       "dom": "MKT",
-      "packet": "PROC|MKT|return:MKT-Agent|p:2|aacp:1.1|res:ab_test|req:apply_winner|validate:statistical_significance",
+      "packet": "PROC|MKT|return:MKT-Agent|p:2|aacp:1.4|res:ab_test|req:apply_winner|validate:statistical_significance",
       "tags": [
         "ab-test",
         "winner",
@@ -3487,7 +3487,7 @@
       "description": "Route marketing content through legal and brand approval workflow before publication",
       "task": "PROC",
       "dom": "MKT",
-      "packet": "PROC|MKT|return:MKT-Agent|p:2|aacp:1.1|res:content_approval|req:legal_review,brand_review",
+      "packet": "PROC|MKT|return:MKT-Agent|p:2|aacp:1.4|res:content_approval|req:legal_review,brand_review",
       "tags": [
         "content",
         "approval",
@@ -3504,7 +3504,7 @@
       "description": "Route marketing qualified lead to sales for qualification and follow-up",
       "task": "PROC",
       "dom": "MKT",
-      "packet": "PROC|MKT|return:MKT-Agent|p:1|aacp:1.1|res:mql_handoff|req:sales_routing|validate:score>=threshold",
+      "packet": "PROC|MKT|return:MKT-Agent|p:1|aacp:1.4|res:mql_handoff|req:sales_routing|validate:score>=threshold",
       "tags": [
         "leads",
         "mql",
@@ -3521,7 +3521,7 @@
       "description": "Process update to marketing attribution model weights based on latest performance data",
       "task": "PROC",
       "dom": "MKT",
-      "packet": "PROC|MKT|return:MKT-Agent|p:3|aacp:1.1|res:attribution_model|req:model_update,validation",
+      "packet": "PROC|MKT|return:MKT-Agent|p:3|aacp:1.4|res:attribution_model|req:model_update,validation",
       "tags": [
         "attribution",
         "model",
@@ -3538,7 +3538,7 @@
       "description": "Generate quarterly revenue attribution report by channel for CMO review",
       "task": "REPORT",
       "dom": "MKT",
-      "packet": "REPORT|MKT|return:MKT-Agent|p:2|aacp:1.1|res:attribution_quarterly|fmt:pdf,xlsx|period:quarter",
+      "packet": "REPORT|MKT|return:MKT-Agent|p:2|aacp:1.4|res:attribution_quarterly|fmt:pdf,xlsx|period:quarter",
       "tags": [
         "attribution",
         "quarterly",
@@ -3555,7 +3555,7 @@
       "description": "Generate monthly campaign performance report for marketing director review",
       "task": "REPORT",
       "dom": "MKT",
-      "packet": "REPORT|MKT|return:MKT-Agent|p:2|aacp:1.1|res:campaign_monthly|fmt:xlsx,pdf|period:current",
+      "packet": "REPORT|MKT|return:MKT-Agent|p:2|aacp:1.4|res:campaign_monthly|fmt:xlsx,pdf|period:current",
       "tags": [
         "campaign",
         "monthly",
@@ -3572,7 +3572,7 @@
       "description": "Generate weekly marketing KPI dashboard for senior leadership review",
       "task": "REPORT",
       "dom": "MKT",
-      "packet": "REPORT|MKT|return:MKT-Agent|p:2|aacp:1.1|res:marketing_kpis|fmt:pdf|period:week|highlight:OFF_TRACK",
+      "packet": "REPORT|MKT|return:MKT-Agent|p:2|aacp:1.4|res:marketing_kpis|fmt:pdf|period:week|highlight:OFF_TRACK",
       "tags": [
         "kpi",
         "dashboard",
@@ -3589,7 +3589,7 @@
       "description": "Send weekly marketing performance update to CEO and leadership team",
       "task": "SEND",
       "dom": "MKT",
-      "packet": "SEND|MKT|return:MKT-Agent|p:2|aacp:1.1|subj:weekly_marketing_update|flag_msg:update_sent",
+      "packet": "SEND|MKT|return:MKT-Agent|p:2|aacp:1.4|subj:weekly_marketing_update|flag_msg:update_sent",
       "tags": [
         "update",
         "leadership",
@@ -3606,7 +3606,7 @@
       "description": "Generate structured account plan for key account including goals, stakeholders, and next steps",
       "task": "BUILD",
       "dom": "SALES",
-      "packet": "BUILD|SALES|return:SALES-Agent|p:2|aacp:1.1|res:account_plan|req:account_data,stakeholder_map,revenue_targets",
+      "packet": "BUILD|SALES|return:SALES-Agent|p:2|aacp:1.4|res:account_plan|req:account_data,stakeholder_map,revenue_targets",
       "tags": [
         "account",
         "plan",
@@ -3623,7 +3623,7 @@
       "description": "Build sales territory assignment for new or reorganised sales team",
       "task": "BUILD",
       "dom": "SALES",
-      "packet": "BUILD|SALES|return:SALES-Agent|p:2|aacp:1.1|res:sales_territory|req:geo_config,account_assignment,quota_allocation",
+      "packet": "BUILD|SALES|return:SALES-Agent|p:2|aacp:1.4|res:sales_territory|req:geo_config,account_assignment,quota_allocation",
       "tags": [
         "territory",
         "sales",
@@ -3640,7 +3640,7 @@
       "description": "Calculate sales commission for the period based on closed deals and commission plan",
       "task": "CALC",
       "dom": "SALES",
-      "packet": "CALC|SALES|return:SALES-Agent|p:2|aacp:1.1|res:commission|rules:commission_plan_v2|period:current",
+      "packet": "CALC|SALES|return:SALES-Agent|p:2|aacp:1.4|res:commission|rules:commission_plan_v2|period:current",
       "tags": [
         "commission",
         "compensation",
@@ -3657,7 +3657,7 @@
       "description": "Calculate statistical win probability for opportunity based on historical data",
       "task": "CALC",
       "dom": "SALES",
-      "packet": "CALC|SALES|return:SALES-Agent|p:2|aacp:1.1|res:win_probability|rules:ml_model",
+      "packet": "CALC|SALES|return:SALES-Agent|p:2|aacp:1.4|res:win_probability|rules:ml_model",
       "tags": [
         "pipeline",
         "probability",
@@ -3674,7 +3674,7 @@
       "description": "Calculate bottom-up sales forecast roll-up from rep level to company level",
       "task": "CALC",
       "dom": "SALES",
-      "packet": "CALC|SALES|return:SALES-Agent|p:2|aacp:1.1|res:forecast_rollup|rules:commit_likely_pipeline",
+      "packet": "CALC|SALES|return:SALES-Agent|p:2|aacp:1.4|res:forecast_rollup|rules:commit_likely_pipeline",
       "tags": [
         "forecast",
         "rollup",
@@ -3691,7 +3691,7 @@
       "description": "Score lead against Budget, Authority, Need, Timeline criteria for qualification",
       "task": "CALC",
       "dom": "SALES",
-      "packet": "CALC|SALES|return:SALES-Agent|p:1|aacp:1.1|res:lead_score|rules:bant",
+      "packet": "CALC|SALES|return:SALES-Agent|p:1|aacp:1.4|res:lead_score|rules:bant",
       "tags": [
         "leads",
         "bant",
@@ -3708,7 +3708,7 @@
       "description": "Score lead against MEDDIC criteria for enterprise sales qualification",
       "task": "CALC",
       "dom": "SALES",
-      "packet": "CALC|SALES|return:SALES-Agent|p:1|aacp:1.1|res:lead_score|rules:meddic",
+      "packet": "CALC|SALES|return:SALES-Agent|p:1|aacp:1.4|res:lead_score|rules:meddic",
       "tags": [
         "leads",
         "meddic",
@@ -3725,7 +3725,7 @@
       "description": "Retrieve latest competitive intelligence updates relevant to active deals",
       "task": "FETCH",
       "dom": "SALES",
-      "packet": "FETCH|SALES|return:SALES-Agent|p:3|aacp:1.1|res:competitive_intel|filter:relevance=high|fmt:json",
+      "packet": "FETCH|SALES|return:SALES-Agent|p:3|aacp:1.4|res:competitive_intel|filter:relevance=high|fmt:json",
       "tags": [
         "competitive",
         "intelligence",
@@ -3742,7 +3742,7 @@
       "description": "Retrieve lead profile including engagement history and intent signals from CRM",
       "task": "FETCH",
       "dom": "SALES",
-      "packet": "FETCH|SALES|return:SALES-Agent|p:1|aacp:1.1|res:lead_profile|filter:status=active|fmt:json",
+      "packet": "FETCH|SALES|return:SALES-Agent|p:1|aacp:1.4|res:lead_profile|filter:status=active|fmt:json",
       "tags": [
         "leads",
         "crm",
@@ -3759,7 +3759,7 @@
       "description": "Retrieve all active opportunities in the sales pipeline by stage",
       "task": "FETCH",
       "dom": "SALES",
-      "packet": "FETCH|SALES|return:SALES-Agent|p:2|aacp:1.1|res:pipeline|filter:status=active|fmt:json",
+      "packet": "FETCH|SALES|return:SALES-Agent|p:2|aacp:1.4|res:pipeline|filter:status=active|fmt:json",
       "tags": [
         "pipeline",
         "deals",
@@ -3776,7 +3776,7 @@
       "description": "Retrieve all customer contracts due for renewal in next 90 days",
       "task": "FETCH",
       "dom": "SALES",
-      "packet": "FETCH|SALES|return:SALES-Agent|p:1|aacp:1.1|res:renewals|filter:due_days<=90|fmt:json",
+      "packet": "FETCH|SALES|return:SALES-Agent|p:1|aacp:1.4|res:renewals|filter:due_days<=90|fmt:json",
       "tags": [
         "renewals",
         "contracts",
@@ -3793,7 +3793,7 @@
       "description": "Flag high-value deals showing risk signals requiring sales director intervention",
       "task": "FLAG",
       "dom": "SALES",
-      "packet": "FLAG|SALES|return:SALES-Agent|p:1|aacp:1.1|res:pipeline|validate:risk_score>=7|highlight:AT_RISK",
+      "packet": "FLAG|SALES|return:SALES-Agent|p:1|aacp:1.4|res:pipeline|validate:risk_score>=7|highlight:AT_RISK",
       "tags": [
         "pipeline",
         "risk",
@@ -3810,7 +3810,7 @@
       "description": "Flag renewals at high churn risk based on product usage and NPS signals",
       "task": "FLAG",
       "dom": "SALES",
-      "packet": "FLAG|SALES|return:SALES-Agent|p:1|aacp:1.1|res:renewals|validate:churn_score>=7|highlight:CHURN_RISK",
+      "packet": "FLAG|SALES|return:SALES-Agent|p:1|aacp:1.4|res:renewals|validate:churn_score>=7|highlight:CHURN_RISK",
       "tags": [
         "renewals",
         "churn",
@@ -3827,7 +3827,7 @@
       "description": "Flag commission calculation where rep has raised a dispute requiring review",
       "task": "FLAG",
       "dom": "SALES",
-      "packet": "FLAG|SALES|return:SALES-Agent|p:2|aacp:1.1|res:commission|status:disputed|highlight:REVIEW_REQ",
+      "packet": "FLAG|SALES|return:SALES-Agent|p:2|aacp:1.4|res:commission|status:disputed|highlight:REVIEW_REQ",
       "tags": [
         "commission",
         "dispute",
@@ -3844,7 +3844,7 @@
       "description": "Flag significant gap between current forecast and sales target requiring action",
       "task": "FLAG",
       "dom": "SALES",
-      "packet": "FLAG|SALES|return:SALES-Agent|p:1|aacp:1.1|res:forecast_gap|validate:gap_pct>=15|highlight:ACTION_REQUIRED",
+      "packet": "FLAG|SALES|return:SALES-Agent|p:1|aacp:1.4|res:forecast_gap|validate:gap_pct>=15|highlight:ACTION_REQUIRED",
       "tags": [
         "forecast",
         "gap",
@@ -3861,7 +3861,7 @@
       "description": "Flag opportunities with no activity in 14+ days for sales manager review",
       "task": "FLAG",
       "dom": "SALES",
-      "packet": "FLAG|SALES|return:SALES-Agent|p:2|aacp:1.1|res:pipeline|validate:last_activity_days>=14|highlight:STALLED",
+      "packet": "FLAG|SALES|return:SALES-Agent|p:2|aacp:1.4|res:pipeline|validate:last_activity_days>=14|highlight:STALLED",
       "tags": [
         "pipeline",
         "stalled",
@@ -3878,7 +3878,7 @@
       "description": "Write lead qualification outcome to CRM audit trail",
       "task": "LOG",
       "dom": "SALES",
-      "packet": "LOG|SALES|return:AUD-Agent|p:3|aacp:1.1|actor:SALES-Agent|res:qualification|status:complete",
+      "packet": "LOG|SALES|return:AUD-Agent|p:3|aacp:1.4|actor:SALES-Agent|res:qualification|status:complete",
       "tags": [
         "leads",
         "audit",
@@ -3895,7 +3895,7 @@
       "description": "Merge CRM closed won data with finance invoicing for commission calculation",
       "task": "MERGE",
       "dom": "SALES",
-      "packet": "MERGE|SALES|return:SALES-Agent|p:2|aacp:1.1|res:commission_data_merged|rules:commission_plan_v2|validate:invoice_match",
+      "packet": "MERGE|SALES|return:SALES-Agent|p:2|aacp:1.4|res:commission_data_merged|rules:commission_plan_v2|validate:invoice_match",
       "tags": [
         "commission",
         "crm",
@@ -3912,7 +3912,7 @@
       "description": "Merge CRM pipeline data with sales forecast for unified revenue view",
       "task": "MERGE",
       "dom": "SALES",
-      "packet": "MERGE|SALES|return:SALES-Agent|p:2|aacp:1.1|res:pipeline_forecast_merged|rules:forecast_v1|validate:period_match",
+      "packet": "MERGE|SALES|return:SALES-Agent|p:2|aacp:1.4|res:pipeline_forecast_merged|rules:forecast_v1|validate:period_match",
       "tags": [
         "pipeline",
         "forecast",
@@ -3929,7 +3929,7 @@
       "description": "Update opportunity stage in CRM and trigger next stage workflow",
       "task": "PROC",
       "dom": "SALES",
-      "packet": "PROC|SALES|return:SALES-Agent|p:2|aacp:1.1|res:opportunity|req:stage_update,next_step_set",
+      "packet": "PROC|SALES|return:SALES-Agent|p:2|aacp:1.4|res:opportunity|req:stage_update,next_step_set",
       "tags": [
         "pipeline",
         "stage",
@@ -3946,7 +3946,7 @@
       "description": "Route qualified lead to assigned sales representative with context and next steps",
       "task": "PROC",
       "dom": "SALES",
-      "packet": "PROC|SALES|return:SALES-Agent|p:1|aacp:1.1|res:lead_routing|validate:score>=60",
+      "packet": "PROC|SALES|return:SALES-Agent|p:1|aacp:1.4|res:lead_routing|validate:score>=60",
       "tags": [
         "leads",
         "routing",
@@ -3963,7 +3963,7 @@
       "description": "Route unqualified lead to marketing nurture sequence for future qualification",
       "task": "PROC",
       "dom": "SALES",
-      "packet": "PROC|SALES|return:SALES-Agent|p:2|aacp:1.1|res:lead_routing|req:nurture_sequence",
+      "packet": "PROC|SALES|return:SALES-Agent|p:2|aacp:1.4|res:lead_routing|req:nurture_sequence",
       "tags": [
         "leads",
         "nurture",
@@ -3980,7 +3980,7 @@
       "description": "Generate period commission summary report for sales ops and finance review",
       "task": "REPORT",
       "dom": "SALES",
-      "packet": "REPORT|SALES|return:SALES-Agent|p:2|aacp:1.1|res:commission_summary|fmt:xlsx|period:current",
+      "packet": "REPORT|SALES|return:SALES-Agent|p:2|aacp:1.4|res:commission_summary|fmt:xlsx|period:current",
       "tags": [
         "commission",
         "report",
@@ -3997,7 +3997,7 @@
       "description": "Generate sales forecast versus target report for VP Sales and board review",
       "task": "REPORT",
       "dom": "SALES",
-      "packet": "REPORT|SALES|return:SALES-Agent|p:2|aacp:1.1|res:forecast_vs_target|fmt:pdf,xlsx|highlight:BELOW_TARGET",
+      "packet": "REPORT|SALES|return:SALES-Agent|p:2|aacp:1.4|res:forecast_vs_target|fmt:pdf,xlsx|highlight:BELOW_TARGET",
       "tags": [
         "forecast",
         "target",
@@ -4014,7 +4014,7 @@
       "description": "Generate weekly sales pipeline report for sales management review",
       "task": "REPORT",
       "dom": "SALES",
-      "packet": "REPORT|SALES|return:SALES-Agent|p:2|aacp:1.1|res:pipeline_weekly|fmt:xlsx|period:week",
+      "packet": "REPORT|SALES|return:SALES-Agent|p:2|aacp:1.4|res:pipeline_weekly|fmt:xlsx|period:week",
       "tags": [
         "pipeline",
         "weekly",
@@ -4031,7 +4031,7 @@
       "description": "Generate win-loss analysis by competitor, deal size and industry segment",
       "task": "REPORT",
       "dom": "SALES",
-      "packet": "REPORT|SALES|return:SALES-Agent|p:3|aacp:1.1|res:win_loss_analysis|fmt:xlsx|period:quarter",
+      "packet": "REPORT|SALES|return:SALES-Agent|p:3|aacp:1.4|res:win_loss_analysis|fmt:xlsx|period:quarter",
       "tags": [
         "win-loss",
         "analysis",
@@ -4048,7 +4048,7 @@
       "description": "Send relevant competitive battlecard to sales rep ahead of key competitor meeting",
       "task": "SEND",
       "dom": "SALES",
-      "packet": "SEND|SALES|return:SALES-Agent|p:2|aacp:1.1|subj:competitive_battlecard|flag_msg:battlecard_sent",
+      "packet": "SEND|SALES|return:SALES-Agent|p:2|aacp:1.4|subj:competitive_battlecard|flag_msg:battlecard_sent",
       "tags": [
         "competitive",
         "battlecard",
@@ -4065,7 +4065,7 @@
       "description": "Notify account manager of upcoming renewal with customer health score and talking points",
       "task": "SEND",
       "dom": "SALES",
-      "packet": "SEND|SALES|return:SALES-Agent|p:1|aacp:1.1|subj:renewal_action_required|highlight:ACTION_REQUIRED",
+      "packet": "SEND|SALES|return:SALES-Agent|p:1|aacp:1.4|subj:renewal_action_required|highlight:ACTION_REQUIRED",
       "tags": [
         "renewals",
         "outreach",
@@ -4082,7 +4082,7 @@
       "description": "Send notification to assigned sales rep with qualified lead details and recommended next step",
       "task": "SEND",
       "dom": "SALES",
-      "packet": "SEND|SALES|return:SALES-Agent|p:1|aacp:1.1|subj:qualified_lead_assigned|highlight:ACTION_REQUIRED",
+      "packet": "SEND|SALES|return:SALES-Agent|p:1|aacp:1.4|subj:qualified_lead_assigned|highlight:ACTION_REQUIRED",
       "tags": [
         "leads",
         "notification",
@@ -4099,7 +4099,7 @@
       "description": "Synchronise closed-won opportunities from CRM to finance system for invoicing",
       "task": "SYNC",
       "dom": "SALES",
-      "packet": "SYNC|SALES|return:SALES-Agent|p:1|aacp:1.1|res:crm_finance_sync|validate:no_duplicates",
+      "packet": "SYNC|SALES|return:SALES-Agent|p:1|aacp:1.4|res:crm_finance_sync|validate:no_duplicates",
       "tags": [
         "sync",
         "crm",

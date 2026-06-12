@@ -4,7 +4,7 @@
   "description": "Retrieve all salary changes, promotions, and adjustments for the current period",
   "task": "FETCH",
   "dom": "HR",
-  "packet": "FETCH|HR|return:HR-Agent|p:1|aacp:1.1|res:payroll_changes|filter:period=current|fmt:json",
+  "packet": "FETCH|HR|return:HR-Agent|p:1|aacp:1.4|res:payroll_changes|filter:period=current|fmt:json",
   "tags": [
     "payroll",
     "changes",

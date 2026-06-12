@@ -4,7 +4,7 @@
   "description": "Send relevant competitive battlecard to sales rep ahead of key competitor meeting",
   "task": "SEND",
   "dom": "SALES",
-  "packet": "SEND|SALES|return:SALES-Agent|p:2|aacp:1.1|subj:competitive_battlecard|flag_msg:battlecard_sent",
+  "packet": "SEND|SALES|return:SALES-Agent|p:2|aacp:1.4|subj:competitive_battlecard|flag_msg:battlecard_sent",
   "tags": [
     "competitive",
     "battlecard",

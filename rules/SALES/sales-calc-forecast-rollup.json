@@ -4,7 +4,7 @@
   "description": "Calculate bottom-up sales forecast roll-up from rep level to company level",
   "task": "CALC",
   "dom": "SALES",
-  "packet": "CALC|SALES|return:SALES-Agent|p:2|aacp:1.1|res:forecast_rollup|rules:commit_likely_pipeline",
+  "packet": "CALC|SALES|return:SALES-Agent|p:2|aacp:1.4|res:forecast_rollup|rules:commit_likely_pipeline",
   "tags": [
     "forecast",
     "rollup",

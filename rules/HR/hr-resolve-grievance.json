@@ -4,7 +4,7 @@
   "description": "Route and manage formal employee grievance through HR resolution process",
   "task": "RESOLVE",
   "dom": "HR",
-  "packet": "RESOLVE|HR|return:HR-Agent|p:1|aacp:1.1|res:grievance|req:investigation,hearing,outcome_letter",
+  "packet": "RESOLVE|HR|return:HR-Agent|p:1|aacp:1.4|res:grievance|req:investigation,hearing,outcome_letter",
   "tags": [
     "grievance",
     "resolution",

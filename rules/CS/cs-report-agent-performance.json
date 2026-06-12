@@ -4,7 +4,7 @@
   "description": "Generate agent performance report including CSAT, resolution rate and AHT",
   "task": "REPORT",
   "dom": "CS",
-  "packet": "REPORT|CS|return:CS-Agent|p:2|aacp:1.1|res:agent_performance|fmt:xlsx|period:current",
+  "packet": "REPORT|CS|return:CS-Agent|p:2|aacp:1.4|res:agent_performance|fmt:xlsx|period:current",
   "tags": [
     "agent",
     "performance",

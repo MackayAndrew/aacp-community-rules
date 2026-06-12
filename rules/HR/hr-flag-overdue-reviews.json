@@ -4,7 +4,7 @@
   "description": "Flag performance reviews that are overdue and escalate to HR Director",
   "task": "FLAG",
   "dom": "HR",
-  "packet": "FLAG|HR|return:HR-Agent|p:1|aacp:1.1|res:overdue_reviews|status:overdue|highlight:ESCALATE",
+  "packet": "FLAG|HR|return:HR-Agent|p:1|aacp:1.4|res:overdue_reviews|status:overdue|highlight:ESCALATE",
   "tags": [
     "performance",
     "overdue",

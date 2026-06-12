@@ -4,7 +4,7 @@
   "description": "Process and route IT change request through CAB approval process",
   "task": "PROC",
   "dom": "IT",
-  "packet": "PROC|IT|return:IT-Agent|p:2|aacp:1.1|res:change_request|req:risk_assessment,cab_approval",
+  "packet": "PROC|IT|return:IT-Agent|p:2|aacp:1.4|res:change_request|req:risk_assessment,cab_approval",
   "tags": [
     "change",
     "cab",

@@ -4,7 +4,7 @@
   "description": "Resolve employee dispute over payroll calculation including investigation and correction",
   "task": "RESOLVE",
   "dom": "HR",
-  "packet": "RESOLVE|HR|return:HR-Agent|p:1|aacp:1.1|res:payroll_dispute|req:calculation_review,correction_if_needed",
+  "packet": "RESOLVE|HR|return:HR-Agent|p:1|aacp:1.4|res:payroll_dispute|req:calculation_review,correction_if_needed",
   "tags": [
     "payroll",
     "dispute",

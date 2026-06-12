@@ -4,7 +4,7 @@
   "description": "Generate monthly campaign performance report for marketing director review",
   "task": "REPORT",
   "dom": "MKT",
-  "packet": "REPORT|MKT|return:MKT-Agent|p:2|aacp:1.1|res:campaign_monthly|fmt:xlsx,pdf|period:current",
+  "packet": "REPORT|MKT|return:MKT-Agent|p:2|aacp:1.4|res:campaign_monthly|fmt:xlsx,pdf|period:current",
   "tags": [
     "campaign",
     "monthly",

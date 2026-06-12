@@ -4,7 +4,7 @@
   "description": "Send reminder to employees with outstanding policy acknowledgements",
   "task": "SEND",
   "dom": "HR",
-  "packet": "SEND|HR|return:HR-Agent|p:2|aacp:1.1|subj:policy_acknowledgement_required|highlight:ACTION_REQUIRED",
+  "packet": "SEND|HR|return:HR-Agent|p:2|aacp:1.4|subj:policy_acknowledgement_required|highlight:ACTION_REQUIRED",
   "tags": [
     "policy",
     "reminder",

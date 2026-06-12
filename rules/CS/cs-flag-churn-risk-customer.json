@@ -4,7 +4,7 @@
   "description": "Flag customer showing churn risk signals for proactive retention outreach",
   "task": "FLAG",
   "dom": "CS",
-  "packet": "FLAG|CS|return:CS-Agent|p:1|aacp:1.1|res:customer_profile|validate:churn_score>=7|highlight:CHURN_RISK",
+  "packet": "FLAG|CS|return:CS-Agent|p:1|aacp:1.4|res:customer_profile|validate:churn_score>=7|highlight:CHURN_RISK",
   "tags": [
     "churn",
     "retention",

@@ -4,7 +4,7 @@
   "description": "Resolve Priority 1 incident with root cause analysis and stakeholder communication",
   "task": "RESOLVE",
   "dom": "IT",
-  "packet": "RESOLVE|IT|return:IT-Agent|p:1|aacp:1.1|res:incident|req:rca,stakeholder_notify,post_incident_review",
+  "packet": "RESOLVE|IT|return:IT-Agent|p:1|aacp:1.4|res:incident|req:rca,stakeholder_notify,post_incident_review",
   "tags": [
     "incident",
     "p1",

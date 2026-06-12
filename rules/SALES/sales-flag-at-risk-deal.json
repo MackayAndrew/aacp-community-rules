@@ -4,7 +4,7 @@
   "description": "Flag high-value deals showing risk signals requiring sales director intervention",
   "task": "FLAG",
   "dom": "SALES",
-  "packet": "FLAG|SALES|return:SALES-Agent|p:1|aacp:1.1|res:pipeline|validate:risk_score>=7|highlight:AT_RISK",
+  "packet": "FLAG|SALES|return:SALES-Agent|p:1|aacp:1.4|res:pipeline|validate:risk_score>=7|highlight:AT_RISK",
   "tags": [
     "pipeline",
     "risk",

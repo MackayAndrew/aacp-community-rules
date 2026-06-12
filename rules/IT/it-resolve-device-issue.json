@@ -4,7 +4,7 @@
   "description": "Resolve employee-reported device fault including remote diagnosis and replacement decision",
   "task": "RESOLVE",
   "dom": "IT",
-  "packet": "RESOLVE|IT|return:IT-Agent|p:2|aacp:1.1|res:device_fault|req:remote_diag,repair_or_replace",
+  "packet": "RESOLVE|IT|return:IT-Agent|p:2|aacp:1.4|res:device_fault|req:remote_diag,repair_or_replace",
   "tags": [
     "device",
     "fault",

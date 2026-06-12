@@ -4,7 +4,7 @@
   "description": "Flag content or product feature with potential IP infringement requiring legal review",
   "task": "FLAG",
   "dom": "LEGAL",
-  "packet": "FLAG|LEGAL|return:LEG-Agent|p:1|aacp:1.1|res:ip_review|issue:potential_infringement|risk:high|highlight:LEGAL_REVIEW",
+  "packet": "FLAG|LEGAL|return:LEG-Agent|p:1|aacp:1.4|res:ip_review|issue:potential_infringement|risk:high|highlight:LEGAL_REVIEW",
   "tags": [
     "ip",
     "infringement",

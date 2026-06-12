@@ -4,7 +4,7 @@
   "description": "Merge permanent employee and contractor records for unified headcount reporting",
   "task": "MERGE",
   "dom": "HR",
-  "packet": "MERGE|HR|return:HR-Agent|p:2|aacp:1.1|res:unified_headcount|rules:headcount_v1|validate:no_duplicates",
+  "packet": "MERGE|HR|return:HR-Agent|p:2|aacp:1.4|res:unified_headcount|rules:headcount_v1|validate:no_duplicates",
   "tags": [
     "headcount",
     "merge",

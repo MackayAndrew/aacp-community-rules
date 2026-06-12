@@ -4,7 +4,7 @@
   "description": "Assign role-based application licences to new user based on department and role",
   "task": "PROC",
   "dom": "IT",
-  "packet": "PROC|IT|return:IT-Agent|p:1|aacp:1.1|res:licence_assignment|req:M365,Slack|validate:licence_policy",
+  "packet": "PROC|IT|return:IT-Agent|p:1|aacp:1.4|res:licence_assignment|req:M365,Slack|validate:licence_policy",
   "tags": [
     "provisioning",
     "licences",

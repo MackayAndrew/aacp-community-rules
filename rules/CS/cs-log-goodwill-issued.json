@@ -4,7 +4,7 @@
   "description": "Write goodwill gesture record to CS audit trail for finance reporting",
   "task": "LOG",
   "dom": "CS",
-  "packet": "LOG|CS|return:AUD-Agent|p:2|aacp:1.1|actor:CS-Agent|res:goodwill|status:issued",
+  "packet": "LOG|CS|return:AUD-Agent|p:2|aacp:1.4|actor:CS-Agent|res:goodwill|status:issued",
   "tags": [
     "goodwill",
     "audit",

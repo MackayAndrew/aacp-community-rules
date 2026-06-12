@@ -4,7 +4,7 @@
   "description": "Calculate pay equity metrics across gender, ethnicity and role level for reporting",
   "task": "CALC",
   "dom": "HR",
-  "packet": "CALC|HR|return:HR-Agent|p:2|aacp:1.1|res:pay_equity|validate:equity_rules|highlight:MATERIAL_VARIANCE",
+  "packet": "CALC|HR|return:HR-Agent|p:2|aacp:1.4|res:pay_equity|validate:equity_rules|highlight:MATERIAL_VARIANCE",
   "tags": [
     "compensation",
     "equity",

@@ -4,7 +4,7 @@
   "description": "Retrieve A/B test results for active experiments requiring analysis",
   "task": "FETCH",
   "dom": "MKT",
-  "packet": "FETCH|MKT|return:MKT-Agent|p:2|aacp:1.1|res:ab_test_results|filter:status=complete|fmt:json",
+  "packet": "FETCH|MKT|return:MKT-Agent|p:2|aacp:1.4|res:ab_test_results|filter:status=complete|fmt:json",
   "tags": [
     "ab-test",
     "experiments",

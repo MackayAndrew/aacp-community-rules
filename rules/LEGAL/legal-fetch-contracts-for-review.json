@@ -4,7 +4,7 @@
   "description": "Retrieve all contracts pending legal review in the current queue",
   "task": "FETCH",
   "dom": "LEGAL",
-  "packet": "FETCH|LEGAL|return:LEG-Agent|p:1|aacp:1.1|res:contracts|filter:status=pending_review|fmt:json",
+  "packet": "FETCH|LEGAL|return:LEG-Agent|p:1|aacp:1.4|res:contracts|filter:status=pending_review|fmt:json",
   "tags": [
     "contracts",
     "review",

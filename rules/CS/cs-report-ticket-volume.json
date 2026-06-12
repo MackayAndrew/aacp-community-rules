@@ -4,7 +4,7 @@
   "description": "Generate ticket volume report by channel, category and resolution time",
   "task": "REPORT",
   "dom": "CS",
-  "packet": "REPORT|CS|return:CS-Agent|p:2|aacp:1.1|res:ticket_volume|fmt:xlsx|period:current",
+  "packet": "REPORT|CS|return:CS-Agent|p:2|aacp:1.4|res:ticket_volume|fmt:xlsx|period:current",
   "tags": [
     "tickets",
     "volume",

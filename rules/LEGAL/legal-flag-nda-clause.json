@@ -4,7 +4,7 @@
   "description": "Flag specific NDA clause requiring legal review due to non-standard terms",
   "task": "FLAG",
   "dom": "LEGAL",
-  "packet": "FLAG|LEGAL|return:LEG-Agent|p:1|aacp:1.1|type:NDA|issue:non_standard_clause|risk:high|highlight:review_req",
+  "packet": "FLAG|LEGAL|return:LEG-Agent|p:1|aacp:1.4|type:NDA|issue:non_standard_clause|risk:high|highlight:review_req",
   "tags": [
     "nda",
     "contract",

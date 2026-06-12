@@ -4,7 +4,7 @@
   "description": "Retrieve current salary band data for benchmarking and compensation review",
   "task": "FETCH",
   "dom": "HR",
-  "packet": "FETCH|HR|return:HR-Agent|p:2|aacp:1.1|res:salary_bands|fmt:json",
+  "packet": "FETCH|HR|return:HR-Agent|p:2|aacp:1.4|res:salary_bands|fmt:json",
   "tags": [
     "compensation",
     "salary",

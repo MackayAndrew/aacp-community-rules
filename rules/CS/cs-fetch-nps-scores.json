@@ -4,7 +4,7 @@
   "description": "Retrieve recent NPS survey responses for analysis and follow-up",
   "task": "FETCH",
   "dom": "CS",
-  "packet": "FETCH|CS|return:CS-Agent|p:2|aacp:1.1|res:nps_scores|filter:period=last_30_days|fmt:json",
+  "packet": "FETCH|CS|return:CS-Agent|p:2|aacp:1.4|res:nps_scores|filter:period=last_30_days|fmt:json",
   "tags": [
     "nps",
     "survey",

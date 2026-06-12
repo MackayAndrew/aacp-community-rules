@@ -4,7 +4,7 @@
   "description": "Retrieve multi-touch attribution data for marketing channel analysis",
   "task": "FETCH",
   "dom": "MKT",
-  "packet": "FETCH|MKT|return:MKT-Agent|p:2|aacp:1.1|res:attribution_data|period:current|fmt:json",
+  "packet": "FETCH|MKT|return:MKT-Agent|p:2|aacp:1.4|res:attribution_data|period:current|fmt:json",
   "tags": [
     "attribution",
     "channels",

@@ -4,7 +4,7 @@
   "description": "Send resolution response to customer via their preferred channel",
   "task": "SEND",
   "dom": "CS",
-  "packet": "SEND|CS|return:CS-Agent|p:1|aacp:1.1|subj:complaint_resolution|tone:empathetic|flag_msg:resolution_sent",
+  "packet": "SEND|CS|return:CS-Agent|p:1|aacp:1.4|subj:complaint_resolution|tone:empathetic|flag_msg:resolution_sent",
   "tags": [
     "resolution",
     "response",

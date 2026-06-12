@@ -4,7 +4,7 @@
   "description": "Route marketing content through legal and brand approval workflow before publication",
   "task": "PROC",
   "dom": "MKT",
-  "packet": "PROC|MKT|return:MKT-Agent|p:2|aacp:1.1|res:content_approval|req:legal_review,brand_review",
+  "packet": "PROC|MKT|return:MKT-Agent|p:2|aacp:1.4|res:content_approval|req:legal_review,brand_review",
   "tags": [
     "content",
     "approval",

@@ -4,7 +4,7 @@
   "description": "Flag tickets with high negative sentiment score for priority handling",
   "task": "FLAG",
   "dom": "CS",
-  "packet": "FLAG|CS|return:CS-Agent|p:1|aacp:1.1|res:ticket|validate:sentiment_score<=-7|highlight:PRIORITY",
+  "packet": "FLAG|CS|return:CS-Agent|p:1|aacp:1.4|res:ticket|validate:sentiment_score<=-7|highlight:PRIORITY",
   "tags": [
     "sentiment",
     "flag",

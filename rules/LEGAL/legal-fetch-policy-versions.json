@@ -4,7 +4,7 @@
   "description": "Retrieve all current policy documents and their version history",
   "task": "FETCH",
   "dom": "LEGAL",
-  "packet": "FETCH|LEGAL|return:LEG-Agent|p:2|aacp:1.1|res:policy_documents|filter:status=current|fmt:json",
+  "packet": "FETCH|LEGAL|return:LEG-Agent|p:2|aacp:1.4|res:policy_documents|filter:status=current|fmt:json",
   "tags": [
     "policy",
     "versioning",

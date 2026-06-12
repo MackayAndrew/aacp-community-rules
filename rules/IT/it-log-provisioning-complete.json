@@ -4,7 +4,7 @@
   "description": "Write provisioning completion record to IT audit trail for compliance",
   "task": "LOG",
   "dom": "IT",
-  "packet": "LOG|IT|return:AUD-Agent|p:2|aacp:1.1|actor:IT-Agent|status:provisioned",
+  "packet": "LOG|IT|return:AUD-Agent|p:2|aacp:1.4|actor:IT-Agent|status:provisioned",
   "tags": [
     "provisioning",
     "audit",

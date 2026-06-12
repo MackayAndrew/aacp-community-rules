@@ -4,7 +4,7 @@
   "description": "Retrieve all absence records for the current period including type and duration",
   "task": "FETCH",
   "dom": "HR",
-  "packet": "FETCH|HR|return:HR-Agent|p:2|aacp:1.1|res:absence_records|period:current|fmt:json",
+  "packet": "FETCH|HR|return:HR-Agent|p:2|aacp:1.4|res:absence_records|period:current|fmt:json",
   "tags": [
     "absence",
     "leave",

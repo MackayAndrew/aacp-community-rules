@@ -4,7 +4,7 @@
   "description": "Generate monthly incident metrics report including MTTR and SLA compliance",
   "task": "REPORT",
   "dom": "IT",
-  "packet": "REPORT|IT|return:IT-Agent|p:2|aacp:1.1|res:incident_metrics|fmt:xlsx|period:current",
+  "packet": "REPORT|IT|return:IT-Agent|p:2|aacp:1.4|res:incident_metrics|fmt:xlsx|period:current",
   "tags": [
     "incident",
     "metrics",

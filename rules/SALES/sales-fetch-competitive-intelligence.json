@@ -4,7 +4,7 @@
   "description": "Retrieve latest competitive intelligence updates relevant to active deals",
   "task": "FETCH",
   "dom": "SALES",
-  "packet": "FETCH|SALES|return:SALES-Agent|p:3|aacp:1.1|res:competitive_intel|filter:relevance=high|fmt:json",
+  "packet": "FETCH|SALES|return:SALES-Agent|p:3|aacp:1.4|res:competitive_intel|filter:relevance=high|fmt:json",
   "tags": [
     "competitive",
     "intelligence",

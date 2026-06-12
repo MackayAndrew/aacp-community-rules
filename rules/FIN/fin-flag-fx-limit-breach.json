@@ -4,7 +4,7 @@
   "description": "Flag currency exposures that exceed approved hedging policy limits",
   "task": "FLAG",
   "dom": "FIN",
-  "packet": "FLAG|FIN|return:FIN-Agent|p:1|aacp:1.1|res:fx_exposure|validate:hedging_limits|highlight:BREACH",
+  "packet": "FLAG|FIN|return:FIN-Agent|p:1|aacp:1.4|res:fx_exposure|validate:hedging_limits|highlight:BREACH",
   "tags": [
     "fx",
     "limit",

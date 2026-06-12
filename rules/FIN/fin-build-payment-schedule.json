@@ -4,7 +4,7 @@
   "description": "Generate payment schedule for multi-stage contract or subscription agreement",
   "task": "BUILD",
   "dom": "FIN",
-  "packet": "BUILD|FIN|return:FIN-Agent|p:2|aacp:1.1|res:payment_schedule|req:contract_value,milestones,payment_terms",
+  "packet": "BUILD|FIN|return:FIN-Agent|p:2|aacp:1.4|res:payment_schedule|req:contract_value,milestones,payment_terms",
   "tags": [
     "payment",
     "schedule",

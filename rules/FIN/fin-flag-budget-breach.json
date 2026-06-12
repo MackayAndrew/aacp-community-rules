@@ -4,7 +4,7 @@
   "description": "Flag cost centres where actual spend has breached approved budget threshold",
   "task": "FLAG",
   "dom": "FIN",
-  "packet": "FLAG|FIN|return:FIN-Agent|p:1|aacp:1.1|res:budget_cc|validate:threshold=90|highlight:BREACH",
+  "packet": "FLAG|FIN|return:FIN-Agent|p:1|aacp:1.4|res:budget_cc|validate:threshold=90|highlight:BREACH",
   "tags": [
     "budget",
     "breach",

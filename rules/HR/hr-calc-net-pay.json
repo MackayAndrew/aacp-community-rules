@@ -4,7 +4,7 @@
   "description": "Calculate net pay by applying PAYE, NI, and pension deductions to gross salary",
   "task": "CALC",
   "dom": "HR",
-  "packet": "CALC|HR|return:HR-Agent|p:1|aacp:1.1|res:net_pay|rules:payroll_v2|validate:deductions",
+  "packet": "CALC|HR|return:HR-Agent|p:1|aacp:1.4|res:net_pay|rules:payroll_v2|validate:deductions",
   "tags": [
     "payroll",
     "net-pay",

@@ -4,7 +4,7 @@
   "description": "Create new monitoring alert rule for system or application threshold breach",
   "task": "BUILD",
   "dom": "IT",
-  "packet": "BUILD|IT|return:IT-Agent|p:2|aacp:1.1|res:alert_rule|req:threshold_config,notification_routing",
+  "packet": "BUILD|IT|return:IT-Agent|p:2|aacp:1.4|res:alert_rule|req:threshold_config,notification_routing",
   "tags": [
     "monitoring",
     "alert",

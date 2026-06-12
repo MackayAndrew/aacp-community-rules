@@ -4,7 +4,7 @@
   "description": "Send reminder to managers with performance reviews due in the next 14 days",
   "task": "SEND",
   "dom": "HR",
-  "packet": "SEND|HR|return:HR-Agent|p:2|aacp:1.1|subj:performance_review_reminder|highlight:ACTION_REQUIRED",
+  "packet": "SEND|HR|return:HR-Agent|p:2|aacp:1.4|subj:performance_review_reminder|highlight:ACTION_REQUIRED",
   "tags": [
     "performance",
     "reminder",

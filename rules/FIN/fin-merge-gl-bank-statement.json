@@ -4,7 +4,7 @@
   "description": "Merge GL transaction data with bank statement for period reconciliation",
   "task": "MERGE",
   "dom": "FIN",
-  "packet": "MERGE|FIN|return:FIN-Agent|p:1|aacp:1.1|res:gl_bank_merged|rules:recon_v1|validate:period_match",
+  "packet": "MERGE|FIN|return:FIN-Agent|p:1|aacp:1.4|res:gl_bank_merged|rules:recon_v1|validate:period_match",
   "tags": [
     "gl",
     "bank",

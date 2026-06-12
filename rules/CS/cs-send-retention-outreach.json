@@ -4,7 +4,7 @@
   "description": "Send proactive retention outreach to at-risk customer with personalised offer",
   "task": "SEND",
   "dom": "CS",
-  "packet": "SEND|CS|return:CS-Agent|p:1|aacp:1.1|subj:retention_outreach|tone:empathetic|sentiment:positive",
+  "packet": "SEND|CS|return:CS-Agent|p:1|aacp:1.4|subj:retention_outreach|tone:empathetic|sentiment:positive",
   "tags": [
     "churn",
     "retention",

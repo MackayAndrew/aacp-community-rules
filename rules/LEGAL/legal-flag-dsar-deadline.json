@@ -4,7 +4,7 @@
   "description": "Flag DSAR requests approaching the 30-day legal response deadline",
   "task": "FLAG",
   "dom": "LEGAL",
-  "packet": "FLAG|LEGAL|return:LEG-Agent|p:1|aacp:1.1|res:dsar_requests|validate:days_remaining<=7|highlight:DEADLINE",
+  "packet": "FLAG|LEGAL|return:LEG-Agent|p:1|aacp:1.4|res:dsar_requests|validate:days_remaining<=7|highlight:DEADLINE",
   "tags": [
     "gdpr",
     "dsar",

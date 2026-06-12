@@ -4,7 +4,7 @@
   "description": "Trigger annual policy review cycle and route to policy owners for update",
   "task": "PROC",
   "dom": "LEGAL",
-  "packet": "PROC|LEGAL|return:LEG-Agent|p:2|aacp:1.1|res:policy_review|req:owner_review,legal_sign_off|period:annual",
+  "packet": "PROC|LEGAL|return:LEG-Agent|p:2|aacp:1.4|res:policy_review|req:owner_review,legal_sign_off|period:annual",
   "tags": [
     "policy",
     "review",

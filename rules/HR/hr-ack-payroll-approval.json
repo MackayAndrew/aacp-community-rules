@@ -4,7 +4,7 @@
   "description": "Acknowledge receipt of payroll approval from Finance Director before processing",
   "task": "ACK",
   "dom": "HR",
-  "packet": "ACK|HR|return:HR-Agent|p:1|aacp:1.1|res:payroll_approval|status:acknowledged",
+  "packet": "ACK|HR|return:HR-Agent|p:1|aacp:1.4|res:payroll_approval|status:acknowledged",
   "tags": [
     "payroll",
     "approval",

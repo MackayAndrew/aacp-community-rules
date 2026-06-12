@@ -4,7 +4,7 @@
   "description": "Flag ticket requiring senior agent or management escalation based on complexity or LTV",
   "task": "FLAG",
   "dom": "CS",
-  "packet": "FLAG|CS|return:CS-Agent|p:1|aacp:1.1|res:ticket|status:escalation_required|highlight:ESCALATE",
+  "packet": "FLAG|CS|return:CS-Agent|p:1|aacp:1.4|res:ticket|status:escalation_required|highlight:ESCALATE",
   "tags": [
     "escalation",
     "flag",

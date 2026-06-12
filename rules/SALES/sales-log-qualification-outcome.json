@@ -4,7 +4,7 @@
   "description": "Write lead qualification outcome to CRM audit trail",
   "task": "LOG",
   "dom": "SALES",
-  "packet": "LOG|SALES|return:AUD-Agent|p:3|aacp:1.1|actor:SALES-Agent|res:qualification|status:complete",
+  "packet": "LOG|SALES|return:AUD-Agent|p:3|aacp:1.4|actor:SALES-Agent|res:qualification|status:complete",
   "tags": [
     "leads",
     "audit",

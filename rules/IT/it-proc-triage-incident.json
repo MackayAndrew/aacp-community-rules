@@ -4,7 +4,7 @@
   "description": "Triage incoming IT incident and assign priority and category for routing",
   "task": "PROC",
   "dom": "IT",
-  "packet": "PROC|IT|return:IT-Agent|p:1|aacp:1.1|res:incident_triage|req:categorise,prioritise,assign",
+  "packet": "PROC|IT|return:IT-Agent|p:1|aacp:1.4|res:incident_triage|req:categorise,prioritise,assign",
   "tags": [
     "incident",
     "triage",

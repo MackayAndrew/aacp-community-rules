@@ -4,7 +4,7 @@
   "description": "Generate balance sheet as at period end for board reporting",
   "task": "REPORT",
   "dom": "FIN",
-  "packet": "REPORT|FIN|return:FIN-Agent|p:2|aacp:1.1|res:balance_sheet|fmt:pdf,xlsx|period:current",
+  "packet": "REPORT|FIN|return:FIN-Agent|p:2|aacp:1.4|res:balance_sheet|fmt:pdf,xlsx|period:current",
   "tags": [
     "balance-sheet",
     "report",

@@ -4,7 +4,7 @@
   "description": "Generate period commission summary report for sales ops and finance review",
   "task": "REPORT",
   "dom": "SALES",
-  "packet": "REPORT|SALES|return:SALES-Agent|p:2|aacp:1.1|res:commission_summary|fmt:xlsx|period:current",
+  "packet": "REPORT|SALES|return:SALES-Agent|p:2|aacp:1.4|res:commission_summary|fmt:xlsx|period:current",
   "tags": [
     "commission",
     "report",

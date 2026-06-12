@@ -4,7 +4,7 @@
   "description": "Acknowledge receipt of customer complaint and confirm investigation timeline",
   "task": "ACK",
   "dom": "CS",
-  "packet": "ACK|CS|return:CS-Agent|p:1|aacp:1.1|res:complaint|status:acknowledged|tone:empathetic",
+  "packet": "ACK|CS|return:CS-Agent|p:1|aacp:1.4|res:complaint|status:acknowledged|tone:empathetic",
   "tags": [
     "complaint",
     "receipt",

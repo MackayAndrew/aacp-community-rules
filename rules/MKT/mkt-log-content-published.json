@@ -4,7 +4,7 @@
   "description": "Write content publication record to marketing audit trail",
   "task": "LOG",
   "dom": "MKT",
-  "packet": "LOG|MKT|return:AUD-Agent|p:3|aacp:1.1|actor:MKT-Agent|res:content|status:published",
+  "packet": "LOG|MKT|return:AUD-Agent|p:3|aacp:1.4|actor:MKT-Agent|res:content|status:published",
   "tags": [
     "content",
     "publication",
